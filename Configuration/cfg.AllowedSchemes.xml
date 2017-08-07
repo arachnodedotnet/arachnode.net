@@ -1,0 +1,24 @@
+<?xml version="1.0" standalone="yes"?>
+<DocumentElement>
+  <AllowedSchemes>
+    <Scheme>chrome</Scheme>
+  </AllowedSchemes>
+  <AllowedSchemes>
+    <Scheme>feed</Scheme>
+  </AllowedSchemes>
+  <AllowedSchemes>
+    <Scheme>http</Scheme>
+  </AllowedSchemes>
+  <AllowedSchemes>
+    <Scheme>https</Scheme>
+  </AllowedSchemes>
+  <AllowedSchemes>
+    <Scheme>mailto</Scheme>
+  </AllowedSchemes>
+  <AllowedSchemes>
+    <Scheme>news</Scheme>
+  </AllowedSchemes>
+  <AllowedSchemes>
+    <Scheme>webcal</Scheme>
+  </AllowedSchemes>
+</DocumentElement>

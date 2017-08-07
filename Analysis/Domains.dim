@@ -1,0 +1,97 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="ce005bc5-a173-4ca1-9ae0-0938d6610ec3" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Domains</ID>
+  <Name>Domains</Name>
+  <CreatedTimestamp>0001-01-01T08:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T08:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T08:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="949fb421-22c5-4666-82da-b050f334ecc6">
+    <DataSourceViewID>UriClassificationDataSourceView</DataSourceViewID>
+  </Source>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="0b26d452-ea1a-4241-b259-1013c8fa9cc8">
+      <ID>Domains</ID>
+      <Name>Domains</Name>
+      <Usage>Key</Usage>
+      <EstimatedCount>100000</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="aa1a671f-007a-43e3-ab85-3a65009f9146">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d69f74bb-c467-4cf0-8f1b-ca4fa342a243">
+            <TableID>dbo_Domains</TableID>
+            <ColumnID>ID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="7c2a4981-8410-4513-8d54-55774dea78b8">
+        <DataType>WChar</DataType>
+        <DataSize>884</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="76e77852-25e3-4d6f-8d75-67f0950e58c1">
+          <TableID>dbo_Domains</TableID>
+          <ColumnID>Domain</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="c1373212-5517-409c-9882-68692530c811">
+          <AttributeID>Extension ID</AttributeID>
+          <Name>Extension ID</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <InstanceSelection>MandatoryFilter</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="c4059d09-b534-401d-bbbd-613ff833fc60">
+      <ID>Extension ID</ID>
+      <Name>Extension ID</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="a218e989-29ff-417f-9db8-99cc2ed3ff74">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="78ee88b2-2f30-4b49-8cf3-ff5b8dd37900">
+            <TableID>dbo_Domains</TableID>
+            <ColumnID>ExtensionID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>MandatoryFilter</InstanceSelection>
+    </Attribute>
+  </Attributes>
+</Dimension>

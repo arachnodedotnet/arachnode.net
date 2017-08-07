@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Configuration>
+  <UniqueIdentifier value="" />
+	<NumberOfThreads value="10" />
+	<DesiredMaximumMemoryUsageInMegabytes value="1024" />
+  <KeepCrawlerAlive value="false" />
+	<ContentTypes>
+		<ContentType key="text/html" value="WebPage" />
+		<ContentType key="image/x-icon" value="Image" />
+		<ContentType key="image/gif" value="Image" />
+		<ContentType key="image/png" value="Image" />
+		<ContentType key="image/jpeg" value="Image" />
+		<ContentType key="image/jpg" value="Image" />
+		<ContentType key="text/css" value="File" />
+		<ContentType key="image/vnd.microsoft.icon" value="Image" />
+    <!-- JavaScript download functionality is not enabled by default for security/safety reasons -->
+    <!--<ContentType key="text/javascript" value="File" />-->
+	</ContentTypes>
+	<!-- The Distributed Caches are currently for in-memory use only.  Disk storage and object distribution are reserved for future releases. -->
+	<CrawlRequestsDistributedCache diskCacheDirectoryRoot="C:\Cache\CrawlRequests" useSlidingWindowCache="true" />
+	<FileAndImageDiscoveriesDistributedCache diskCacheDirectoryRoot="C:\Cache\FileAndImageDiscoveries" useSlidingWindowCache="true" />
+	<HyperLinkDiscoveriesDistributedCache diskCacheDirectoryRoot="C:\Cache\HyperLinkDiscoveries" useSlidingWindowCache="true" />
+	<FilesDistributedCache diskCacheDirectoryRoot="C:\Cache\Files" useSlidingWindowCache="false" />
+	<ImagesDistributedCache diskCacheDirectoryRoot="C:\Cache\Images" useSlidingWindowCache="false" />
+	<WebPagesDistributedCache diskCacheDirectoryRoot="C:\Cache\WebPages" useSlidingWindowCache="false" />
+</Configuration>

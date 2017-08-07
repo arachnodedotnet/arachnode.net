@@ -1,0 +1,1110 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="50a758d1-d1c8-47a5-845e-d50b82aea436" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>UriClassificationCube_DM</ID>
+  <Name>UriClassificationCube_DM</Name>
+  <CreatedTimestamp>0001-01-01T08:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T08:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T08:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Dimensions>
+    <Dimension dwd:design-time-name="a56bb9e4-4ae9-4e8c-890e-aad837cef9e0">
+      <ID>Scheme Discovery ID1</ID>
+      <Name>Scheme Discovery ID1</Name>
+      <DimensionID>Schemes Discoveries</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="88c58436-b816-40cf-9dd5-4f1ef5bb7f2d">
+          <AttributeID>Schemes Discoveries</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="3a720a8a-382a-4dba-bf9f-d8c4e299c188">
+          <AttributeID>Initially Discovered</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="59205941-14f4-4497-8cd7-c8836a4256eb">
+          <AttributeID>Last Discovered</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="1dd10e73-6fef-4e81-817e-a2597c2ac986">
+          <AttributeID>Discovery Type ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="714c4d0c-fb07-4b80-ba2a-03771e59806c">
+          <AttributeID>Schemes</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="0851b721-6e24-456a-b9ea-58cd82136900">
+          <AttributeID>Scheme</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="06169f5a-fc72-4d91-b24e-8ab69ddf212b">
+          <HierarchyID>Schemes - Schemes Discoveries</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="7f67ecee-af41-47cf-ac67-6e9810263570">
+      <ID>Scheme Discovery ID2</ID>
+      <Name>Scheme Discovery ID2</Name>
+      <DimensionID>Schemes Discoveries</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="7aff4874-f7fc-43b8-9fa4-b155f15ab0b2">
+          <AttributeID>Schemes Discoveries</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="4e9fd501-e81a-4e89-bfb1-39516f0e9541">
+          <AttributeID>Initially Discovered</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="2a5085ad-b5e5-4446-ac68-771c00fc632c">
+          <AttributeID>Last Discovered</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="56290b39-7605-43e1-afe6-5a5642ede0b6">
+          <AttributeID>Discovery Type ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="a94a301b-a388-4524-a2db-af5ecd9b3507">
+          <AttributeID>Schemes</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="702f3e73-30d7-4ecd-a483-32fed01d02e6">
+          <AttributeID>Scheme</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="d0d0afa0-5664-43cc-a775-83772a730348">
+          <HierarchyID>Schemes - Schemes Discoveries</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="847288b7-8b0a-4620-b261-9142eec73594">
+      <ID>Discovery Types</ID>
+      <Name>Discovery Types</Name>
+      <DimensionID>Discovery Types</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="965202a8-43bf-4a59-9db1-aa0140960446">
+          <AttributeID>Discovery Types</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="203e08b8-ebce-4e22-bd9d-fba889320dbe">
+          <AttributeID>Name</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="e5922d4b-a099-4815-966a-257c32d0462d">
+      <ID>Host Discovery ID1</ID>
+      <Name>Host Discovery ID1</Name>
+      <DimensionID>Hosts Discoveries</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="85fdb279-19da-4c52-851e-ca0ba2e6daab">
+          <AttributeID>Hosts Discoveries</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="f540d7cf-16f3-4c4c-8463-9cd7ddb8a4e3">
+          <AttributeID>Initially Discovered</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="bda5bd37-1f68-4492-a026-46af4d481ebe">
+          <AttributeID>Last Discovered</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="65ea2e84-c3c9-4a10-b8f9-19a6576408b7">
+          <AttributeID>Discovery Type ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="7239d54a-336f-4901-8694-79f6a047788b">
+          <AttributeID>Hosts</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="1857c942-c906-4383-9c68-73b61d729167">
+          <AttributeID>Domain ID</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="2625e590-d24d-4238-85ed-3e0e23ba19a2">
+          <HierarchyID>Hosts - Hosts Discoveries</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="3b41baf4-54a8-4e43-8bc4-02550fdf7768">
+      <ID>Host Discovery ID2</ID>
+      <Name>Host Discovery ID2</Name>
+      <DimensionID>Hosts Discoveries</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="da9c0e4f-00cc-477a-9dc8-6dd48c29ed76">
+          <AttributeID>Hosts Discoveries</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="9a4de5df-0c0e-482a-8140-8cd207adfcc0">
+          <AttributeID>Initially Discovered</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="c1420870-cac8-469c-bcac-2aac5f033577">
+          <AttributeID>Last Discovered</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="a42c8573-6536-44d4-b438-dfa7aabf4b78">
+          <AttributeID>Discovery Type ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="277532f2-f0f7-4700-9649-6bcd7af820bf">
+          <AttributeID>Hosts</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="aa49c995-48e4-4ea8-9ed1-596890e8dbe7">
+          <AttributeID>Domain ID</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="36011a38-ed5a-4a0a-9bcd-60ea69afe161">
+          <HierarchyID>Hosts - Hosts Discoveries</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="664ec7b4-aaeb-47d0-b887-2e072391b7a2">
+      <ID>Host Discovery ID1 - Domain</ID>
+      <Name>Host Discovery ID1 - Domain</Name>
+      <DimensionID>Domains</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="7eadec15-1c55-49bb-b530-35fc6cb74649">
+          <AttributeID>Domains</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="b4d355cc-3571-4717-a2c2-cf95d9d709f8">
+          <AttributeID>Extension ID</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="8ae4f73e-e7da-44d5-a730-0cc047273e40">
+      <ID>Host Discovery ID1 - Domain - Extension</ID>
+      <Name>Host Discovery ID1 - Domain - Extension</Name>
+      <DimensionID>Extensions</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="1bd0fb9d-1158-4e0e-812b-4bf039b5a8c2">
+          <AttributeID>Extensions</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="c6d91ef1-ac50-408a-bc1d-992037c247d7">
+      <ID>Host Discovery ID2 - Domain</ID>
+      <Name>Host Discovery ID2 - Domain</Name>
+      <DimensionID>Domains</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="6a81167c-7fec-417d-9586-803da510677c">
+          <AttributeID>Domains</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="55d49266-1419-4c2e-b329-9dd58d9cc3ff">
+          <AttributeID>Extension ID</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="2baee122-2ac5-441e-882a-1b891be64055">
+      <ID>Host Discovery ID2 - Domain - Extension</ID>
+      <Name>Host Discovery ID2 - Domain - Extension</Name>
+      <DimensionID>Extensions</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="fe267cec-a46f-4721-a3b4-92378f8e0c39">
+          <AttributeID>Extensions</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="860d6be1-e230-45bf-9de0-d35043622786">
+      <ID>Domains</ID>
+      <Name>Domains</Name>
+      <DimensionID>Domains</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="50d41744-b930-4113-acef-d2182891ac5b">
+          <AttributeID>Domains</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="81ba39f7-4301-46d9-af4a-23fb8a5e003c">
+          <AttributeID>Extension ID</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="fd19ba98-f4fa-40b5-8eb2-b60be270de95">
+      <ID>Extensions</ID>
+      <Name>Extensions</Name>
+      <DimensionID>Extensions</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="fc8a28de-3c08-4e88-87c5-899591989158">
+          <AttributeID>Extensions</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="9cf5bf34-0a89-47b8-af6c-7593401d78ce">
+      <ID>Schemes Discoveries</ID>
+      <Name>Schemes Discoveries</Name>
+      <DimensionID>Schemes Discoveries</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="2ed9d600-e6a4-4cde-9762-f02e45af57aa">
+          <AttributeID>Schemes Discoveries</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="868909ee-aea4-4642-9851-db0a689982ea">
+          <AttributeID>Initially Discovered</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="ae968c5d-1a9b-498d-bc5d-a6d48b83fd3b">
+          <AttributeID>Last Discovered</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="d5daee00-be66-4ca3-95fd-00ca6ba7446c">
+          <AttributeID>Discovery Type ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="5dbb5284-4a50-44c6-aa0b-1e27b5dcb693">
+          <AttributeID>Schemes</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="1dbffa95-b65e-4597-93f5-e7cab1da3238">
+          <AttributeID>Scheme</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="ad09942b-7fbb-47ac-9da7-69c81c7f8584">
+          <HierarchyID>Schemes - Schemes Discoveries</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="70c9d8a5-ce36-441f-98c7-69177d6330c7">
+      <ID>Hosts Discoveries</ID>
+      <Name>Hosts Discoveries</Name>
+      <DimensionID>Hosts Discoveries</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="f91b1968-af56-409d-aa44-6c06f9e4e9d9">
+          <AttributeID>Hosts Discoveries</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="93e00e42-5523-413d-a060-332ddbd3f162">
+          <AttributeID>Initially Discovered</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="d8bc83ed-e3f7-4221-b924-a69a4b2d2f0e">
+          <AttributeID>Last Discovered</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="14b48262-6a26-48ab-b804-e1ce10fd9993">
+          <AttributeID>Discovery Type ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="cd5ece38-2142-435d-aa28-7106e398c9b1">
+          <AttributeID>Hosts</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="b690f2f5-313f-4db4-ac7b-598e8d9b46d3">
+          <AttributeID>Domain ID</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="57868bb7-cbb6-4d7d-bc4a-84857e0707a2">
+          <HierarchyID>Hosts - Hosts Discoveries</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="6f565dba-0b72-4d2e-84bb-10d423205ade">
+      <ID>Domains_DMDim</ID>
+      <Name>Domains_DMDim</Name>
+      <DimensionID>Domains_DMDim</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="1d2d05b3-af96-473c-a25e-0a10424d318b">
+          <AttributeID>ATTRIBUTE_NAME</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="cb1b3248-e8f9-456b-be44-9e42626d7187">
+          <AttributeID>PARENT_UNIQUE_NAME</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="58c806d8-0b0e-43a4-b1c3-31e42a173753">
+          <AttributeID>NODE_RULE</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="1095c79e-5716-45e6-8c9e-c0493448d908">
+          <AttributeID>NODE_SUPPORT</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="f91442eb-332a-4d2a-ad69-3136ecd0ec6e">
+          <AttributeID>NODE_UNIQUE_NAME</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+  </Dimensions>
+  <MeasureGroups>
+    <MeasureGroup dwd:design-time-name="12de97fe-6926-4188-8125-b77868c31d8a">
+      <ID>Domains Discoveries</ID>
+      <Name>Domains Discoveries</Name>
+      <CreatedTimestamp>0001-01-01T08:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T08:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T08:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="dc5fd214-603c-446e-975f-87bb6abbc56f">
+          <ID>Discovery Type ID</ID>
+          <Name>Discovery Type ID</Name>
+          <Source dwd:design-time-name="d2580fa4-fc3e-4eb2-94f6-69002e833cfc">
+            <DataType>UnsignedInt</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="e0a2b3ea-2a1f-45fb-9258-08a8a924e64c">
+              <TableID>dbo_Domains_Discoveries</TableID>
+              <ColumnID>DiscoveryTypeID</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="0fcea70f-f4b0-4b3a-8f1e-71dcfba1c462">
+          <ID>Domains Discoveries Count</ID>
+          <Name>Domains Discoveries Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="4165ed45-f09b-4976-8588-6ea94746d21f">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="8a18267a-dd60-4480-909d-2d3ccd4701d9">
+              <TableID>dbo_Domains_Discoveries</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <Source dwd:design-time-name="875bfc34-4f81-481e-a21e-d9f7a05bd00d">
+        <DataSourceID>.</DataSourceID>
+        <CubeID>Uri Classification Data Source View</CubeID>
+        <MeasureGroupID>Domains Discoveries</MeasureGroupID>
+        <Persistence>Metadata</Persistence>
+        <RefreshInterval>PT1S</RefreshInterval>
+      </Source>
+      <StorageMode>Molap</StorageMode>
+      <EstimatedRows>100000</EstimatedRows>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="f2dcaeec-e361-4448-a1f2-f867bd4c2a03">
+          <CubeDimensionID>Domains</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="f25b54d3-b022-4e69-ad11-42d4c10f3e86">
+              <AttributeID>Domains</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="60c4178b-5e59-464d-9d44-7780136a4951">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="28922a21-0727-4232-a470-2f4ce8fb93f3">
+                    <TableID>dbo_Domains_Discoveries</TableID>
+                    <ColumnID>DomainID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="DataMiningMeasureGroupDimension" dwd:design-time-name="4976aedb-2eb3-4fe5-ae86-34f715bae0a9">
+          <CubeDimensionID>Domains_DMDim</CubeDimensionID>
+          <CaseCubeDimensionID>Domains</CaseCubeDimensionID>
+        </Dimension>
+      </Dimensions>
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="13643002-53e1-457d-b0a1-4656502c9aef">
+      <ID>Extensions Discoveries</ID>
+      <Name>Extensions Discoveries</Name>
+      <CreatedTimestamp>0001-01-01T08:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T08:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T08:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="29e14209-291b-4ccb-85f7-5f91436307ee">
+          <ID>Discovery Type ID - Extensions Discoveries</ID>
+          <Name>Discovery Type ID - Extensions Discoveries</Name>
+          <Source dwd:design-time-name="eb159493-bb03-4803-a37e-4d4261f8b96e">
+            <DataType>UnsignedInt</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="21a071c4-bbc1-420d-b168-1f089c87942a">
+              <TableID>dbo_Extensions_Discoveries</TableID>
+              <ColumnID>DiscoveryTypeID</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="b589a088-d2b9-4714-832f-f4ac3053fe47">
+          <ID>Extensions Discoveries Count</ID>
+          <Name>Extensions Discoveries Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="b6bcc496-413a-4cb2-a2b7-ad04966ec374">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="9f41ec9a-e8bf-4867-8b3a-b6f3f2d568ac">
+              <TableID>dbo_Extensions_Discoveries</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <Source dwd:design-time-name="9dfaa255-18d2-4427-983f-ee5e0119bf09">
+        <DataSourceID>.</DataSourceID>
+        <CubeID>Uri Classification Data Source View</CubeID>
+        <MeasureGroupID>Extensions Discoveries</MeasureGroupID>
+        <Persistence>Metadata</Persistence>
+        <RefreshInterval>PT1S</RefreshInterval>
+      </Source>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="b72bfd48-748d-4a38-b681-1c140f5424f5">
+          <CubeDimensionID>Extensions</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="1cf108a1-f97d-4a16-a55a-343a76d5e7df">
+              <AttributeID>Extensions</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="7105a437-1328-4fc3-9307-2d3234716b3b">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="2f0e613c-ac54-4825-b2ba-e5ad5c6e5544">
+                    <TableID>dbo_Extensions_Discoveries</TableID>
+                    <ColumnID>ExtensionID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="b85a7364-a5b0-4ec7-9293-7ceebeea4fd0">
+      <ID>Files Schemes Discoveries</ID>
+      <Name>Files Schemes Discoveries</Name>
+      <CreatedTimestamp>0001-01-01T08:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T08:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T08:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="a369b870-d99e-44c0-b118-b3f106009520">
+          <ID>Files Schemes Discoveries Count</ID>
+          <Name>Files Schemes Discoveries Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="9ab2ae2c-6cc4-44fd-9822-95034a2b3857">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="6783cabe-3a04-4e5a-9630-8ac9ab2d86c8">
+              <TableID>dbo_Files_Schemes_Discoveries</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <Source dwd:design-time-name="47905c47-452c-42c3-a056-e22131970d4b">
+        <DataSourceID>.</DataSourceID>
+        <CubeID>Uri Classification Data Source View</CubeID>
+        <MeasureGroupID>Files Schemes Discoveries</MeasureGroupID>
+        <Persistence>Metadata</Persistence>
+        <RefreshInterval>PT1S</RefreshInterval>
+      </Source>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="33ee1026-5ead-4bd5-9db0-5902b8da6d9e">
+          <CubeDimensionID>Schemes Discoveries</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="59bb1581-73d8-4ce2-9e96-381c08e1db77">
+              <AttributeID>Schemes Discoveries</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="a42f2931-cbbd-4c27-936d-1e5251c18e45">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="ce94f33f-817c-4d7c-87b3-969f688efe30">
+                    <TableID>dbo_Files_Schemes_Discoveries</TableID>
+                    <ColumnID>Scheme_DiscoveryID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="1f8d4d34-06a7-49f6-8ce8-9a8482f8ed8d">
+      <ID>Exceptions Schemes Discoveries</ID>
+      <Name>Exceptions Schemes Discoveries</Name>
+      <CreatedTimestamp>0001-01-01T08:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T08:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T08:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="e18ac837-f6fb-4a21-b1bd-34ac02c9f113">
+          <ID>Exceptions Schemes Discoveries Count</ID>
+          <Name>Exceptions Schemes Discoveries Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="a5e92d2d-ca09-4886-b38e-06ec8095301e">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="07e90178-2524-44a4-9110-3188e50428fd">
+              <TableID>dbo_Exceptions_Schemes_Discoveries</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <Source dwd:design-time-name="af5ba118-8b7f-4c44-bf8f-0d2c0410f938">
+        <DataSourceID>.</DataSourceID>
+        <CubeID>Uri Classification Data Source View</CubeID>
+        <MeasureGroupID>Exceptions Schemes Discoveries</MeasureGroupID>
+        <Persistence>Metadata</Persistence>
+        <RefreshInterval>PT1S</RefreshInterval>
+      </Source>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="191c3a9b-bfc7-4516-8391-4a670be3c8f2">
+          <CubeDimensionID>Scheme Discovery ID1</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="7673e42a-08ea-47f7-a624-16c1ff3f41f3">
+              <AttributeID>Schemes Discoveries</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="07906505-d4d9-4908-a7b5-b6e34a40635d">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="3f1f51d7-8cb3-4314-8cb4-240263c8a084">
+                    <TableID>dbo_Exceptions_Schemes_Discoveries</TableID>
+                    <ColumnID>Scheme_DiscoveryID1</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="38244846-a9e7-4b52-947f-7bdfb46e378c">
+          <CubeDimensionID>Scheme Discovery ID2</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="fcd15500-67b5-47b1-b711-eca0d8938815">
+              <AttributeID>Schemes Discoveries</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="e8a67e36-8679-4ff7-a5c0-083bec82177f">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="a355c709-8f47-43a8-a002-c591f360e09c">
+                    <TableID>dbo_Exceptions_Schemes_Discoveries</TableID>
+                    <ColumnID>Scheme_DiscoveryID2</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="0ff4c858-30d9-45c7-aac5-33c32e02fa18">
+      <ID>Web Pages Schemes Discoveries</ID>
+      <Name>Web Pages Schemes Discoveries</Name>
+      <CreatedTimestamp>0001-01-01T08:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T08:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T08:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="ec4fa77d-55fb-4d87-b9b4-00fa01f7784b">
+          <ID>Web Pages Schemes Discoveries Count</ID>
+          <Name>Web Pages Schemes Discoveries Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="40c560df-0f39-49bd-b39b-df5da53e3d5d">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="59ff4127-b545-4b4b-9d0a-389f73b19365">
+              <TableID>dbo_WebPages_Schemes_Discoveries</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <Source dwd:design-time-name="95eecdcd-e61f-435e-b038-5aca0895444c">
+        <DataSourceID>.</DataSourceID>
+        <CubeID>Uri Classification Data Source View</CubeID>
+        <MeasureGroupID>Web Pages Schemes Discoveries</MeasureGroupID>
+        <Persistence>Metadata</Persistence>
+        <RefreshInterval>PT1S</RefreshInterval>
+      </Source>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="d82257e8-94a8-4113-b13e-ebcf26d06a2d">
+          <CubeDimensionID>Schemes Discoveries</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="32d9253b-1f57-4a08-8171-2caafd56543b">
+              <AttributeID>Schemes Discoveries</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="b2bc95b0-5668-4339-a811-a17a16a1a1b9">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="3c3395c3-5172-407d-bbef-354fe08a9918">
+                    <TableID>dbo_WebPages_Schemes_Discoveries</TableID>
+                    <ColumnID>Scheme_DiscoveryID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="5b824e9c-238d-42c1-b9c0-efdf08f7f960">
+      <ID>Discovery Types</ID>
+      <Name>Discovery Types</Name>
+      <CreatedTimestamp>0001-01-01T08:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T08:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T08:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="94f6f629-47e0-404b-ac50-4afe581691c4">
+          <ID>Discovery Types Count</ID>
+          <Name>Discovery Types Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="f5d4ca2c-3723-47c1-9da4-c33c7d15124d">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="bdac7d33-7c50-41f9-bffe-f449fe965d72">
+              <TableID>dbo_DiscoveryTypes</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <Source dwd:design-time-name="6abca68a-4bce-4dc9-9bc1-5ca80f652cc5">
+        <DataSourceID>.</DataSourceID>
+        <CubeID>Uri Classification Data Source View</CubeID>
+        <MeasureGroupID>Discovery Types</MeasureGroupID>
+        <Persistence>Metadata</Persistence>
+        <RefreshInterval>PT1S</RefreshInterval>
+      </Source>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="7efe8da6-e19a-48bb-8da2-e6764ef49491">
+          <CubeDimensionID>Discovery Types</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="0a132364-46af-4b0c-abeb-7721a8f6539a">
+              <AttributeID>Discovery Types</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="7fa2e473-79aa-47a9-aece-51b0bbedf86b">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="32b6b500-b473-4a6b-959e-53becd255279">
+                    <TableID>dbo_DiscoveryTypes</TableID>
+                    <ColumnID>ID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="c78b61f4-584d-4352-9fb3-308e83638d26">
+      <ID>Email Addresses Schemes Discoveries</ID>
+      <Name>Email Addresses Schemes Discoveries</Name>
+      <CreatedTimestamp>0001-01-01T08:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T08:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T08:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="db07f1b9-8116-4448-a81c-3e5e4a07d107">
+          <ID>Email Addresses Schemes Discoveries Count</ID>
+          <Name>Email Addresses Schemes Discoveries Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="5ff247cf-53d0-4747-90c3-a1929fdd7e32">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="fd649d29-6410-410a-8a93-664d2e850ab7">
+              <TableID>dbo_EmailAddresses_Schemes_Discoveries</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <Source dwd:design-time-name="16173b27-1eac-452b-96d1-f17ca8004dc2">
+        <DataSourceID>.</DataSourceID>
+        <CubeID>Uri Classification Data Source View</CubeID>
+        <MeasureGroupID>Email Addresses Schemes Discoveries</MeasureGroupID>
+        <Persistence>Metadata</Persistence>
+        <RefreshInterval>PT1S</RefreshInterval>
+      </Source>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="dd1d2fdd-c28e-48d3-a8f8-b3827460375e">
+          <CubeDimensionID>Schemes Discoveries</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="ff56a3e5-a1d5-4855-9a47-cd59bed2aab9">
+              <AttributeID>Schemes Discoveries</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="bc9caf5b-cb61-4629-ae9c-c477d92ca2d4">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="281edc3d-8b59-4370-85de-bd1a16a56ce3">
+                    <TableID>dbo_EmailAddresses_Schemes_Discoveries</TableID>
+                    <ColumnID>Scheme_DiscoveryID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="d83f3ed8-9fe5-4104-a88b-6b157ec0caa1">
+      <ID>Hyper Links Schemes Discoveries</ID>
+      <Name>Hyper Links Schemes Discoveries</Name>
+      <CreatedTimestamp>0001-01-01T08:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T08:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T08:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="94e63bfc-9025-40fc-8fd3-7558a0c8a204">
+          <ID>Hyper Links Schemes Discoveries Count</ID>
+          <Name>Hyper Links Schemes Discoveries Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="9d8b1e9c-f120-4839-b0ca-a3a092a6e002">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="e6bb7520-9526-41df-8ffa-fd3711230f0d">
+              <TableID>dbo_HyperLinks_Schemes_Discoveries</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <Source dwd:design-time-name="8597f295-4b71-4147-b2be-7f891a66eac8">
+        <DataSourceID>.</DataSourceID>
+        <CubeID>Uri Classification Data Source View</CubeID>
+        <MeasureGroupID>Hyper Links Schemes Discoveries</MeasureGroupID>
+        <Persistence>Metadata</Persistence>
+        <RefreshInterval>PT1S</RefreshInterval>
+      </Source>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="48c4b5c0-aa4f-4523-87fa-53b65c95e5ce">
+          <CubeDimensionID>Schemes Discoveries</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="9517ec28-8483-45e8-a9e2-81e933dd0177">
+              <AttributeID>Schemes Discoveries</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="6314ccca-8087-4c31-b655-17ec3172bf6c">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="9cf7aacc-da2c-4956-8caf-077dbd2ef5e7">
+                    <TableID>dbo_HyperLinks_Schemes_Discoveries</TableID>
+                    <ColumnID>Scheme_DiscoveryID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="033875be-6085-4924-a8b6-863f6162adb0">
+      <ID>Hyper Links Hosts Discoveries</ID>
+      <Name>Hyper Links Hosts Discoveries</Name>
+      <CreatedTimestamp>0001-01-01T08:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T08:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T08:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="ff4c98a0-793c-4cb7-a729-da54df2369fb">
+          <ID>Hyper Links Hosts Discoveries Count</ID>
+          <Name>Hyper Links Hosts Discoveries Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="c5a6edd3-b53d-4ef3-9561-70510a3969ee">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="788433ad-e342-4092-804c-9bdc7e97d100">
+              <TableID>dbo_HyperLinks_Hosts_Discoveries</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <Source dwd:design-time-name="ddb015ee-5b71-48fc-a2b9-99658c6e947e">
+        <DataSourceID>.</DataSourceID>
+        <CubeID>Uri Classification Data Source View</CubeID>
+        <MeasureGroupID>Hyper Links Hosts Discoveries</MeasureGroupID>
+        <Persistence>Metadata</Persistence>
+        <RefreshInterval>PT1S</RefreshInterval>
+      </Source>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="5059941e-3c8c-417e-981b-9cb6d9539ce0">
+          <CubeDimensionID>Hosts Discoveries</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="21ccff31-5870-4b8f-af11-0ee0b505af46">
+              <AttributeID>Hosts Discoveries</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="c65d1cc4-d3b8-407e-86c0-9ab7b4c4c677">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="fe7bef22-e314-4183-ae9e-c19fc99a8b37">
+                    <TableID>dbo_HyperLinks_Hosts_Discoveries</TableID>
+                    <ColumnID>Host_DiscoveryID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="d7db6d51-8097-48dd-a0dc-b179d3ff8b4a">
+      <ID>Files Hosts Discoveries</ID>
+      <Name>Files Hosts Discoveries</Name>
+      <CreatedTimestamp>0001-01-01T08:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T08:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T08:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="f2931a0f-0648-41e1-94b1-e36f7d95c01a">
+          <ID>Files Hosts Discoveries Count</ID>
+          <Name>Files Hosts Discoveries Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="7e827535-9c05-4173-8787-ffea764b724d">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="be6439a2-929e-456d-84b6-89908b57fa2e">
+              <TableID>dbo_Files_Hosts_Discoveries</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <Source dwd:design-time-name="17f9a3b8-4aab-4e28-8bf8-80a99c854363">
+        <DataSourceID>.</DataSourceID>
+        <CubeID>Uri Classification Data Source View</CubeID>
+        <MeasureGroupID>Files Hosts Discoveries</MeasureGroupID>
+        <Persistence>Metadata</Persistence>
+        <RefreshInterval>PT1S</RefreshInterval>
+      </Source>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="1b2ecf6b-1ace-4435-8240-887e84a4e354">
+          <CubeDimensionID>Hosts Discoveries</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="41646d75-8ee8-4607-bcef-fd958657e27e">
+              <AttributeID>Hosts Discoveries</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="aeaac594-fde6-4eeb-b18f-b376a5cfff60">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="f53dba3b-d7bc-4ba8-a302-5cdb81d0403d">
+                    <TableID>dbo_Files_Hosts_Discoveries</TableID>
+                    <ColumnID>Host_DiscoveryID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="34d6dd0f-bd89-4ceb-925f-402eee031e15">
+      <ID>Email Addresses Hosts Discoveries</ID>
+      <Name>Email Addresses Hosts Discoveries</Name>
+      <CreatedTimestamp>0001-01-01T08:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T08:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T08:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="9b63a49d-ef45-4b8e-bd60-fa84217910a6">
+          <ID>Email Addresses Hosts Discoveries Count</ID>
+          <Name>Email Addresses Hosts Discoveries Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="e5c1a0df-e203-4279-96ce-febdb6adb993">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="802463b5-ba7b-4d5a-8cea-9d601119fe36">
+              <TableID>dbo_EmailAddresses_Hosts_Discoveries</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <Source dwd:design-time-name="c0f71850-cb5b-4e7b-aa10-0cdf2b73fe7a">
+        <DataSourceID>.</DataSourceID>
+        <CubeID>Uri Classification Data Source View</CubeID>
+        <MeasureGroupID>Email Addresses Hosts Discoveries</MeasureGroupID>
+        <Persistence>Metadata</Persistence>
+        <RefreshInterval>PT1S</RefreshInterval>
+      </Source>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="5d2d6b58-5be6-48c3-ae55-9eb10c9b41ab">
+          <CubeDimensionID>Hosts Discoveries</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="c0986319-69c2-402a-8844-5a721faf5677">
+              <AttributeID>Hosts Discoveries</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="c7b93f6a-0040-4ba2-a8d0-8acd0bc07114">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="1710bf89-2f7d-4833-a25f-96d71c91d872">
+                    <TableID>dbo_EmailAddresses_Hosts_Discoveries</TableID>
+                    <ColumnID>Host_DiscoveryID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="16beb76a-4782-45ff-b4e8-b4f35f330b71">
+      <ID>Web Pages Hosts Discoveries</ID>
+      <Name>Web Pages Hosts Discoveries</Name>
+      <CreatedTimestamp>0001-01-01T08:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T08:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T08:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="d59a5b63-a815-4276-9784-7b422b8e16ed">
+          <ID>Web Pages Hosts Discoveries Count</ID>
+          <Name>Web Pages Hosts Discoveries Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="13cdd1ea-a0f4-4931-9908-9b8d13785ff5">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="3e7c7267-21d7-4a6a-9ff4-75c7400fc9d3">
+              <TableID>dbo_WebPages_Hosts_Discoveries</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <Source dwd:design-time-name="2a51b9ba-04ad-4b03-b276-ac026c76ffee">
+        <DataSourceID>.</DataSourceID>
+        <CubeID>Uri Classification Data Source View</CubeID>
+        <MeasureGroupID>Web Pages Hosts Discoveries</MeasureGroupID>
+        <Persistence>Metadata</Persistence>
+        <RefreshInterval>PT1S</RefreshInterval>
+      </Source>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="68625bae-ed7a-42b9-9274-11dbf9915d67">
+          <CubeDimensionID>Hosts Discoveries</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="7ec3c7f4-8cf2-4307-bd19-75b7fa39bec6">
+              <AttributeID>Hosts Discoveries</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="18c8ebf1-fb68-4884-ab8b-c4936e9b5ef7">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="030bf975-d833-4715-b527-61ae6d9b9acf">
+                    <TableID>dbo_WebPages_Hosts_Discoveries</TableID>
+                    <ColumnID>Host_DiscoveryID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="cc945df9-d112-4352-a942-762be7a42dca">
+      <ID>Exceptions Hosts Discoveries</ID>
+      <Name>Exceptions Hosts Discoveries</Name>
+      <CreatedTimestamp>0001-01-01T08:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T08:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T08:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="d710d729-0232-4a60-861c-0f937dfe77f1">
+          <ID>Exceptions Hosts Discoveries Count</ID>
+          <Name>Exceptions Hosts Discoveries Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="b81def8d-dbae-4c6d-b707-a2e55ea305d8">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="05ed7c11-fce4-484c-a2c1-97738cd583d7">
+              <TableID>dbo_Exceptions_Hosts_Discoveries</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <Source dwd:design-time-name="f7dd679d-e23d-4ee9-b540-1b49553a9c0f">
+        <DataSourceID>.</DataSourceID>
+        <CubeID>Uri Classification Data Source View</CubeID>
+        <MeasureGroupID>Exceptions Hosts Discoveries</MeasureGroupID>
+        <Persistence>Metadata</Persistence>
+        <RefreshInterval>PT1S</RefreshInterval>
+      </Source>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="2e78e1f5-6943-4a30-acd6-8f12bde991ae">
+          <CubeDimensionID>Host Discovery ID1</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="c2cc39f4-2624-4f1a-8ca5-e05aa794ef97">
+              <AttributeID>Hosts Discoveries</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="c193f754-073e-45fe-97b4-8cc4300c9524">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="11b95926-a9f2-4279-8de3-2f4856e4d13c">
+                    <TableID>dbo_Exceptions_Hosts_Discoveries</TableID>
+                    <ColumnID>Host_DiscoveryID1</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="e661b99b-0e04-43da-91ab-7663e2cc23e1">
+          <CubeDimensionID>Host Discovery ID2</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="4c788436-036d-4671-8a32-a8c80041c382">
+              <AttributeID>Hosts Discoveries</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="12e008a4-1f27-4e8a-bd19-adcec964897a">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="564f72f4-193f-461c-b4a0-4f740af6be1a">
+                    <TableID>dbo_Exceptions_Hosts_Discoveries</TableID>
+                    <ColumnID>Host_DiscoveryID2</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="7e6b381d-da6c-48f0-af3c-6589206c45b1">
+          <CubeDimensionID>Host Discovery ID1 - Domain</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="8fd1c6a8-ca78-4a40-acb3-16cab3b4037c">
+              <AttributeID>Domains</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Host Discovery ID1</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Domain ID</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="ec3ddc0b-4088-4bc7-a36b-1339c00b0a13">
+          <CubeDimensionID>Host Discovery ID1 - Domain - Extension</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="7025be40-8c28-44c0-ae24-2d7ef5cef47b">
+              <AttributeID>Extensions</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Host Discovery ID1 - Domain</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Extension ID</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="5476c2d7-84bd-4f04-8a3e-859ca9e25ab2">
+          <CubeDimensionID>Host Discovery ID2 - Domain</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="9c145277-0087-4d4c-8d6d-276b8b3a0bb0">
+              <AttributeID>Domains</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Host Discovery ID2</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Domain ID</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="77b93add-548d-4e24-b548-186d3aa7f40e">
+          <CubeDimensionID>Host Discovery ID2 - Domain - Extension</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="aa611334-9992-4273-b870-ba117c9a61c7">
+              <AttributeID>Extensions</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Host Discovery ID2 - Domain</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Extension ID</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+        </Dimension>
+      </Dimensions>
+    </MeasureGroup>
+  </MeasureGroups>
+  <Source dwd:design-time-name="b8380a54-d42d-412d-b6a9-00feb2e02071">
+    <DataSourceViewID>UriClassificationDataSourceView</DataSourceViewID>
+  </Source>
+</Cube>

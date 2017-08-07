@@ -1,0 +1,1582 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="897c4d3c-7832-49d3-84d1-4007ffe17279" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Uri Classification Data Source View</ID>
+  <Name>UriClassificationCube</Name>
+  <CreatedTimestamp>0001-01-01T08:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T08:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="38" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="8768" scrolltop="265" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="75" x="17463" y="19950" backcolor="15334399" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.1" tooltip="EmailAddresses_Hosts_Discoveries (dbo.EmailAddresses_Hosts_Discoveries)" left="19251" top="12932" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="3466" height="1879" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000800008a0d000057070000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_EmailAddresses_Hosts_Discoveries" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.1" tooltip="Files_Hosts_Discoveries (dbo.Files_Hosts_Discoveries)" left="28117" top="24264" logicalid="2" controlid="2" masterid="0" hint1="0" hint2="0" width="3466" height="1879" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000800008a0d000057070000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Files_Hosts_Discoveries" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.1" tooltip="WebPages_Schemes_Discoveries (dbo.WebPages_Schemes_Discoveries)" left="12176" top="13144" logicalid="3" controlid="3" masterid="0" hint1="0" hint2="0" width="3916" height="1879" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000800004c0f000057070000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_WebPages_Schemes_Discoveries" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.1" tooltip="Files_Schemes_Discoveries (dbo.Files_Schemes_Discoveries)" left="20" top="10793" logicalid="4" controlid="4" masterid="0" hint1="0" hint2="0" width="3916" height="1879" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000800004c0f000057070000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Files_Schemes_Discoveries" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.1" tooltip="Extensions_Discoveries (dbo.Extensions_Discoveries)" left="36797" top="12297" logicalid="5" controlid="5" masterid="0" hint1="0" hint2="0" width="3440" height="3149" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="00080000700d00004d0c0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Extensions_Discoveries" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.1" tooltip="Schemes_Discoveries (dbo.Schemes_Discoveries)" left="6336" top="10158" logicalid="6" controlid="6" masterid="0" hint1="0" hint2="0" width="3440" height="3149" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="00080000700d00004d0c0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Schemes_Discoveries" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.1" tooltip="WebPages_Hosts_Discoveries (dbo.WebPages_Hosts_Discoveries)" left="25091" top="8018" logicalid="7" controlid="7" masterid="0" hint1="0" hint2="0" width="3466" height="1879" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000800008a0d000057070000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_WebPages_Hosts_Discoveries" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.1" tooltip="Domains_Discoveries (dbo.Domains_Discoveries)" left="30957" top="15283" logicalid="8" controlid="8" masterid="0" hint1="0" hint2="0" width="3440" height="3149" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="00080000700d00004d0c0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Domains_Discoveries" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.1" tooltip="HyperLinks_Hosts_Discoveries (dbo.HyperLinks_Hosts_Discoveries)" left="30957" top="19985" logicalid="9" controlid="9" masterid="0" hint1="0" hint2="0" width="3466" height="1879" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000800008a0d000057070000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_HyperLinks_Hosts_Discoveries" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.1" tooltip="Schemes (dbo.Schemes)" left="3398" top="17423" logicalid="10" controlid="10" masterid="0" hint1="0" hint2="0" width="3000" height="1879" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="00080000b80b000057070000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Schemes" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.1" tooltip="Hosts_Discoveries (dbo.Hosts_Discoveries)" left="25117" top="12297" logicalid="11" controlid="11" masterid="0" hint1="0" hint2="0" width="3440" height="3149" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="00080000700d00004d0c0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Hosts_Discoveries" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.1" tooltip="Hosts (dbo.Hosts)" left="31397" top="5879" logicalid="12" controlid="12" masterid="0" hint1="0" hint2="0" width="3000" height="2302" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="00080000b80b0000fe080000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Hosts" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.1" tooltip="Exceptions_Schemes_Discoveries (dbo.Exceptions_Schemes_Discoveries)" left="12176" top="8442" logicalid="13" controlid="13" masterid="0" hint1="0" hint2="0" width="4075" height="2302" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="00080000eb0f0000fe080000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Exceptions_Schemes_Discoveries" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.1" tooltip="EmailAddresses_Schemes_Discoveries (dbo.EmailAddresses_Schemes_Discoveries)" left="5860" top="5879" logicalid="14" controlid="14" masterid="0" hint1="0" hint2="0" width="3916" height="1879" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000800004c0f000057070000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_EmailAddresses_Schemes_Discoveries" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.1" tooltip="DiscoveryTypes (dbo.DiscoveryTypes)" left="20" top="0" logicalid="15" controlid="15" masterid="0" hint1="0" hint2="0" width="3000" height="1879" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="00080000b80b000057070000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_DiscoveryTypes" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.1" tooltip="Domains (dbo.Domains)" left="31397" top="10581" logicalid="16" controlid="16" masterid="0" hint1="0" hint2="0" width="3000" height="2302" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="00080000b80b0000fe080000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Domains" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.1" tooltip="Exceptions_Hosts_Discoveries (dbo.Exceptions_Hosts_Discoveries)" left="22092" top="24264" logicalid="17" controlid="17" masterid="0" hint1="0" hint2="0" width="3625" height="2302" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="00080000290e0000fe080000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Exceptions_Hosts_Discoveries" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.1" tooltip="HyperLinks_Schemes_Discoveries (dbo.HyperLinks_Schemes_Discoveries)" left="8798" top="17423" logicalid="18" controlid="18" masterid="0" hint1="0" hint2="0" width="3916" height="1879" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000800004c0f000057070000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_HyperLinks_Schemes_Discoveries" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.1" tooltip="Extensions (dbo.Extensions)" left="37017" top="8018" logicalid="19" controlid="19" masterid="0" hint1="0" hint2="0" width="3000" height="1879" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="00080000b80b000057070000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Extensions" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="22417" top="13472" logicalid="20" controlid="20" masterid="0" hint1="0" hint2="0" width="3000" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_EmailAddresses_Hosts_Discoveries_Hosts_Discoveries]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="11" destid="1" sourceattachpoint="14" destattachpoint="13" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="25117" y="13871" />
+              <point x="22717" y="13871" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="26988" top="14947" logicalid="21" controlid="21" masterid="0" hint1="0" hint2="0" width="3162" height="9617" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_Files_Hosts_Discoveries_Hosts_Discoveries]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="11" destid="2" sourceattachpoint="7" destattachpoint="4" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="27387" y="15446" />
+              <point x="27387" y="19855" />
+              <point x="29850" y="19855" />
+              <point x="29850" y="24264" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="9476" top="11883" logicalid="22" controlid="22" masterid="0" hint1="0" hint2="0" width="3000" height="2500" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_WebPages_Schemes_Discoveries_Schemes_Discoveries]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="6" destid="3" sourceattachpoint="17" destattachpoint="16" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="9776" y="12282" />
+              <point x="10976" y="12282" />
+              <point x="10976" y="14083" />
+              <point x="12176" y="14083" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="3636" top="11333" logicalid="23" controlid="23" masterid="0" hint1="0" hint2="0" width="3000" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_Files_Schemes_Discoveries_Schemes_Discoveries]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="6" destid="4" sourceattachpoint="14" destattachpoint="17" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="6336" y="11732" />
+              <point x="3936" y="11732" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="38118" top="9398" logicalid="24" controlid="24" masterid="0" hint1="0" hint2="0" width="799" height="3199" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_Extensions_Discoveries_Extensions]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="19" destid="5" sourceattachpoint="5" destattachpoint="4" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="38517" y="9897" />
+              <point x="38517" y="12297" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="4499" top="13007" logicalid="25" controlid="25" masterid="0" hint1="0" hint2="0" width="2757" height="4916" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_Schemes_Discoveries_Schemes]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="10" destid="6" sourceattachpoint="4" destattachpoint="1" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="4898" y="17423" />
+              <point x="4898" y="15365" />
+              <point x="6956" y="15365" />
+              <point x="6956" y="13307" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="8207" top="12808" logicalid="26" controlid="26" masterid="0" hint1="0" hint2="0" width="2849" height="4915" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_HyperLinks_Schemes_Discoveries_Schemes_Discoveries]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="6" destid="18" sourceattachpoint="7" destattachpoint="6" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="8606" y="13307" />
+              <point x="8606" y="15365" />
+              <point x="10756" y="15365" />
+              <point x="10756" y="17423" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="7518" top="7458" logicalid="27" controlid="27" masterid="0" hint1="0" hint2="0" width="938" height="3200" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_EmailAddresses_Schemes_Discoveries_Schemes_Discoveries]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="6" destid="14" sourceattachpoint="4" destattachpoint="7" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="8056" y="10158" />
+              <point x="8056" y="8958" />
+              <point x="7818" y="8958" />
+              <point x="7818" y="7758" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="9476" top="9293" logicalid="28" controlid="28" masterid="0" hint1="0" hint2="0" width="3000" height="2839" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_Exceptions_Schemes_Discoveries_Schemes_Discoveries1]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="6" destid="13" sourceattachpoint="15" destattachpoint="16" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="9776" y="11732" />
+              <point x="10976" y="11732" />
+              <point x="10976" y="9593" />
+              <point x="12176" y="9593" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="9476" top="8743" logicalid="29" controlid="29" masterid="0" hint1="0" hint2="0" width="3000" height="2839" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_Exceptions_Schemes_Discoveries_Schemes_Discoveries]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="6" destid="13" sourceattachpoint="13" destattachpoint="14" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="9776" y="11182" />
+              <point x="10976" y="11182" />
+              <point x="10976" y="9043" />
+              <point x="12176" y="9043" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="26438" top="9597" logicalid="30" controlid="30" masterid="0" hint1="0" hint2="0" width="799" height="3200" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_WebPages_Hosts_Discoveries_Hosts_Discoveries]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="11" destid="7" sourceattachpoint="4" destattachpoint="5" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="26837" y="12297" />
+              <point x="26837" y="11097" />
+              <point x="26824" y="11097" />
+              <point x="26824" y="9897" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="32377" top="12384" logicalid="31" controlid="31" masterid="0" hint1="0" hint2="0" width="920" height="3199" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_Domains_Discoveries_Domains]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="16" destid="8" sourceattachpoint="5" destattachpoint="4" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="32897" y="12883" />
+              <point x="32897" y="14083" />
+              <point x="32677" y="14083" />
+              <point x="32677" y="15283" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="28257" top="14022" logicalid="32" controlid="32" masterid="0" hint1="0" hint2="0" width="3000" height="7202" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_HyperLinks_Hosts_Discoveries_Hosts_Discoveries]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="11" destid="9" sourceattachpoint="17" destattachpoint="12" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="28557" y="14421" />
+              <point x="29757" y="14421" />
+              <point x="29757" y="20924" />
+              <point x="30957" y="20924" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="28257" top="6631" logicalid="33" controlid="33" masterid="0" hint1="0" hint2="0" width="3440" height="6440" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_Hosts_Discoveries_Hosts]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="12" destid="11" sourceattachpoint="12" destattachpoint="11" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="31397" y="7030" />
+              <point x="29977" y="7030" />
+              <point x="29977" y="12771" />
+              <point x="28557" y="12771" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="24154" top="14947" logicalid="34" controlid="34" masterid="0" hint1="0" hint2="0" width="3083" height="9617" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_Exceptions_Hosts_Discoveries_Hosts_Discoveries1]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="11" destid="17" sourceattachpoint="5" destattachpoint="8" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="26837" y="15446" />
+              <point x="26837" y="19855" />
+              <point x="24454" y="19855" />
+              <point x="24454" y="24264" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="22504" top="14947" logicalid="35" controlid="35" masterid="0" hint1="0" hint2="0" width="4183" height="9617" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_Exceptions_Hosts_Discoveries_Hosts_Discoveries]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="11" destid="17" sourceattachpoint="3" destattachpoint="2" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="26287" y="15446" />
+              <point x="26287" y="19855" />
+              <point x="22804" y="19855" />
+              <point x="22804" y="24264" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="32498" top="7881" logicalid="36" controlid="36" masterid="0" hint1="0" hint2="0" width="799" height="3200" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_Hosts_Domains]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="16" destid="12" sourceattachpoint="4" destattachpoint="5" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="32897" y="10581" />
+              <point x="32897" y="8181" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline" left="34097" top="8558" logicalid="37" controlid="37" masterid="0" hint1="0" hint2="0" width="3220" height="3474" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK_Domains_Extensions]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="19" destid="16" sourceattachpoint="12" destattachpoint="13" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="37017" y="8957" />
+              <point x="35707" y="8957" />
+              <point x="35707" y="11732" />
+              <point x="34397" y="11732" />
+            </connector>
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>8768</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>265</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>75</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T08:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Dimensions>
+    <Dimension dwd:design-time-name="1a452150-96f0-4802-b9af-77613807644e">
+      <ID>Scheme Discovery ID1</ID>
+      <Name>Scheme Discovery ID1</Name>
+      <DimensionID>Schemes Discoveries</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="0f30809f-f870-4bb8-9c51-2ce6ca2c4c8d">
+          <AttributeID>Schemes Discoveries</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="6f587834-306b-418f-8d42-b68a9287b766">
+          <AttributeID>Initially Discovered</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="16df034e-33f4-4dd9-ba19-24f8add5dea3">
+          <AttributeID>Last Discovered</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="d22e795a-ab70-48f1-b0a4-7fca8e424829">
+          <AttributeID>Discovery Type ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="847f5afb-e93f-409a-a21f-b6705331c8a1">
+          <AttributeID>Schemes</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="1b6e631a-7d47-4265-93a3-718331b70cae">
+          <AttributeID>Scheme</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="eda8dd4e-9cb3-452a-bcee-006e4c112f25">
+          <HierarchyID>Schemes - Schemes Discoveries</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="691ccad8-5dd1-477d-bb77-51d12920686c">
+      <ID>Scheme Discovery ID2</ID>
+      <Name>Scheme Discovery ID2</Name>
+      <DimensionID>Schemes Discoveries</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="b68c3324-281d-4926-a655-d291b8e8e596">
+          <AttributeID>Schemes Discoveries</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="29c131b1-e5c0-4a4c-8a05-30d9999f6394">
+          <AttributeID>Initially Discovered</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="28ad1614-0665-47c0-ae77-a6be9cc8bcb4">
+          <AttributeID>Last Discovered</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="89bcc77d-d968-43e6-951c-66cec2ca96e3">
+          <AttributeID>Discovery Type ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="5d678091-2101-438c-b3b5-6773fdf41f2a">
+          <AttributeID>Schemes</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="57058ae9-1a2d-4e6d-890c-56c098c084cb">
+          <AttributeID>Scheme</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="dbf1840f-75ef-4cdd-8bfe-3badb05df1d0">
+          <HierarchyID>Schemes - Schemes Discoveries</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="9cbd1a3f-9581-4a3a-92a5-660375ab6094">
+      <ID>Discovery Types</ID>
+      <Name>Discovery Types</Name>
+      <DimensionID>Discovery Types</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="83def90c-e8a6-495f-b039-10387ceb00a3">
+          <AttributeID>Discovery Types</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="2d0081dd-709a-4251-9007-6976e143eb08">
+          <AttributeID>Name</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="b2b43da4-848d-4ec3-a537-3d02f3de260a">
+      <ID>Host Discovery ID1</ID>
+      <Name>Host Discovery ID1</Name>
+      <DimensionID>Hosts Discoveries</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="d421068b-9ecb-474e-a853-f00fabdf6243">
+          <AttributeID>Hosts Discoveries</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="2032b0db-3e7d-4e29-81a3-bd5785f6a733">
+          <AttributeID>Initially Discovered</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="28431c76-2a72-4fca-a843-a3d915f70580">
+          <AttributeID>Last Discovered</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="b48aead2-28df-4fae-93b2-efadc75d44fe">
+          <AttributeID>Discovery Type ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="645d4c72-ff41-4fe2-a98f-e811ae8611d1">
+          <AttributeID>Hosts</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="8d0381a1-6905-4aa4-afee-15fd1e77e7a5">
+          <AttributeID>Domain ID</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="7f89d6af-999b-4aec-936d-75b4ef108d6c">
+          <HierarchyID>Hosts - Hosts Discoveries</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="4cc64e84-5934-4615-9730-986f0fcb1eab">
+      <ID>Host Discovery ID2</ID>
+      <Name>Host Discovery ID2</Name>
+      <DimensionID>Hosts Discoveries</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="d466e97a-b319-43df-b07a-0cee68710402">
+          <AttributeID>Hosts Discoveries</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="ed9206fd-2139-4c02-816c-12376f3c975f">
+          <AttributeID>Initially Discovered</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="8424d2d3-33c3-4a89-9dc8-a57c78aff8c3">
+          <AttributeID>Last Discovered</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="0fff32eb-5a47-4f7a-9b7f-54c9c82be39c">
+          <AttributeID>Discovery Type ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="e984c6bd-4b03-4f62-be03-049262aaecf1">
+          <AttributeID>Hosts</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="5d2d3e67-b991-42bb-bab6-1b1b55485a82">
+          <AttributeID>Domain ID</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="61e5d781-694e-43e4-9982-6b99309ca76b">
+          <HierarchyID>Hosts - Hosts Discoveries</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="676451fb-383b-4cc7-a98c-b16add04a357">
+      <ID>Host Discovery ID1 - Domain</ID>
+      <Name>Host Discovery ID1 - Domain</Name>
+      <DimensionID>Domains</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="66fdea5d-b73e-492a-887f-75822c52878e">
+          <AttributeID>Domains</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="89ab44b5-8f51-42c7-9fcf-d1e8a89059ff">
+          <AttributeID>Extension ID</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="c7627a87-f064-4c4e-a120-b178b4321e5d">
+      <ID>Host Discovery ID1 - Domain - Extension</ID>
+      <Name>Host Discovery ID1 - Domain - Extension</Name>
+      <DimensionID>Extensions</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="c7fcd923-00aa-4377-8478-56e2ba6c5c5d">
+          <AttributeID>Extensions</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="5dcd9cb5-378c-421e-94a9-49c5d6ce9a01">
+      <ID>Host Discovery ID2 - Domain</ID>
+      <Name>Host Discovery ID2 - Domain</Name>
+      <DimensionID>Domains</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="9f0f7306-196f-48a1-b720-d953acecd3d1">
+          <AttributeID>Domains</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="80beda29-4bc0-441f-89c2-c18e52608877">
+          <AttributeID>Extension ID</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="6a77b486-8e82-4afb-8a30-91c670fec8f8">
+      <ID>Host Discovery ID2 - Domain - Extension</ID>
+      <Name>Host Discovery ID2 - Domain - Extension</Name>
+      <DimensionID>Extensions</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="5a9dca25-242f-49ae-a091-eeabb092c7c0">
+          <AttributeID>Extensions</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="85f2ca45-101f-4e34-8de8-9e1aa26ff268">
+      <ID>Domains</ID>
+      <Name>Domains</Name>
+      <DimensionID>Domains</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="b27cc9b4-7458-4f4f-8f4e-390b3df1e30e">
+          <AttributeID>Domains</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="a6056c5d-f09b-49b8-9cc0-bc00304df3a9">
+          <AttributeID>Extension ID</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="3429def1-712d-4073-8fc6-5378b6f53737">
+      <ID>Extensions</ID>
+      <Name>Extensions</Name>
+      <DimensionID>Extensions</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="9b587e47-3548-4612-8392-f1bd0610940e">
+          <AttributeID>Extensions</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="5ba8814b-0d12-428e-8d33-5a768ccd4cff">
+      <ID>Schemes Discoveries</ID>
+      <Name>Schemes Discoveries</Name>
+      <DimensionID>Schemes Discoveries</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="3e753656-183f-4623-b95b-7825d2f593b4">
+          <AttributeID>Schemes Discoveries</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="a51965a2-6607-4ec3-9702-004a17d29292">
+          <AttributeID>Initially Discovered</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="1bc54d17-045b-4ce4-94ca-5e9939727ede">
+          <AttributeID>Last Discovered</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="4695ffb7-3e75-422e-a859-e9e3d4cac739">
+          <AttributeID>Discovery Type ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="285c24c1-5509-4e8f-a2b2-3ea83687dae1">
+          <AttributeID>Schemes</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="cf26d6f0-37e4-4449-96a4-bf2df292e249">
+          <AttributeID>Scheme</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="92a158d2-700e-4fed-ad5e-6394a7757462">
+          <HierarchyID>Schemes - Schemes Discoveries</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="31770f3a-0f83-434b-b94b-e04a0fbbf852">
+      <ID>Hosts Discoveries</ID>
+      <Name>Hosts Discoveries</Name>
+      <DimensionID>Hosts Discoveries</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="3e642380-8127-44b5-b70c-40ffb4bdddf0">
+          <AttributeID>Hosts Discoveries</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="05db66c2-4ac0-41db-8a4f-7784ce31f49f">
+          <AttributeID>Initially Discovered</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="277bb324-c6fa-4f62-b268-47c0addb1334">
+          <AttributeID>Last Discovered</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="665aaa20-53f4-4e42-a4ff-bb9152d0fef6">
+          <AttributeID>Discovery Type ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="ae59db1f-ff14-4df0-815c-1f400d340dc2">
+          <AttributeID>Hosts</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="0fc011bb-3bde-4c67-96a8-321473a502d4">
+          <AttributeID>Domain ID</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="c0dc8665-e3a7-4420-bb52-8a0cabe5f551">
+          <HierarchyID>Hosts - Hosts Discoveries</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+  </Dimensions>
+  <MeasureGroups>
+    <MeasureGroup dwd:design-time-name="d42f9ce1-f88b-4499-8563-31703a0cd5ad">
+      <ID>Domains Discoveries</ID>
+      <Name>Domains Discoveries</Name>
+      <CreatedTimestamp>0001-01-01T08:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T08:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T08:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="464ae102-906c-4a8e-a370-2d4021e4eb81">
+          <ID>Discovery Type ID</ID>
+          <Name>Discovery Type ID</Name>
+          <Source dwd:design-time-name="8838c6e9-0346-4e42-9d0c-206cd2496a9f">
+            <DataType>UnsignedInt</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="3d58fc7b-a001-4aed-b7bc-c40ea3229ca9">
+              <TableID>dbo_Domains_Discoveries</TableID>
+              <ColumnID>DiscoveryTypeID</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="5d8cd0f5-57ab-44b0-a496-1e5a15b2dabb">
+          <ID>Domains Discoveries Count</ID>
+          <Name>Domains Discoveries Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="e20c0369-9503-4cc1-9b7c-ba9c103e4698">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="169953a3-6b78-4dbc-a0ca-1fc1e5d2fe28">
+              <TableID>dbo_Domains_Discoveries</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <EstimatedRows>100000</EstimatedRows>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="c88ade92-fbad-4980-b531-845338fb84a5">
+          <CubeDimensionID>Domains</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="68928c8f-9210-445b-87d9-0f3bb622111c">
+              <AttributeID>Domains</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="f9a36a3d-964b-42b8-bc3c-787fe3398136">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="d321fc52-5340-464f-ba57-5c836485b051">
+                    <TableID>dbo_Domains_Discoveries</TableID>
+                    <ColumnID>DomainID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="a65d39ef-8096-478e-9dc4-1a1a29a02e1b">
+      <ID>Extensions Discoveries</ID>
+      <Name>Extensions Discoveries</Name>
+      <CreatedTimestamp>0001-01-01T08:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T08:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T08:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="2bce66b4-b01a-4689-9286-6fc0c79f9d6a">
+          <ID>Discovery Type ID - Extensions Discoveries</ID>
+          <Name>Discovery Type ID - Extensions Discoveries</Name>
+          <Source dwd:design-time-name="f48e9be4-5068-439b-a788-1f2a83dc46a1">
+            <DataType>UnsignedInt</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="61740cab-aeb1-4033-a33c-d980d63921f8">
+              <TableID>dbo_Extensions_Discoveries</TableID>
+              <ColumnID>DiscoveryTypeID</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="ffafcb4a-616e-47f4-9446-38a0f3fe25a4">
+          <ID>Extensions Discoveries Count</ID>
+          <Name>Extensions Discoveries Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="91fac623-8caf-4a7b-b549-98920c3d4c3e">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="dbfc88e2-b118-4609-bb8a-931b5ac5781b">
+              <TableID>dbo_Extensions_Discoveries</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="ac49cfb0-b0e1-466a-a4cb-1fe90a9298e6">
+          <CubeDimensionID>Extensions</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="47a6385e-c077-4dd6-9364-db7a22efaf21">
+              <AttributeID>Extensions</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="50f0ef64-b577-4f43-b416-20c844398a2f">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="5d4a7f90-1245-49c9-a069-6690b92c1b84">
+                    <TableID>dbo_Extensions_Discoveries</TableID>
+                    <ColumnID>ExtensionID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="d93bcfc8-b2bd-4ca5-a0f5-8d6a7938880a">
+      <ID>Files Schemes Discoveries</ID>
+      <Name>Files Schemes Discoveries</Name>
+      <CreatedTimestamp>0001-01-01T08:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T08:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T08:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="58f456a9-8d71-466c-a3ac-770c38a5ab8b">
+          <ID>Files Schemes Discoveries Count</ID>
+          <Name>Files Schemes Discoveries Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="82da5049-b1d8-4135-89be-5cdfed2aacbf">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="863790b2-8351-46a5-bde2-04333c1def6c">
+              <TableID>dbo_Files_Schemes_Discoveries</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="295b6143-8982-45fe-ab62-a35f6cb50ac7">
+          <CubeDimensionID>Schemes Discoveries</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="682d3182-461f-4f49-9adf-9729118d648b">
+              <AttributeID>Schemes Discoveries</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="af2b1419-cdfa-4a3c-9d42-c406819b094d">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="da047e26-d4bd-47c5-b45b-0c8cc19b3a88">
+                    <TableID>dbo_Files_Schemes_Discoveries</TableID>
+                    <ColumnID>Scheme_DiscoveryID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="08f9f0e8-9a6d-440f-be62-172bde315822">
+      <ID>Exceptions Schemes Discoveries</ID>
+      <Name>Exceptions Schemes Discoveries</Name>
+      <CreatedTimestamp>0001-01-01T08:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T08:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T08:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="a8e7e449-754f-4e74-8ea0-3d42468e5e4c">
+          <ID>Exceptions Schemes Discoveries Count</ID>
+          <Name>Exceptions Schemes Discoveries Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="486f066f-fc74-4fc2-80e4-d06b1af9295e">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="a7e2593f-528d-40db-889f-8e15893e8459">
+              <TableID>dbo_Exceptions_Schemes_Discoveries</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="8d49abdd-5bbe-4c3d-bfe0-7d089574290b">
+          <CubeDimensionID>Scheme Discovery ID1</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="ba398a98-5556-4a8a-a363-e63a28dd976e">
+              <AttributeID>Schemes Discoveries</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="67df4f32-7069-408f-b41c-f467dedbe793">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="d450ffd5-2955-4d3b-8cc9-cf0efbf635cb">
+                    <TableID>dbo_Exceptions_Schemes_Discoveries</TableID>
+                    <ColumnID>Scheme_DiscoveryID1</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="b0200ac6-9a31-46a7-a2bf-f2d84949a7be">
+          <CubeDimensionID>Scheme Discovery ID2</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="9baece17-14d1-4011-955c-41f8fdf79f74">
+              <AttributeID>Schemes Discoveries</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="c8ac3b61-0ca5-477f-8c1a-d12c926bdefe">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="95c8b3d9-caa9-4390-bdc8-56f8437cd345">
+                    <TableID>dbo_Exceptions_Schemes_Discoveries</TableID>
+                    <ColumnID>Scheme_DiscoveryID2</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="7d592ac7-d405-4e71-a6d9-d02bf955f495">
+      <ID>Web Pages Schemes Discoveries</ID>
+      <Name>Web Pages Schemes Discoveries</Name>
+      <CreatedTimestamp>0001-01-01T08:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T08:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T08:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="95876eac-0e13-4e39-8c75-f3e0340d4be1">
+          <ID>Web Pages Schemes Discoveries Count</ID>
+          <Name>Web Pages Schemes Discoveries Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="ddf8eea5-b70a-4bc7-9106-3df0134871f9">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="8cc3023a-c9ae-4968-873d-53a185f12a00">
+              <TableID>dbo_WebPages_Schemes_Discoveries</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="8a99e986-78a6-41d1-929d-2f87acb8140a">
+          <CubeDimensionID>Schemes Discoveries</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="df716415-c6bd-4588-9e98-e9860f734bea">
+              <AttributeID>Schemes Discoveries</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="7a930f4a-eb0e-42c1-a0a2-b06a13c0ad5a">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="baf1cbe4-042c-4c14-86e6-adf7cddd6366">
+                    <TableID>dbo_WebPages_Schemes_Discoveries</TableID>
+                    <ColumnID>Scheme_DiscoveryID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="e13f6761-917d-4181-824c-8b0c24580a31">
+      <ID>Discovery Types</ID>
+      <Name>Discovery Types</Name>
+      <CreatedTimestamp>0001-01-01T08:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T08:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T08:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="dff5c41e-c244-4c0f-86dc-e354cbc5b885">
+          <ID>Discovery Types Count</ID>
+          <Name>Discovery Types Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="52459cb1-e5ef-4345-b370-2ca7a2d46ba7">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="bffd7f14-2bc7-4613-b2b0-e4af07042fda">
+              <TableID>dbo_DiscoveryTypes</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="a2cbe2ef-7ad2-4435-a040-d83899ae78b9">
+          <CubeDimensionID>Discovery Types</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="6f0b34b3-96cd-4cef-9298-69f440d2558d">
+              <AttributeID>Discovery Types</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="e90ffd4b-ea9d-4d5a-9a8b-90cd592f66f7">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="662a88fc-e566-410c-bc70-bc2992602331">
+                    <TableID>dbo_DiscoveryTypes</TableID>
+                    <ColumnID>ID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="20d1ca55-6352-4c29-9a2c-65574220e128">
+      <ID>Email Addresses Schemes Discoveries</ID>
+      <Name>Email Addresses Schemes Discoveries</Name>
+      <CreatedTimestamp>0001-01-01T08:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T08:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T08:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="75782bb8-fcde-4081-9860-71144dd8d154">
+          <ID>Email Addresses Schemes Discoveries Count</ID>
+          <Name>Email Addresses Schemes Discoveries Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="4a61342e-4695-4f70-9c00-55521a5206e4">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="c03ddcfa-1efe-4f11-ae56-f8c3510c41af">
+              <TableID>dbo_EmailAddresses_Schemes_Discoveries</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="4a3cfcd5-fead-4d95-9dce-407aab91327a">
+          <CubeDimensionID>Schemes Discoveries</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="85f8f8a8-e048-4c94-a935-87e58bdec789">
+              <AttributeID>Schemes Discoveries</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="41313694-88fc-4e58-b786-dd8a609ba0d5">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="f8a5f54b-2a1b-4ab5-8e2a-5d8b2a4e262a">
+                    <TableID>dbo_EmailAddresses_Schemes_Discoveries</TableID>
+                    <ColumnID>Scheme_DiscoveryID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="18440eed-1777-4d5f-ab6c-940082d1c367">
+      <ID>Hyper Links Schemes Discoveries</ID>
+      <Name>Hyper Links Schemes Discoveries</Name>
+      <CreatedTimestamp>0001-01-01T08:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T08:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T08:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="50ad331c-64ab-4310-8727-f10250ac835a">
+          <ID>Hyper Links Schemes Discoveries Count</ID>
+          <Name>Hyper Links Schemes Discoveries Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="15f18fa9-dbb5-4a1c-9e7c-74cd9daf552f">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="67173d00-ea2b-4b95-9799-ec903e23fcfc">
+              <TableID>dbo_HyperLinks_Schemes_Discoveries</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="0cd70668-85e2-4518-a457-ecc8cacc2e7d">
+          <CubeDimensionID>Schemes Discoveries</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="4504f4a5-d81c-4fd9-bfe7-7bc053a5ef7e">
+              <AttributeID>Schemes Discoveries</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="963e4ee2-16d3-4def-a79f-8fd6b211c4e2">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="2c0b2521-fd6d-4b20-bffd-bf42ee4bc922">
+                    <TableID>dbo_HyperLinks_Schemes_Discoveries</TableID>
+                    <ColumnID>Scheme_DiscoveryID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="bdf234ac-a5b1-4fe1-8049-a41d16d4c6a1">
+      <ID>Hyper Links Hosts Discoveries</ID>
+      <Name>Hyper Links Hosts Discoveries</Name>
+      <CreatedTimestamp>0001-01-01T08:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T08:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T08:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="84aeac79-664b-4ff8-8837-215267a97c72">
+          <ID>Hyper Links Hosts Discoveries Count</ID>
+          <Name>Hyper Links Hosts Discoveries Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="e512f11b-4ca5-4126-ab22-9fcad8f89c04">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="1fccefae-445c-4204-8606-dcf8beacc809">
+              <TableID>dbo_HyperLinks_Hosts_Discoveries</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="b80013f7-7fa9-4a9e-9c5a-2be0e04f0280">
+          <CubeDimensionID>Hosts Discoveries</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="7341dc91-a3a3-41b9-ab9a-cade9c6626ac">
+              <AttributeID>Hosts Discoveries</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="89ce56d6-84ea-4230-8c5e-a508bbf866a8">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="f4693f88-cb60-45fc-b2c4-94c956574170">
+                    <TableID>dbo_HyperLinks_Hosts_Discoveries</TableID>
+                    <ColumnID>Host_DiscoveryID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="13e518c8-e85a-4a09-9623-c91ca55ae309">
+      <ID>Files Hosts Discoveries</ID>
+      <Name>Files Hosts Discoveries</Name>
+      <CreatedTimestamp>0001-01-01T08:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T08:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T08:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="674e5c2c-1250-43f5-ba9b-17951ee3baa1">
+          <ID>Files Hosts Discoveries Count</ID>
+          <Name>Files Hosts Discoveries Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="32bbea13-a6dd-4475-b02a-1678289a4f4a">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="ce629681-77e7-4e94-90a6-2c38897d3d61">
+              <TableID>dbo_Files_Hosts_Discoveries</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="dab279a7-46a0-43e6-a1ac-5776300dd55e">
+          <CubeDimensionID>Hosts Discoveries</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="c190e0b6-a0de-405a-b8ed-e21c836f07d4">
+              <AttributeID>Hosts Discoveries</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="415d99f1-d0ca-4b65-a087-e6d059867322">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="1ccfd561-e003-4cab-ba1b-1e228f40624d">
+                    <TableID>dbo_Files_Hosts_Discoveries</TableID>
+                    <ColumnID>Host_DiscoveryID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="da6d7f43-93a3-4347-afcd-2e0550eb0b32">
+      <ID>Email Addresses Hosts Discoveries</ID>
+      <Name>Email Addresses Hosts Discoveries</Name>
+      <CreatedTimestamp>0001-01-01T08:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T08:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T08:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="910b7052-ab45-4de4-9182-de2d0a70d2ee">
+          <ID>Email Addresses Hosts Discoveries Count</ID>
+          <Name>Email Addresses Hosts Discoveries Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="935653d2-e638-4a38-bdb4-c76e6eec4a3b">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="ce0ccd89-6450-4729-9cbc-59560c01dc14">
+              <TableID>dbo_EmailAddresses_Hosts_Discoveries</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="eead8384-89a2-4ecf-9965-6340f3362b26">
+          <CubeDimensionID>Hosts Discoveries</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="0497b9d5-2ba8-4b3a-b44f-b1ff03c88d42">
+              <AttributeID>Hosts Discoveries</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="6335432b-7c9f-4eb8-8f95-4077a00442bf">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="d83d8233-5fd5-42f1-bff9-d152ea2bbc74">
+                    <TableID>dbo_EmailAddresses_Hosts_Discoveries</TableID>
+                    <ColumnID>Host_DiscoveryID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="924f0e54-33cb-456d-88ad-39c7f390bff6">
+      <ID>Web Pages Hosts Discoveries</ID>
+      <Name>Web Pages Hosts Discoveries</Name>
+      <CreatedTimestamp>0001-01-01T08:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T08:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T08:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="78e1ca48-ff8d-4e49-a151-ee42f2c68f27">
+          <ID>Web Pages Hosts Discoveries Count</ID>
+          <Name>Web Pages Hosts Discoveries Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="9a9bbbe4-d756-4c64-b504-6f55913bf27e">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="1c61e99e-3b2b-4ae5-bda9-5f8ec3c632e3">
+              <TableID>dbo_WebPages_Hosts_Discoveries</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="94127a17-f587-4ee0-a3b0-fce357c181f6">
+          <CubeDimensionID>Hosts Discoveries</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="3f7912cd-d174-465a-9966-584041e5b1fa">
+              <AttributeID>Hosts Discoveries</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="ae7e3207-5a88-48f7-8b9f-7d07c36c333e">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="805a9f77-863b-49cf-b5c6-a70dec6e060f">
+                    <TableID>dbo_WebPages_Hosts_Discoveries</TableID>
+                    <ColumnID>Host_DiscoveryID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="0d709865-30c8-4b5f-952a-deb38d9f29f2">
+      <ID>Exceptions Hosts Discoveries</ID>
+      <Name>Exceptions Hosts Discoveries</Name>
+      <CreatedTimestamp>0001-01-01T08:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T08:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T08:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="9afc6921-06f2-494a-8b61-e2f65c103dc5">
+          <ID>Exceptions Hosts Discoveries Count</ID>
+          <Name>Exceptions Hosts Discoveries Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="2db23ceb-167d-481f-a75c-85f8e24177f5">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="397aed7a-f63d-4930-af7b-bf0d13484b1c">
+              <TableID>dbo_Exceptions_Hosts_Discoveries</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="eca87a19-bed1-41b2-b19d-8813d39ff251">
+          <CubeDimensionID>Host Discovery ID1</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="b6091dd9-9d00-4d94-b2ed-e25e84ad1778">
+              <AttributeID>Hosts Discoveries</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="e5b67a66-2bf9-43a3-b79e-1c6e9d1a9750">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="677eba26-fe7f-4bd4-bd98-47d741952be5">
+                    <TableID>dbo_Exceptions_Hosts_Discoveries</TableID>
+                    <ColumnID>Host_DiscoveryID1</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="423d97a3-aef3-4a23-b3fe-43e48a17e5f5">
+          <CubeDimensionID>Host Discovery ID2</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="891ab61e-7446-4bac-a8d2-a996ffd880b4">
+              <AttributeID>Hosts Discoveries</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="77b237d4-873b-4dfc-8623-c839023cfe36">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="2b611dcb-bca5-479d-9cbb-91eae4c6514a">
+                    <TableID>dbo_Exceptions_Hosts_Discoveries</TableID>
+                    <ColumnID>Host_DiscoveryID2</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="9467d0ee-a656-4db0-a499-c5c4b5498357">
+          <CubeDimensionID>Host Discovery ID1 - Domain</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="a83f5e1f-f73f-44dc-b951-74eef7608cd6">
+              <AttributeID>Domains</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Host Discovery ID1</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Domain ID</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="3c1d6824-53e7-4e91-a640-51ce0e5310e0">
+          <CubeDimensionID>Host Discovery ID1 - Domain - Extension</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="3413ebbe-8cd0-476c-9d85-2f1a3b377540">
+              <AttributeID>Extensions</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Host Discovery ID1 - Domain</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Extension ID</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="378fcff8-0c4d-4772-bac8-a4642166cf5a">
+          <CubeDimensionID>Host Discovery ID2 - Domain</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="dabfe465-68eb-4999-b977-5fc7e842ec20">
+              <AttributeID>Domains</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Host Discovery ID2</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Domain ID</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="d79a3bc3-1306-4b11-b65a-55d177ebbd7b">
+          <CubeDimensionID>Host Discovery ID2 - Domain - Extension</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="f9dd4623-6d6e-4a63-929f-3101809b2d6e">
+              <AttributeID>Extensions</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Host Discovery ID2 - Domain</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>Extension ID</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+  </MeasureGroups>
+  <Source dwd:design-time-name="25fc96e2-7b40-4d4e-8e4b-d389962b37e5">
+    <DataSourceViewID>UriClassificationDataSourceView</DataSourceViewID>
+  </Source>
+</Cube>

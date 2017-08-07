@@ -1,0 +1,156 @@
+body
+{
+	font-size: 90%;
+	font-family: Arial, Helvetica;
+}
+
+#header_arachnode_net_search
+{
+	font-size: 180%;
+	font-weight: bold;
+	margin: 0px 0px 0px 0px;
+}
+
+#header_arachnode_net_search input
+{
+	font-size: 100%;
+	font-weight: bold;
+	margin: 0px 0px 0px 0px;
+}
+
+#header_arachnode_net_cached
+{
+	background-color: White;
+	border: dashed 1px silver;
+	color: Black;
+	font-family: Arial, Helvetica;
+	font-size: 180%;
+	font-weight: bold;
+	margin: 0px 0px 4px 0px;
+	padding: 4px 4px 4px 4px;
+	text-align:left;
+}
+
+#header_arachnode_net_browse
+{
+	background-color: White;
+	border: dashed 1px silver;
+	color: Black;
+	font-family: Arial, Helvetica;
+	font-size: 180%;
+	font-weight: bold;
+	margin: 0px 0px 4px 0px;
+	padding: 4px 4px 4px 4px;
+	text-align:left;
+}
+
+.searchBox
+{
+	margin-left: 8px;
+	margin-right: 4px;
+	width: 250px;
+}
+
+.searchButton
+{
+	margin-left: 8px;	
+}
+
+#discoveryType
+{
+    float: left;
+    height: 15px;
+    clear:left;
+    margin: -5px 0px 8px 0px;
+}
+
+#resultsDetails
+{
+	background-color: WhiteSmoke;
+	border-bottom: dashed 1px Silver;
+	border-top: solid 3px Navy;
+	margin: 0px 0px 8px 0px;
+	padding: 1px 8px 1px 0px;
+	text-align:right;
+}
+
+#explanationDetails
+{
+	background-color: WhiteSmoke;
+	border-bottom: dashed 1px Silver;
+	border-top: solid 3px Navy;
+	margin: 0px 0px 8px 0px;
+	padding: 1px 8px 1px 0px;
+	text-align:left;
+}
+
+#searchResults
+{
+	
+}
+
+.searchResult
+{
+	margin-bottom: 10px;
+}
+
+.title
+{
+	font-size: 120%;
+	font-weight:bold;
+}
+
+.summary
+{
+
+}
+
+.image
+{
+    padding: 8px 0px 8px 0px;
+}
+
+#toggleClustering
+{
+	border-top: dashed 1px silver;
+	font-weight:bold;
+	font-size:80%;
+	padding: 8px 0px 8px 0px;
+}
+
+#pager
+{
+	border-top: dashed 1px silver;
+	padding: 8px 0px 0px 0px;
+}
+
+.absoluteUri
+{
+	font-weight:bold;
+}
+
+.pageNumber
+{
+	margin: 6px 8px 6px 0px;
+}
+
+.currentPageNumber 
+{
+	font-weight: bold;
+	margin: 6px 8px 6px 0px;
+}
+
+.exception
+{
+	color:Red;
+}
+
+.discoveredDiscovery
+{
+    border: dashed 2px Green;
+}
+
+.undiscoveredDiscovery
+{
+    border: dashed 2px Red
+}

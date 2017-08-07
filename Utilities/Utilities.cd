@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Font Name="Tahoma" Size="8.25" />
+  <Class Name="Arachnode.Utilities.EXIF.EXIFExtractor" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="3" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>EXIF\EXIFExtractor.cs</FileName>
+      <HashCode>AAAAAAAABAAAEBAECAAAAIQICAAAwBACAAQAgAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Arachnode.Utilities.EXIF.EXIFextractorEnumerator" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="4.75" Y="3.25" Width="2" />
+    <TypeIdentifier>
+      <FileName>EXIF\EXIFExtractor.cs</FileName>
+      <HashCode>AAAAAAAAAAAABAAAAACAAAAAACAAAAAAIAAAAAABAAA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Arachnode.Utilities.EXIF.EXIFTranslator" Collapsed="true">
+    <Position X="3" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>EXIF\EXIFTranslator.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Arachnode.Utilities.EXIF.Rational" Collapsed="true">
+    <Position X="3" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>EXIF\EXIFTranslator.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAACAAAAAAAEEBAAAAAAACA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Arachnode.Utilities.Resources" Collapsed="true">
+    <Position X="4.75" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABEIAAAQAAAAAAAAAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Arachnode.Utilities.XML.Attribute" Collapsed="true">
+    <Position X="3" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>XML\Attribute.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAgAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Arachnode.Utilities.XML.ConstsAndDefinitions" Collapsed="true">
+    <Position X="4.75" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <FileName>XML\ConstantsAndDefinitions.cs</FileName>
+      <HashCode>YACQAEgBgAAACAAAIAAAgEAAgEAAgCAAAAAAAAAAEAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Arachnode.Utilities.XML.HtmlBrowser" Collapsed="true">
+    <Position X="4.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>XML\HtmlBrowser.cs</FileName>
+      <HashCode>gAAAAAAAAAAEAAAAAAAAAAAIAAAAAAAAAAAQAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Arachnode.Utilities.XML.HtmlDocument" Collapsed="true">
+    <Position X="3" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>XML\HtmlDocument.cs</FileName>
+      <HashCode>BAAAJAEAABgAAAAIIgAAAABIAAJBAGiAAAAIAAAAQCQ=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Arachnode.Utilities.XML.HtmlParser" Collapsed="true">
+    <Position X="4.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>XML\HtmlParser.cs</FileName>
+      <HashCode>gAAgAAAAAAAAAEEAAgAAAACAAAJAAEgACABCBAAAAAg=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Arachnode.Utilities.XML.HtmlTag" Collapsed="true">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>XML\HtmlTag.cs</FileName>
+      <HashCode>AAAAAAAAAiAAAAAgEAAAQAAAAAAEIAABAAAAAggAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Arachnode.Utilities.XML.HttpBrowser" Collapsed="true">
+    <Position X="3" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>XML\HttpBrowser.cs</FileName>
+      <HashCode>gAAAAAAAAAAEAAAAAAAAAAAIAAAAAAAAAAAQAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="Arachnode.Utilities.XML.HttpBrowser.Stage" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>XML\HttpBrowser.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+  </Class>
+  <Class Name="Arachnode.Utilities.XML.Logger" Collapsed="true">
+    <Position X="4.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>XML\Logger.cs</FileName>
+      <HashCode>AAAAAAAAABAAAAAAAEIAAAAAAAAAACAAAAAAAAAAAAg=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Arachnode.Utilities.XML.Tag" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>XML\Tag.cs</FileName>
+      <HashCode>EEAAIAAQEAAAAAAACAAEAAQQAAQAAAAAAQBgAAAAQAA=</HashCode>
+    </TypeIdentifier>
+    <NestedTypes>
+      <Enum Name="Arachnode.Utilities.XML.Tag.TagTypeEnum" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>XML\Tag.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+  </Class>
+</ClassDiagram>

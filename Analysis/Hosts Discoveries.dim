@@ -1,0 +1,193 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="2819c7df-76a0-49a8-8834-849cf187c0a6" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Hosts Discoveries</ID>
+  <Name>Hosts Discoveries</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="3a3d1f37-719e-4adc-94aa-506da4c9ac75">
+    <DataSourceViewID>UriClassificationDataSourceView</DataSourceViewID>
+  </Source>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="c8adfe13-d79b-4b74-a630-15b9026c9190">
+      <ID>Hosts Discoveries</ID>
+      <Name>Hosts Discoveries</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="e9e870c1-0a4d-41db-8b13-96965990aa53">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="048aa91a-c072-4995-b3cc-b547aee46f7d">
+            <TableID>dbo_Hosts_Discoveries</TableID>
+            <ColumnID>ID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="79f7ff5d-0fa5-496f-9882-6c09cdcb745f">
+          <AttributeID>Initially Discovered</AttributeID>
+          <Name>Initially Discovered</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="7c4cccf5-7ebe-4eb8-9e2d-140c4426cc0c">
+          <AttributeID>Last Discovered</AttributeID>
+          <Name>Last Discovered</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="7dde4602-32bf-4834-b51a-42d469b59440">
+          <AttributeID>Discovery Type ID</AttributeID>
+          <Name>Discovery Type ID</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="b74a9102-6fbb-4da4-9b7e-389f9053a338">
+          <AttributeID>Hosts</AttributeID>
+          <Name>Hosts</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <InstanceSelection>MandatoryFilter</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="160f222b-b2bd-4274-8f04-5ce7d1fef4bf">
+      <ID>Initially Discovered</ID>
+      <Name>Initially Discovered</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="95f7dc3d-a484-4e98-a6d3-c2d472701e48">
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="21690485-5ab9-4985-9dd4-908d1731ca4c">
+            <TableID>dbo_Hosts_Discoveries</TableID>
+            <ColumnID>InitiallyDiscovered</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <InstanceSelection>MandatoryFilter</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="45bd9222-ce57-4b38-a4d5-b9c6b14f14f0">
+      <ID>Last Discovered</ID>
+      <Name>Last Discovered</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="95cc1869-0f11-4820-80d5-aa2ea0359954">
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="755146de-68ba-422c-963e-b5eab7dfe93b">
+            <TableID>dbo_Hosts_Discoveries</TableID>
+            <ColumnID>LastDiscovered</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <InstanceSelection>MandatoryFilter</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="a7a48749-8bd2-4182-a477-53153fee718a">
+      <ID>Discovery Type ID</ID>
+      <Name>Discovery Type ID</Name>
+      <EstimatedCount>5</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="aefdda00-3328-4ec2-ad4e-879ded8eeaab">
+          <DataType>UnsignedTinyInt</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="238413ac-9160-4b9a-bb83-e1e26e98f535">
+            <TableID>dbo_Hosts_Discoveries</TableID>
+            <ColumnID>DiscoveryTypeID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="d796f833-9da4-4c06-be9c-39a6172f0ad2">
+      <ID>Hosts</ID>
+      <Name>Hosts</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="1d839e06-4c6a-4a55-a915-b5f168ca3849">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="04a67751-54d2-4772-9a24-a361ccd697d9">
+            <TableID>dbo_Hosts</TableID>
+            <ColumnID>ID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="ba5f013d-781b-496c-ae9f-050fc97ff6d8">
+        <DataType>WChar</DataType>
+        <DataSize>884</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="fd02edcc-e4fe-42e8-bbb5-a5162981494a">
+          <TableID>dbo_Hosts</TableID>
+          <ColumnID>Host</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="12aa1df0-9b59-4a5f-bdf4-1e73efa2a0be">
+          <AttributeID>Domain ID</AttributeID>
+          <Name>Domain ID</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <InstanceSelection>MandatoryFilter</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="5b528b9b-aa5e-4190-a5fc-cad68838fd2f">
+      <ID>Domain ID</ID>
+      <Name>Domain ID</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="d6e431be-7768-4a71-8a3b-a265bbe28877">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d24f462d-1e54-4ade-acfc-326b2ccc5a5c">
+            <TableID>dbo_Hosts</TableID>
+            <ColumnID>DomainID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <InstanceSelection>MandatoryFilter</InstanceSelection>
+    </Attribute>
+  </Attributes>
+  <Hierarchies>
+    <Hierarchy dwd:design-time-name="72b0bc70-8e2a-465c-b44e-cb22e38a454b">
+      <ID>Hosts - Hosts Discoveries</ID>
+      <Name>Hosts - Hosts Discoveries</Name>
+      <Levels>
+        <Level dwd:design-time-name="094782a7-4d2c-4da3-8657-bf90ecddbbd1">
+          <ID>Hosts</ID>
+          <Name>Hosts</Name>
+          <SourceAttributeID>Hosts</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="0cca36f6-07b4-4961-87d4-ff095edf45c2">
+          <ID>Hosts Discoveries</ID>
+          <Name>Hosts Discoveries</Name>
+          <SourceAttributeID>Hosts Discoveries</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+  </Hierarchies>
+</Dimension>

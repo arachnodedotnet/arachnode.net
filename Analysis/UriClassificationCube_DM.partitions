@@ -1,0 +1,3 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="06243ec8-4622-477b-b003-85eb3197bc13" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>UriClassificationCube_DM</ID>
+</Cube>

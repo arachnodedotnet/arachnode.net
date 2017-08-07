@@ -1,0 +1,332 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9E8DDB9D-13D8-4A82-888D-5795B9168B3C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Arachnode.SiteCrawler</RootNamespace>
+    <AssemblyName>Arachnode.SiteCrawler</AssemblyName>
+    <SignAssembly>false</SignAssembly>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <AssemblyOriginatorKeyFile>arachnode.net.snk</AssemblyOriginatorKeyFile>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>
+    </DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DocumentationFile>
+    </DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Demo|AnyCPU' ">
+    <OutputPath>bin\Demo\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <Optimize>true</Optimize>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <DefineConstants>DEMO</DefineConstants>
+    <DebugType>pdbonly</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>
+    </DocumentationFile>
+    <Optimize>true</Optimize>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Demo|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Demo\</OutputPath>
+    <DefineConstants>DEMO</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="HtmlAgilityPack, Version=1.3.0.0, Culture=neutral, PublicKeyToken=bd319b19eaf3b43a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Library\HtmlAgilityPack.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Library\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="RSS.NET, Version=0.86.3607.35464, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Library\RSS.NET.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Components\DiscoveryProcessor.cs" />
+    <Compile Include="Components\WebClient.cs">
+    </Compile>
+    <Compile Include="Components\Crawl.cs" />
+    <Compile Include="Crawler.cs" />
+    <Compile Include="Managers\ActionManager.cs" />
+    <Compile Include="Managers\CacheManager.cs" />
+    <Compile Include="Managers\CookieManager.cs" />
+    <Compile Include="Managers\CrawlerPeerManager.cs" />
+    <Compile Include="Managers\CrawlRequestManager.cs" />
+    <Compile Include="Managers\DatabasePeerManager.cs" />
+    <Compile Include="Managers\EncodingManager.cs" />
+    <Compile Include="Managers\ImageManager.cs" />
+    <Compile Include="Managers\DataTypeManager.cs" />
+    <Compile Include="Managers\DiscoveryManager.cs" />
+    <Compile Include="Managers\ConsoleManager.cs" />
+    <Compile Include="Managers\MemoryManager.cs" />
+    <Compile Include="Managers\PolitenessManager.cs" />
+    <Compile Include="Managers\ProxyManager.cs" />
+    <Compile Include="Managers\RobotsDotTextManager.cs" />
+    <Compile Include="Managers\RuleManager.cs" />
+    <Compile Include="Managers\ReportingManager.cs" />
+    <Compile Include="Managers\DataManager.cs" />
+    <Compile Include="Managers\WebPageManager.cs" />
+    <Compile Include="Managers\HtmlManager.cs" />
+    <Compile Include="Managers\FileManager.cs" />
+    <Compile Include="Utilities\AbsoluteUriUtilities.cs" />
+    <Compile Include="Utilities\ImageUtilities.cs" />
+    <Compile Include="Utilities\FileUtilities.cs" />
+    <Compile Include="Utilities\WebPageUtilities.cs" />
+    <Compile Include="Value\AbstractClasses\AActionManager.cs" />
+    <Compile Include="Value\AbstractClasses\ABehavior.cs" />
+    <Compile Include="Value\AbstractClasses\ACacheable.cs" />
+    <Compile Include="Value\AbstractClasses\ACacheManager.cs" />
+    <Compile Include="Value\AbstractClasses\AConsoleManager.cs" />
+    <Compile Include="Value\AbstractClasses\ACookieManager.cs" />
+    <Compile Include="Value\AbstractClasses\ACrawlerPeerManager.cs" />
+    <Compile Include="Value\AbstractClasses\ACrawlRequestManager.cs" />
+    <Compile Include="Value\AbstractClasses\ACrawlRule.cs" />
+    <Compile Include="Value\AbstractClasses\ADatabasePeerManager.cs" />
+    <Compile Include="Value\AbstractClasses\ADataManager.cs" />
+    <Compile Include="Value\AbstractClasses\ADataTypeManager.cs" />
+    <Compile Include="Value\AbstractClasses\ADisallowed.cs" />
+    <Compile Include="Value\AbstractClasses\ADiscoveryManager.cs" />
+    <Compile Include="Value\AbstractClasses\AEncodingManager.cs" />
+    <Compile Include="Value\AbstractClasses\AFileManager.cs" />
+    <Compile Include="Value\AbstractClasses\AHtmlManager.cs" />
+    <Compile Include="Value\AbstractClasses\AImageManager.cs" />
+    <Compile Include="Value\AbstractClasses\AManager.cs" />
+    <Compile Include="Value\AbstractClasses\AMemoryManager.cs" />
+    <Compile Include="Value\AbstractClasses\APolitenessManager.cs" />
+    <Compile Include="Value\AbstractClasses\AProxyManager.cs" />
+    <Compile Include="Value\AbstractClasses\AReportingManager.cs" />
+    <Compile Include="Value\AbstractClasses\ARobotsDotTextManager.cs" />
+    <Compile Include="Value\AbstractClasses\ARuleManager.cs" />
+    <Compile Include="Value\AbstractClasses\AStorable.cs" />
+    <Compile Include="Value\AbstractClasses\AWebPageManager.cs" />
+    <Compile Include="Value\AbstractClasses\AWorker.cs" />
+    <Compile Include="Value\DatabasePeer.cs" />
+    <Compile Include="Value\CrawlInfo.cs" />
+    <Compile Include="Value\CrawlerPeer.cs" />
+    <Compile Include="Value\Discoveries.cs" />
+    <Compile Include="Value\Discovery.cs" />
+    <Compile Include="Value\Enums\CrawlerPeerMessageType.cs" />
+    <Compile Include="Value\Enums\CrawlerPeerManagerState.cs" />
+    <Compile Include="Value\Enums\PolitenessState.cs" />
+    <Compile Include="Value\Enums\CrawlState.cs" />
+    <Compile Include="Value\Enums\CrawlMode.cs" />
+    <Compile Include="Value\Enums\DiscoveryState.cs" />
+    <Compile Include="Value\Enums\DiscoveryType.cs" />
+    <Compile Include="Value\Enums\EngineActionType.cs" />
+    <Compile Include="Value\Enums\CrawlActionType.cs" />
+    <Compile Include="Value\Enums\OutputType.cs" />
+    <Compile Include="Value\Enums\UriClassificationType.cs" />
+    <Compile Include="Value\Enums\UriQualificationType.cs" />
+    <Compile Include="Value\Interfaces\IManagedDiscovery.cs" />
+    <Compile Include="Value\AbstractClasses\AEngineAction.cs" />
+    <Compile Include="Value\AbstractClasses\ACrawlAction.cs" />
+    <Compile Include="Value\ManagedFile.cs" />
+    <Compile Include="Value\ManagedImage.cs" />
+    <Compile Include="Value\ManagedWebPage.cs" />
+    <Compile Include="Value\Politeness.cs" />
+    <Compile Include="Value\Enums\CrawlRuleType.cs" />
+    <Compile Include="Value\RendererResponse.cs" />
+    <Compile Include="Value\RobotsDotText.cs" />
+    <Compile Include="Value\Structs\DataType.cs" />
+    <Compile Include="Value\Enums\EngineState.cs" />
+    <Compile Include="Value\CrawlRequest.cs" />
+    <Compile Include="Core\QueryProcessor.cs" />
+    <Compile Include="Core\Cache.cs" />
+    <Compile Include="Core\Engine.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Configuration\Configuration.csproj">
+      <Project>{608DAB8E-14C5-4BCC-A1B1-8EEE5002A08D}</Project>
+      <Name>Configuration</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataAccess\DataAccess.csproj">
+      <Project>{2370073C-5D54-4965-A03F-24FB8B836D75}</Project>
+      <Name>DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataSource\DataSource.csproj">
+      <Project>{D504363E-17F7-424C-A521-A00313B21713}</Project>
+      <Name>DataSource</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Functions\Functions.sqlproj">
+      <Project>{8b8dff90-bae2-4666-ba40-9ae416338e0c}</Project>
+      <Name>Functions</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Performance\Performance.csproj">
+      <Project>{3E3B6D4F-A93C-4B30-ACF7-40CF972E9310}</Project>
+      <Name>Performance</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Proxy\Proxy.csproj">
+      <Project>{A1D577FA-90CD-41EB-929B-D85F3E48A995}</Project>
+      <Name>Proxy</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Renderer\Renderer.csproj">
+      <Project>{693D9013-4B08-46FA-A0BE-F5CCEBA06DBA}</Project>
+      <Name>Renderer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Security\Security.csproj">
+      <Project>{2CED3829-441B-424D-B123-E2504276C8D9}</Project>
+      <Name>Security</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Structures\Structures.csproj">
+      <Project>{7E399865-B54A-4EDC-9949-0C43AD585E38}</Project>
+      <Name>Structures</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Utilities\Utilities.csproj">
+      <Project>{18CF60B8-D1EF-4846-901B-758D207B42C1}</Project>
+      <Name>Utilities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="arachnode.net.snk" />
+    <None Include="SiteCrawler.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="READ_ME_DEMO.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxSHDocVw">
+      <Guid>{EAB22AC0-30C1-11CF-A7EB-0000C05BAE0B}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>1</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="MSHTML">
+      <Guid>{3050F1C5-98B5-11CF-BB82-00AA00BDCE0B}</Guid>
+      <VersionMajor>4</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Actions\" />
+    <Folder Include="EngineActions\" />
+    <Folder Include="Rules\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

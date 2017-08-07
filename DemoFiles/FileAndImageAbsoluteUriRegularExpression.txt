@@ -1,0 +1,1 @@
+﻿<\s*(?<Tag>(applet|embed|frame|iframe|img|link|script|xml))\s*.*?(?<AttributeName>(src|href|xhref))\s*=\s*([\"\'])(?<FileOrImage>.*?)\3

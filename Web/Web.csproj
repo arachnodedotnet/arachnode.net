@@ -1,0 +1,401 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{721873CB-EE1E-4606-A015-B1373BC0C420}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Arachnode.Web</RootNamespace>
+    <AssemblyName>Arachnode.Web</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <SignAssembly>false</SignAssembly>
+    <AssemblyOriginatorKeyFile>arachnode.net.snk</AssemblyOriginatorKeyFile>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Demo|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Demo|x86' ">
+    <OutputPath>bin\Demo\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Highlighter.Net, Version=2.3.2.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Library\Highlighter.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="HtmlAgilityPack, Version=1.3.0.0, Culture=neutral, PublicKeyToken=bd319b19eaf3b43a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Library\HtmlAgilityPack.dll</HintPath>
+    </Reference>
+    <Reference Include="Lucene.Net, Version=2.3.1.3, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Library\Lucene.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.ServiceModel">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Extensions.Design" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Arachnode.Master.cs">
+      <DependentUpon>Arachnode.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Arachnode.Master.designer.cs">
+      <DependentUpon>Arachnode.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Browse.aspx.cs">
+      <DependentUpon>Browse.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Browse.aspx.designer.cs">
+      <DependentUpon>Browse.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Cached.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Cached.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Cached.aspx.designer.cs">
+      <DependentUpon>Cached.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Depth_1\Depth_2\Depth_3\Test_1_Depth_3.aspx.cs">
+      <DependentUpon>Test_1_Depth_3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Depth_1\Depth_2\Depth_3\Test_1_Depth_3.aspx.designer.cs">
+      <DependentUpon>Test_1_Depth_3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Depth_1\Depth_2\Depth_3\Test_2_Depth_3.aspx.cs">
+      <DependentUpon>Test_2_Depth_3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Depth_1\Depth_2\Depth_3\Test_2_Depth_3.aspx.designer.cs">
+      <DependentUpon>Test_2_Depth_3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Depth_1\Depth_2\Test_1_Depth_2.aspx.cs">
+      <DependentUpon>Test_1_Depth_2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Depth_1\Depth_2\Test_1_Depth_2.aspx.designer.cs">
+      <DependentUpon>Test_1_Depth_2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Depth_1\Depth_2\Test_2_Depth_2.aspx.cs">
+      <DependentUpon>Test_2_Depth_2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Depth_1\Depth_2\Test_2_Depth_2.aspx.designer.cs">
+      <DependentUpon>Test_2_Depth_2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Depth_1\Depth_2_Parallel_Level\Test_1_Depth_2_Parallel_Level.aspx.cs">
+      <DependentUpon>Test_1_Depth_2_Parallel_Level.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Depth_1\Depth_2_Parallel_Level\Test_1_Depth_2_Parallel_Level.aspx.designer.cs">
+      <DependentUpon>Test_1_Depth_2_Parallel_Level.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Depth_1\Depth_2_Parallel_Level\Test_2_Depth_2_Parallel_Level.aspx.cs">
+      <DependentUpon>Test_2_Depth_2_Parallel_Level.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Depth_1\Depth_2_Parallel_Level\Test_2_Depth_2_Parallel_Level.aspx.designer.cs">
+      <DependentUpon>Test_2_Depth_2_Parallel_Level.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Depth_1\Test_1_Depth_1.aspx.cs">
+      <DependentUpon>Test_1_Depth_1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Depth_1\Test_1_Depth_1.aspx.designer.cs">
+      <DependentUpon>Test_1_Depth_1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Depth_1\Test_2_Depth_1.aspx.cs">
+      <DependentUpon>Test_2_Depth_1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Depth_1\Test_2_Depth_1.aspx.designer.cs">
+      <DependentUpon>Test_2_Depth_1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Explanation.aspx.cs">
+      <DependentUpon>Explanation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Explanation.aspx.designer.cs">
+      <DependentUpon>Explanation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Services\ArachnodeDAOService.asmx.cs">
+      <DependentUpon>ArachnodeDAOService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Services\MembershipService.asmx.cs">
+      <DependentUpon>MembershipService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PageBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Services\PersonalizationService.asmx.cs">
+      <DependentUpon>PersonalizationService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Services\ProfileService.asmx.cs">
+      <DependentUpon>ProfileService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\RoleService.asmx.cs">
+      <DependentUpon>RoleService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Search.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Search.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Search.aspx.designer.cs">
+      <DependentUpon>Search.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Services\SearchService.asmx.cs">
+      <DependentUpon>SearchService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Services\ServiceService.asmx.cs">
+      <DependentUpon>ServiceService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Test.aspx.cs">
+      <DependentUpon>Test.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Test.aspx.designer.cs">
+      <DependentUpon>Test.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\SearchResult.ascx.cs">
+      <DependentUpon>SearchResult.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\SearchResult.ascx.designer.cs">
+      <DependentUpon>SearchResult.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\SearchResults.ascx.cs">
+      <DependentUpon>SearchResults.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\SearchResults.ascx.designer.cs">
+      <DependentUpon>SearchResults.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UserControlBase.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Value\AbstractClasses\AWebService.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Services\CrawlerService.asmx.cs">
+      <DependentUpon>CrawlerService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Value\SettingsPropertySerializable.cs" />
+    <Compile Include="Value\SettingsPropertyValueSerializable.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Configuration\Configuration.csproj">
+      <Project>{608DAB8E-14C5-4BCC-A1B1-8EEE5002A08D}</Project>
+      <Name>Configuration</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataAccess\DataAccess.csproj">
+      <Project>{2370073C-5D54-4965-A03F-24FB8B836D75}</Project>
+      <Name>DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataSource\DataSource.csproj">
+      <Project>{d504363e-17f7-424c-a521-a00313b21713}</Project>
+      <Name>DataSource</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Functions\Functions.sqlproj">
+      <Project>{8b8dff90-bae2-4666-ba40-9ae416338e0c}</Project>
+      <Name>Functions</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Plugins\Plugins.csproj">
+      <Project>{B911CBD6-C9AD-495F-B579-8EF5D4A4D7B6}</Project>
+      <Name>Plugins</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Renderer\Renderer.csproj">
+      <Project>{693D9013-4B08-46FA-A0BE-F5CCEBA06DBA}</Project>
+      <Name>Renderer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Security\Security.csproj">
+      <Project>{2CED3829-441B-424D-B123-E2504276C8D9}</Project>
+      <Name>Security</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SiteCrawler\SiteCrawler.csproj">
+      <Project>{9E8DDB9D-13D8-4A82-888D-5795B9168B3C}</Project>
+      <Name>SiteCrawler</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Structures\Structures.csproj">
+      <Project>{7E399865-B54A-4EDC-9949-0C43AD585E38}</Project>
+      <Name>Structures</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Arachnode.Master" />
+    <Content Include="Browse.aspx" />
+    <Content Include="Cached.aspx" />
+    <Content Include="Depth_1\Depth_2\Depth_3\Test_1_Depth_3.aspx" />
+    <Content Include="Depth_1\Depth_2\Depth_3\Test_2_Depth_3.aspx" />
+    <Content Include="Depth_1\Depth_2\Test_1_Depth_2.aspx" />
+    <Content Include="Depth_1\Depth_2\Test_2_Depth_2.aspx" />
+    <Content Include="Depth_1\Depth_2_Parallel_Level\Test_1_Depth_2_Parallel_Level.aspx" />
+    <Content Include="Depth_1\Depth_2_Parallel_Level\Test_2_Depth_2_Parallel_Level.aspx" />
+    <Content Include="Depth_1\Test_1_Depth_1.aspx" />
+    <Content Include="Depth_1\Test_2_Depth_1.aspx" />
+    <Content Include="Explanation.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Services\ArachnodeDAOService.asmx" />
+    <Content Include="Services\MembershipService.asmx" />
+    <Content Include="Services\PersonalizationService.asmx" />
+    <Content Include="Services\ProfileService.asmx" />
+    <Content Include="Services\RoleService.asmx" />
+    <Content Include="Search.aspx" />
+    <Content Include="Services\SearchService.asmx" />
+    <Content Include="Services\ServiceService.asmx" />
+    <Content Include="style.css" />
+    <Content Include="Test.aspx" />
+    <None Include="arachnode.net.snk" />
+    <None Include="Test\UriTest" />
+    <Content Include="Test\LPTD-DBCH1-Finish-Shot.jpg" />
+    <Content Include="Test\LPTD-HBCH1-Finish-Shot.jpg" />
+    <Content Include="Test\LPTDGTCH1-Finish-Shot.jpg" />
+    <Content Include="Test\TestPage1.htm" />
+    <Content Include="Test\TestPage2.htm" />
+    <Content Include="Test\TestPage3.htm" />
+    <Content Include="Test\TestPage4.htm" />
+    <Content Include="Test\UriTest.htm" />
+    <Content Include="UserControls\SearchResult.ascx" />
+    <Content Include="UserControls\SearchResults.ascx" />
+    <Content Include="Services\CrawlerService.asmx" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>False</AutoAssignPort>
+          <DevelopmentServerPort>56830</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:56830/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

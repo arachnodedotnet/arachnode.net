@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Database Name="arachnode.net" Class="ArachnodeDataSourceDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+	<Connection Mode="AppSettings" ConnectionString="Data Source=.;Initial Catalog=arachnode.net;Integrated Security=True" SettingsObjectName="Arachnode.GraphicalUserInterface.Properties.Settings" SettingsPropertyName="arachnode_netConnectionString" Provider="System.Data.SqlClient" />
+	<Table Name="cfg.AllowedDataTypes" Member="AllowedDataTypes">
+		<Type Name="AllowedDataType">
+			<Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+			<Column Name="ContentTypeID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+			<Column Name="DiscoveryTypeID" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+			<Column Name="FullTextIndexType" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+			<Column Name="Overrides" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+			<Association Name="ContentType_AllowedDataType" Member="ContentType" ThisKey="ContentTypeID" OtherKey="ID" Type="ContentType" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+		</Type>
+	</Table>
+	<Table Name="cfg.Version" Member="Versions">
+		<Type Name="Version">
+			<Column Name="Value" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+			<Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+		</Type>
+	</Table>
+	<Table Name="cfg.AllowedExtensions" Member="AllowedExtensions">
+		<Type Name="AllowedExtension">
+			<Column Name="Extension" Type="System.String" DbType="VarChar(884) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+		</Type>
+	</Table>
+	<Table Name="cfg.AllowedSchemes" Member="AllowedSchemes">
+		<Type Name="AllowedScheme">
+			<Column Name="Scheme" Type="System.String" DbType="VarChar(25) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+		</Type>
+	</Table>
+	<Table Name="cfg.Configuration" Member="Configurations">
+		<Type Name="Configuration">
+			<Column Name="ConfigurationTypeID" Type="System.Byte" DbType="TinyInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+			<Column Name="[Key]" Member="Key" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+			<Column Name="Value" Type="System.Object" DbType="Variant NOT NULL" CanBeNull="false" UpdateCheck="Never" />
+			<Column Name="Help" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+		</Type>
+	</Table>
+	<Table Name="cfg.ConfigurationTypes" Member="ConfigurationTypes">
+		<Type Name="ConfigurationType">
+			<Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+			<Column Name="Name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+		</Type>
+	</Table>
+	<Table Name="cfg.ContentTypes" Member="ContentTypes">
+		<Type Name="ContentType">
+			<Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+			<Column Name="ContentTypeTypeID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+			<Column Name="Name" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+			<Association Name="ContentType_AllowedDataType" Member="AllowedDataTypes" ThisKey="ID" OtherKey="ContentTypeID" Type="AllowedDataType" />
+			<Association Name="ContentTypeType_ContentType" Member="ContentTypeType" ThisKey="ContentTypeTypeID" OtherKey="ID" Type="ContentTypeType" IsForeignKey="true" />
+		</Type>
+	</Table>
+	<Table Name="cfg.ContentTypeTypes" Member="ContentTypeTypes">
+		<Type Name="ContentTypeType">
+			<Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+			<Column Name="Name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+			<Association Name="ContentTypeType_ContentType" Member="ContentTypes" ThisKey="ID" OtherKey="ContentTypeTypeID" Type="ContentType" />
+		</Type>
+	</Table>
+	<Table Name="cfg.CrawlActions" Member="CrawlActions">
+		<Type Name="CrawlAction">
+			<Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+			<Column Name="CrawlActionTypeID" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+			<Column Name="AssemblyName" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+			<Column Name="TypeName" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+			<Column Name="IsEnabled" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+			<Column Name="[Order]" Member="Order" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+			<Column Name="Settings" Type="System.String" DbType="VarChar(1000)" CanBeNull="true" />
+			<Association Name="CrawlActionType_CrawlAction" Member="CrawlActionType" ThisKey="CrawlActionTypeID" OtherKey="ID" Type="CrawlActionType" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+		</Type>
+	</Table>
+	<Table Name="cfg.CrawlActionTypes" Member="CrawlActionTypes">
+		<Type Name="CrawlActionType">
+			<Column Name="ID" Type="System.Byte" DbType="TinyInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+			<Column Name="Name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+			<Association Name="CrawlActionType_CrawlAction" Member="CrawlActions" ThisKey="ID" OtherKey="CrawlActionTypeID" Type="CrawlAction" />
+		</Type>
+	</Table>
+	<Table Name="cfg.CrawlRules" Member="CrawlRules">
+		<Type Name="CrawlRule">
+			<Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+			<Column Name="CrawlRuleTypeID" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+			<Column Name="AssemblyName" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+			<Column Name="TypeName" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+			<Column Name="IsEnabled" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+			<Column Name="[Order]" Member="Order" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+			<Column Name="OutputIsDisallowedReason" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+			<Column Name="Settings" Type="System.String" DbType="VarChar(1000)" CanBeNull="true" />
+			<Association Name="CrawlRuleType_CrawlRule" Member="CrawlRuleType" ThisKey="CrawlRuleTypeID" OtherKey="ID" Type="CrawlRuleType" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+		</Type>
+	</Table>
+	<Table Name="cfg.CrawlRuleTypes" Member="CrawlRuleTypes">
+		<Type Name="CrawlRuleType">
+			<Column Name="ID" Type="System.Byte" DbType="TinyInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+			<Column Name="Name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+			<Association Name="CrawlRuleType_CrawlRule" Member="CrawlRules" ThisKey="ID" OtherKey="CrawlRuleTypeID" Type="CrawlRule" />
+		</Type>
+	</Table>
+	<Table Name="cfg.DisallowedDomains" Member="DisallowedDomains">
+		<Type Name="DisallowedDomain">
+			<Column Name="Domain" Type="System.String" DbType="VarChar(884) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+			<Column Name="IsDisallowed" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+			<Column Name="Reason" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+		</Type>
+	</Table>
+	<Table Name="cfg.DisallowedExtensions" Member="DisallowedExtensions">
+		<Type Name="DisallowedExtension">
+			<Column Name="Extension" Type="System.String" DbType="VarChar(884) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+			<Column Name="IsDisallowed" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+		</Type>
+	</Table>
+	<Table Name="cfg.DisallowedFileExtensions" Member="DisallowedFileExtensions">
+		<Type Name="DisallowedFileExtension">
+			<Column Name="FileExtension" Type="System.String" DbType="VarChar(884) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+			<Column Name="IsDisallowed" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+		</Type>
+	</Table>
+	<Table Name="cfg.DisallowedHosts" Member="DisallowedHosts">
+		<Type Name="DisallowedHost">
+			<Column Name="Host" Type="System.String" DbType="VarChar(884) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+			<Column Name="IsDisallowed" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+		</Type>
+	</Table>
+	<Table Name="cfg.DisallowedSchemes" Member="DisallowedSchemes">
+		<Type Name="DisallowedScheme">
+			<Column Name="Scheme" Type="System.String" DbType="VarChar(884) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+			<Column Name="IsDisallowed" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+		</Type>
+	</Table>
+	<Table Name="cfg.DisallowedWords" Member="DisallowedWords">
+		<Type Name="DisallowedWord">
+			<Column Name="Word" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+			<Column Name="IsDisallowedForAbsoluteUri" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+			<Column Name="IsDisallowedForResponseHeaders" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+			<Column Name="IsDisallowedForSource" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+		</Type>
+	</Table>
+	<Table Name="cfg.EngineActions" Member="EngineActions">
+		<Type Name="EngineAction">
+			<Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+			<Column Name="EngineActionTypeID" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+			<Column Name="AssemblyName" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+			<Column Name="TypeName" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+			<Column Name="IsEnabled" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+			<Column Name="[Order]" Member="Order" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+			<Column Name="Settings" Type="System.String" DbType="VarChar(1000)" CanBeNull="true" />
+			<Association Name="EngineActionType_EngineAction" Member="EngineActionType" ThisKey="EngineActionTypeID" OtherKey="ID" Type="EngineActionType" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+		</Type>
+	</Table>
+	<Table Name="cfg.EngineActionTypes" Member="EngineActionTypes">
+		<Type Name="EngineActionType">
+			<Column Name="ID" Type="System.Byte" DbType="TinyInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+			<Column Name="Name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+			<Association Name="EngineActionType_EngineAction" Member="EngineActions" ThisKey="ID" OtherKey="EngineActionTypeID" Type="EngineAction" />
+		</Type>
+	</Table>
+	<Table Name="cfg.FullTextIndexTypes" Member="FullTextIndexTypes">
+		<Type Name="FullTextIndexType">
+			<Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+			<Column Name="FullTextIndexType" Member="FullTextIndexType1" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+		</Type>
+	</Table>
+	<Table Name="cfg.Priorities" Member="Priorities">
+		<Type Name="Priority">
+			<Column Name="Host" Type="System.String" DbType="VarChar(255) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+			<Column Name="Value" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+		</Type>
+	</Table>
+</Database>

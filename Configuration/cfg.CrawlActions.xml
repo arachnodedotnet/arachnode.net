@@ -1,0 +1,38 @@
+<?xml version="1.0" standalone="yes"?>
+<DocumentElement>
+  <CrawlActions>
+    <ID>1</ID>
+    <CrawlActionTypeID>1</CrawlActionTypeID>
+    <AssemblyName>Arachnode.Plugins</AssemblyName>
+    <TypeName>Arachnode.Plugins.CrawlActions.Anonymizer</TypeName>
+    <IsEnabled>false</IsEnabled>
+    <Order>1</Order>
+    <Settings>AnonymizerAbsoluteUri=http://anonymouse.org/cgi-bin/anon-www.cgi/</Settings>
+  </CrawlActions>
+  <CrawlActions>
+    <ID>2</ID>
+    <CrawlActionTypeID>3</CrawlActionTypeID>
+    <AssemblyName>Arachnode.Plugins</AssemblyName>
+    <TypeName>Arachnode.Plugins.CrawlActions.ManageLuceneDotNetIndexes</TypeName>
+    <IsEnabled>true</IsEnabled>
+    <Order>1</Order>
+    <Settings>AutoCommit=true|LuceneDotNetIndexDirectory=C:\Applications\arachnode.net\Console\bin\Debug\LuceneDotNetIndex|CheckIndexes=false|IndexFiles=true|IndexImages=true|IndexWebPages=true|RebuildIndexOnLoad=false|FileIDLowerBound=1|FileIDUpperBound=100000|ImageIDLowerBound=1|ImageIDUpperBound=100000|WebPageIDLowerBound=1|WebPageIDUpperBound=100000</Settings>
+  </CrawlActions>
+  <CrawlActions>
+    <ID>7</ID>
+    <CrawlActionTypeID>3</CrawlActionTypeID>
+    <AssemblyName>Arachnode.Plugins</AssemblyName>
+    <TypeName>Arachnode.Plugins.CrawlActions.BayesianClassifier</TypeName>
+    <IsEnabled>false</IsEnabled>
+    <Order>2</Order>
+    <Settings>Class1ExemplarDirectory=|Class2ExemplarDirectory=</Settings>
+  </CrawlActions>
+  <CrawlActions>
+    <ID>14</ID>
+    <CrawlActionTypeID>3</CrawlActionTypeID>
+    <AssemblyName>Arachnode.Plugins</AssemblyName>
+    <TypeName>Arachnode.Plugins.CrawlActions.Renderer</TypeName>
+    <IsEnabled>true</IsEnabled>
+    <Order>3</Order>
+  </CrawlActions>
+</DocumentElement>

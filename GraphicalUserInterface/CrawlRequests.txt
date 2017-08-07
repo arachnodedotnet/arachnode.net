@@ -1,0 +1,110 @@
+﻿// This file creates CrawlRequests for Console\GraphicalUserInterface\Service, depending upon the StartUp project.
+// http://arachnode.net, 1, Domain, Domain, 1, None, None -> SiteCrawler\Value\CrawlRequest.cs
+// http://arachnode.net [AbsoluteUri], 1 [Depth], Domain [RestrictCrawlTo], Domain [RestrictDiscoveriesTo], 1 [Priority], None [RenderType], None [RenderTypeForChildren]
+
+// [AbsoluteUri / http://arachnode.net] -> The AbsoluteUri you wish to Crawl -> AbsoluteUri->Discovery->CrawlRequest.
+// [Depth / 1] - 1 to Int32.MaxValue -> 1 = the AbsoluteUri, 2 = the AbsoluteUri and all WebPages found at the AbsoluteUri.
+// [RestrictCrawlTo / Domain] -> Where is arachnode.net allowed to Crawl?  See: Arachnode.SiteCrawler.Value.Enums.UriClassificationType
+// [RestrictDiscoveriesTo / Domain] -> What can arachnode.net discover from the WebPages is it allowed to Crawl?  See: Arachnode.SiteCrawler.Value.Enums.UriClassificationType
+// [RenderType / None] -> Should the initial AbsoluteUri->Discovery->CrawlRequest be sent to the Renderers to evaluate and execute JavaScript/AJAX?  See: Arachnode.Renderer.Value.Enums.RenderType
+// [RenderType / None] -> Should children of the initial AbsoluteUri->Discovery->CrawlRequest be sent to the Renderers to evaluate and execute JavaScript/AJAX?  See: Arachnode.Renderer.Value.Enums.RenderType
+
+// Summary: For the specified CrawlRequest ('http://arachnode.net,1,Domain,Domain,1,None,None') I wish to crawl only the first page of http://arachnode.net, and as I wish to crawl only the
+// first page of http://arachnode.net the [RestrictCrawlTo] parameter is respected implicitly.  For anything I may discover at http://arachnode.net (EmailAddresses/Files/HyperLinks/Images) I only want to allow Discoveries
+// if they come from the Domain 'arachnode.net'.  Finally, I do not wish to Render http://arachnode.net, nor do I wish to Render any WebPages which may be found as children to http://arachnode.net.
+
+http://google.com,1,Domain,Domain,1,None,None
+http://yahoo.com,1,Domain,Domain,1,None,None
+http://youtube.com,1,Domain,Domain,1,None,None
+http://live.com,1,Domain,Domain,1,None,None
+http://facebook.com,1,Domain,Domain,1,None,None
+http://msn.com,1,Domain,Domain,1,None,None
+http://wikipedia.org,1,Domain,Domain,1,None,None
+http://blogger.com,1,Domain,Domain,1,None,None
+http://myspace.com,1,Domain,Domain,1,None,None
+http://yahoo.co.jp,1,Domain,Domain,1,None,None
+http://baidu.com,1,Domain,Domain,1,None,None
+http://google.co.in,1,Domain,Domain,1,None,None
+http://google.de,1,Domain,Domain,1,None,None
+http://microsoft.com,1,Domain,Domain,1,None,None
+http://qq.com,1,Domain,Domain,1,None,None
+http://rapidshare.com,1,Domain,Domain,1,None,None
+http://google.fr,1,Domain,Domain,1,None,None
+http://sina.com.cn,1,Domain,Domain,1,None,None
+http://doubleclick.com,1,Domain,Domain,1,None,None
+http://ebay.com,1,Domain,Domain,1,None,None
+http://hi5.com,1,Domain,Domain,1,None,None
+http://fc2.com,1,Domain,Domain,1,None,None
+http://google.co.uk,1,Domain,Domain,1,None,None
+http://wordpress.com,1,Domain,Domain,1,None,None
+http://google.cn,1,Domain,Domain,1,None,None
+http://mail.ru,1,Domain,Domain,1,None,None
+http://craigslist.org,1,Domain,Domain,1,None,None
+http://google.com.br,1,Domain,Domain,1,None,None
+http://vkontakte.ru,1,Domain,Domain,1,None,None
+http://aol.com,1,Domain,Domain,1,None,None
+http://yandex.ru,1,Domain,Domain,1,None,None
+http://google.it,1,Domain,Domain,1,None,None
+http://flickr.com,1,Domain,Domain,1,None,None
+http://amazon.com,1,Domain,Domain,1,None,None
+http://google.co.jp,1,Domain,Domain,1,None,None
+http://google.es,1,Domain,Domain,1,None,None
+http://taobao.com,1,Domain,Domain,1,None,None
+http://photobucket.com,1,Domain,Domain,1,None,None
+http://orkut.com.br,1,Domain,Domain,1,None,None
+http://google.com.mx,1,Domain,Domain,1,None,None
+http://imdb.com,1,Domain,Domain,1,None,None
+http://odnoklassniki.ru,1,Domain,Domain,1,None,None
+http://163.com,1,Domain,Domain,1,None,None
+http://go.com,1,Domain,Domain,1,None,None
+http://bbc.co.uk,1,Domain,Domain,1,None,None
+http://skyrock.com,1,Domain,Domain,1,None,None
+http://ask.com,1,Domain,Domain,1,None,None
+http://friendster.com,1,Domain,Domain,1,None,None
+http://cnn.com,1,Domain,Domain,1,None,None
+http://adobe.com,1,Domain,Domain,1,None,None
+http://google.ca,1,Domain,Domain,1,None,None
+http://orkut.co.in,1,Domain,Domain,1,None,None
+http://naver.com,1,Domain,Domain,1,None,None
+http://uol.com.br,1,Domain,Domain,1,None,None
+http://sohu.com,1,Domain,Domain,1,None,None
+http://bp.blogspot.com,1,Domain,Domain,1,None,None
+http://apple.com,1,Domain,Domain,1,None,None
+http://imageshack.us,1,Domain,Domain,1,None,None
+http://rakuten.co.jp,1,Domain,Domain,1,None,None
+http://conduit.com,1,Domain,Domain,1,None,None
+http://google.com.tr,1,Domain,Domain,1,None,None
+http://ebay.de,1,Domain,Domain,1,None,None
+http://dailymotion.com,1,Domain,Domain,1,None,None
+http://megaupload.com,1,Domain,Domain,1,None,None
+http://globo.com,1,Domain,Domain,1,None,None
+http://tagged.com,1,Domain,Domain,1,None,None
+http://rediff.com,1,Domain,Domain,1,None,None
+http://megavideo.com,1,Domain,Domain,1,None,None
+http://livedoor.com,1,Domain,Domain,1,None,None
+http://youku.com,1,Domain,Domain,1,None,None
+http://about.com,1,Domain,Domain,1,None,None
+http://soso.com,1,Domain,Domain,1,None,None
+http://mediafire.com,1,Domain,Domain,1,None,None
+http://mixi.jp,1,Domain,Domain,1,None,None
+http://ameblo.jp,1,Domain,Domain,1,None,None
+http://google.co.id,1,Domain,Domain,1,None,None
+http://rambler.ru,1,Domain,Domain,1,None,None
+http://google.com.au,1,Domain,Domain,1,None,None
+http://espn.go.com,1,Domain,Domain,1,None,None
+http://vmn.net,1,Domain,Domain,1,None,None
+http://mininova.org,1,Domain,Domain,1,None,None
+http://4shared.com,1,Domain,Domain,1,None,None
+http://livejournal.com,1,Domain,Domain,1,None,None
+http://google.pl,1,Domain,Domain,1,None,None
+http://metroflog.com,1,Domain,Domain,1,None,None
+http://nasza-klasa.pl,1,Domain,Domain,1,None,None
+http://goo.ne.jp,1,Domain,Domain,1,None,None
+http://wretch.cc,1,Domain,Domain,1,None,None
+http://google.ru,1,Domain,Domain,1,None,None
+http://netlog.com,1,Domain,Domain,1,None,None
+http://google.com.sa,1,Domain,Domain,1,None,None
+http://daum.net,1,Domain,Domain,1,None,None
+http://ebay.co.uk,1,Domain,Domain,1,None,None
+http://orkut.com,1,Domain,Domain,1,None,None
+http://google.nl,1,Domain,Domain,1,None,None

@@ -1,0 +1,191 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="04d1a738-a505-4ec9-9ac3-988916cc15c3" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Schemes Discoveries</ID>
+  <Name>Schemes Discoveries</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="20c91e16-d77a-459e-886a-d176415c4ec5">
+    <DataSourceViewID>UriClassificationDataSourceView</DataSourceViewID>
+  </Source>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="3a4d5855-6c1e-4aeb-97ad-9d4a67e429d0">
+      <ID>Schemes Discoveries</ID>
+      <Name>Schemes Discoveries</Name>
+      <Usage>Key</Usage>
+      <EstimatedCount>27</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="a456734e-12e1-4cf6-b743-ca156e30cfbc">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="306024a5-6dbd-4819-9e17-8cb14c8d47fb">
+            <TableID>dbo_Schemes_Discoveries</TableID>
+            <ColumnID>ID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="75bb3e20-0a21-4d0d-b323-e930304f19fc">
+          <AttributeID>Initially Discovered</AttributeID>
+          <Name>Initially Discovered</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="d0ec91d8-6fa7-4a42-80ab-663842685f82">
+          <AttributeID>Last Discovered</AttributeID>
+          <Name>Last Discovered</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="f3cbaf80-25e3-4e6f-98a5-008bfa61bff9">
+          <AttributeID>Discovery Type ID</AttributeID>
+          <Name>Discovery Type ID</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="839fd93b-46e2-41a1-a19b-2ebb00be17a6">
+          <AttributeID>Schemes</AttributeID>
+          <Name>Schemes</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="284bfe10-a473-47b5-8a1b-2745eadc5197">
+      <ID>Initially Discovered</ID>
+      <Name>Initially Discovered</Name>
+      <EstimatedCount>18</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="12a017e1-86f0-4df9-a6d1-6c8b1c2c43ae">
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c94da7a0-4519-4e64-bce6-47b73f6e5a3d">
+            <TableID>dbo_Schemes_Discoveries</TableID>
+            <ColumnID>InitiallyDiscovered</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="56140190-ea3b-405d-89a5-016341664502">
+      <ID>Last Discovered</ID>
+      <Name>Last Discovered</Name>
+      <EstimatedCount>19</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="989c78a3-5b25-46a6-bec7-5f0f560a1044">
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="929fe15c-ae24-42a2-acae-5209c5c04660">
+            <TableID>dbo_Schemes_Discoveries</TableID>
+            <ColumnID>LastDiscovered</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="c8d60d9e-76d9-4b29-99ee-f2539efcce1d">
+      <ID>Discovery Type ID</ID>
+      <Name>Discovery Type ID</Name>
+      <EstimatedCount>5</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="42a41dc6-b77a-458d-a831-56d1acb92f0f">
+          <DataType>UnsignedTinyInt</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="46777dc8-2e27-48c2-8cde-2902d157cbf5">
+            <TableID>dbo_Schemes_Discoveries</TableID>
+            <ColumnID>DiscoveryTypeID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="a4a584c5-8a38-4241-95c8-b5a8eefea54e">
+      <ID>Schemes</ID>
+      <Name>Schemes</Name>
+      <EstimatedCount>11</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="7088da1a-df26-436f-b18a-9920338d87e5">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e24b6725-561b-42e4-8929-6e8a4b54d5ce">
+            <TableID>dbo_Schemes</TableID>
+            <ColumnID>ID</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="10927e23-2727-46c0-9a08-369ff195458c">
+          <AttributeID>Scheme</AttributeID>
+          <Name>Scheme</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+    <Attribute dwd:design-time-name="f83dd0ff-1e0e-43bf-b9f3-42f15b286548">
+      <ID>Scheme</ID>
+      <Name>Scheme</Name>
+      <EstimatedCount>11</EstimatedCount>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="fd07496b-0a0d-4247-926c-368120e3b4cc">
+          <DataType>WChar</DataType>
+          <DataSize>884</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="0c5b9f00-3f73-4080-bf2f-7f9d3dac644d">
+            <TableID>dbo_Schemes</TableID>
+            <ColumnID>Scheme</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <InstanceSelection>DropDown</InstanceSelection>
+    </Attribute>
+  </Attributes>
+  <Hierarchies>
+    <Hierarchy dwd:design-time-name="c6e353e0-88d4-4462-8136-f44b1344c12b">
+      <ID>Schemes - Schemes Discoveries</ID>
+      <Name>Schemes - Schemes Discoveries</Name>
+      <Levels>
+        <Level dwd:design-time-name="4a6a388d-8f2c-4e95-96cd-351b74cd3fd4">
+          <ID>Schemes</ID>
+          <Name>Schemes</Name>
+          <SourceAttributeID>Schemes</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="df1460cd-f024-42b4-aa62-4649156d9e25">
+          <ID>Schemes Discoveries</ID>
+          <Name>Schemes Discoveries</Name>
+          <SourceAttributeID>Schemes Discoveries</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+  </Hierarchies>
+</Dimension>

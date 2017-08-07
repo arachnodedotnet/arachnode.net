@@ -1,0 +1,1 @@
+Code @ namespace Arachnode.Utilities.EXIF provided by http://www.codeproject.com/KB/graphics/exifextractor.aspx?df=100&forumid=207371&exp=0&select=2059852

@@ -1,0 +1,453 @@
+<?xml version="1.0" standalone="yes"?>
+<DocumentElement>
+  <Configuration>
+    <ID>0</ID>
+    <ConfigurationTypeID>1</ConfigurationTypeID>
+    <Key>Accept</Key>
+    <Value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8</Value>
+  </Configuration>
+  <Configuration>
+    <ID>1</ID>
+    <ConfigurationTypeID>1</ConfigurationTypeID>
+    <Key>AcceptEncoding</Key>
+    <Value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">gzip,deflate,sdch</Value>
+  </Configuration>
+  <Configuration>
+    <ID>2</ID>
+    <ConfigurationTypeID>1</ConfigurationTypeID>
+    <Key>AllowAutoRedirect</Key>
+    <Value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">true</Value>
+  </Configuration>
+  <Configuration>
+    <ID>3</ID>
+    <ConfigurationTypeID>1</ConfigurationTypeID>
+    <Key>AssignCrawlRequestPrioritiesForFiles</Key>
+    <Value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">true</Value>
+  </Configuration>
+  <Configuration>
+    <ID>4</ID>
+    <ConfigurationTypeID>1</ConfigurationTypeID>
+    <Key>AssignCrawlRequestPrioritiesForHyperLinks</Key>
+    <Value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">true</Value>
+  </Configuration>
+  <Configuration>
+    <ID>5</ID>
+    <ConfigurationTypeID>1</ConfigurationTypeID>
+    <Key>AssignCrawlRequestPrioritiesForImages</Key>
+    <Value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">true</Value>
+  </Configuration>
+  <Configuration>
+    <ID>6</ID>
+    <ConfigurationTypeID>1</ConfigurationTypeID>
+    <Key>AssignCrawlRequestPrioritiesForWebPages</Key>
+    <Value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">true</Value>
+  </Configuration>
+  <Configuration>
+    <ID>7</ID>
+    <ConfigurationTypeID>1</ConfigurationTypeID>
+    <Key>AssignEmailAddressDiscoveries</Key>
+    <Value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">true</Value>
+  </Configuration>
+  <Configuration>
+    <ID>8</ID>
+    <ConfigurationTypeID>1</ConfigurationTypeID>
+    <Key>AssignFileAndImageDiscoveries</Key>
+    <Value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">true</Value>
+  </Configuration>
+  <Configuration>
+    <ID>9</ID>
+    <ConfigurationTypeID>1</ConfigurationTypeID>
+    <Key>AssignHyperLinkDiscoveries</Key>
+    <Value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">true</Value>
+  </Configuration>
+  <Configuration>
+    <ID>10</ID>
+    <ConfigurationTypeID>1</ConfigurationTypeID>
+    <Key>ClassifyAbsoluteUris</Key>
+    <Value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">true</Value>
+  </Configuration>
+  <Configuration>
+    <ID>11</ID>
+    <ConfigurationTypeID>1</ConfigurationTypeID>
+    <Key>ConsoleOutputLogsDirectory</Key>
+    <Value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">C:\Applications\arachnode.net\Console\bin\Debug\ConsoleOutputLogs</Value>
+  </Configuration>
+  <Configuration>
+    <ID>12</ID>
+    <ConfigurationTypeID>1</ConfigurationTypeID>
+    <Key>CrawlRequestTimeoutInMinutes</Key>
+    <Value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">1</Value>
+  </Configuration>
+  <Configuration>
+    <ID>13</ID>
+    <ConfigurationTypeID>1</ConfigurationTypeID>
+    <Key>CreateCrawlRequestsFromDatabaseCrawlRequests</Key>
+    <Value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">true</Value>
+  </Configuration>
+  <Configuration>
+    <ID>14</ID>
+    <ConfigurationTypeID>1</ConfigurationTypeID>
+    <Key>CreateCrawlRequestsFromDatabaseFiles</Key>
+    <Value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+  </Configuration>
+  <Configuration>
+    <ID>15</ID>
+    <ConfigurationTypeID>1</ConfigurationTypeID>
+    <Key>CreateCrawlRequestsFromDatabaseHyperLinks</Key>
+    <Value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+  </Configuration>
+  <Configuration>
+    <ID>16</ID>
+    <ConfigurationTypeID>1</ConfigurationTypeID>
+    <Key>CreateCrawlRequestsFromDatabaseImages</Key>
+    <Value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+  </Configuration>
+  <Configuration>
+    <ID>17</ID>
+    <ConfigurationTypeID>1</ConfigurationTypeID>
+    <Key>CreateCrawlRequestsFromDatabaseWebPages</Key>
+    <Value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+  </Configuration>
+  <Configuration>
+    <ID>18</ID>
+    <ConfigurationTypeID>1</ConfigurationTypeID>
+    <Key>DesiredMaximumMemoryUsageInMegabytes</Key>
+    <Value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">1024</Value>
+  </Configuration>
+  <Configuration>
+    <ID>19</ID>
+    <ConfigurationTypeID>1</ConfigurationTypeID>
+    <Key>DiscoverySlidingExpirationInSeconds</Key>
+    <Value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">120</Value>
+  </Configuration>
+  <Configuration>
+    <ID>20</ID>
+    <ConfigurationTypeID>1</ConfigurationTypeID>
+    <Key>DownloadedFilesDirectory</Key>
+    <Value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">C:\Applications\arachnode.net\Console\bin\Debug\DownloadedFiles</Value>
+  </Configuration>
+  <Configuration>
+    <ID>21</ID>
+    <ConfigurationTypeID>1</ConfigurationTypeID>
+    <Key>DownloadedImagesDirectory</Key>
+    <Value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">C:\Applications\arachnode.net\Console\bin\Debug\DownloadedImages</Value>
+  </Configuration>
+  <Configuration>
+    <ID>22</ID>
+    <ConfigurationTypeID>1</ConfigurationTypeID>
+    <Key>DownloadedWebPagesDirectory</Key>
+    <Value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">C:\Applications\arachnode.net\Console\bin\Debug\DownloadedWebPages</Value>
+  </Configuration>
+  <Configuration>
+    <ID>23</ID>
+    <ConfigurationTypeID>1</ConfigurationTypeID>
+    <Key>EnableConsoleOutput</Key>
+    <Value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">true</Value>
+  </Configuration>
+  <Configuration>
+    <ID>24</ID>
+    <ConfigurationTypeID>1</ConfigurationTypeID>
+    <Key>ExtractFileMetaData</Key>
+    <Value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+  </Configuration>
+  <Configuration>
+    <ID>25</ID>
+    <ConfigurationTypeID>1</ConfigurationTypeID>
+    <Key>ExtractImageMetaData</Key>
+    <Value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">true</Value>
+  </Configuration>
+  <Configuration>
+    <ID>26</ID>
+    <ConfigurationTypeID>1</ConfigurationTypeID>
+    <Key>ExtractWebPageMetaData</Key>
+    <Value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+  </Configuration>
+  <Configuration>
+    <ID>27</ID>
+    <ConfigurationTypeID>1</ConfigurationTypeID>
+    <Key>HttpWebRequestRetries</Key>
+    <Value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">5</Value>
+  </Configuration>
+  <Configuration>
+    <ID>28</ID>
+    <ConfigurationTypeID>1</ConfigurationTypeID>
+    <Key>InsertCrawlRequests</Key>
+    <Value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">true</Value>
+  </Configuration>
+  <Configuration>
+    <ID>29</ID>
+    <ConfigurationTypeID>1</ConfigurationTypeID>
+    <Key>InsertDisallowedAbsoluteUriDiscoveries</Key>
+    <Value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">true</Value>
+  </Configuration>
+  <Configuration>
+    <ID>30</ID>
+    <ConfigurationTypeID>1</ConfigurationTypeID>
+    <Key>InsertDisallowedAbsoluteUris</Key>
+    <Value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">true</Value>
+  </Configuration>
+  <Configuration>
+    <ID>31</ID>
+    <ConfigurationTypeID>1</ConfigurationTypeID>
+    <Key>InsertDisallowedDiscoveries</Key>
+    <Value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+  </Configuration>
+  <Configuration>
+    <ID>32</ID>
+    <ConfigurationTypeID>1</ConfigurationTypeID>
+    <Key>InsertDiscoveries</Key>
+    <Value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">true</Value>
+  </Configuration>
+  <Configuration>
+    <ID>33</ID>
+    <ConfigurationTypeID>1</ConfigurationTypeID>
+    <Key>InsertEmailAddressDiscoveries</Key>
+    <Value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">true</Value>
+  </Configuration>
+  <Configuration>
+    <ID>34</ID>
+    <ConfigurationTypeID>1</ConfigurationTypeID>
+    <Key>InsertEmailAddresses</Key>
+    <Value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">true</Value>
+  </Configuration>
+  <Configuration>
+    <ID>35</ID>
+    <ConfigurationTypeID>1</ConfigurationTypeID>
+    <Key>InsertExceptions</Key>
+    <Value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">true</Value>
+  </Configuration>
+  <Configuration>
+    <ID>36</ID>
+    <ConfigurationTypeID>1</ConfigurationTypeID>
+    <Key>InsertFileDiscoveries</Key>
+    <Value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">true</Value>
+  </Configuration>
+  <Configuration>
+    <ID>37</ID>
+    <ConfigurationTypeID>1</ConfigurationTypeID>
+    <Key>InsertFileMetaData</Key>
+    <Value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+  </Configuration>
+  <Configuration>
+    <ID>38</ID>
+    <ConfigurationTypeID>1</ConfigurationTypeID>
+    <Key>InsertFileResponseHeaders</Key>
+    <Value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">true</Value>
+  </Configuration>
+  <Configuration>
+    <ID>39</ID>
+    <ConfigurationTypeID>1</ConfigurationTypeID>
+    <Key>InsertFiles</Key>
+    <Value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">true</Value>
+  </Configuration>
+  <Configuration>
+    <ID>40</ID>
+    <ConfigurationTypeID>1</ConfigurationTypeID>
+    <Key>InsertFileSource</Key>
+    <Value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+  </Configuration>
+  <Configuration>
+    <ID>41</ID>
+    <ConfigurationTypeID>1</ConfigurationTypeID>
+    <Key>InsertHyperLinkDiscoveries</Key>
+    <Value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">true</Value>
+  </Configuration>
+  <Configuration>
+    <ID>42</ID>
+    <ConfigurationTypeID>1</ConfigurationTypeID>
+    <Key>InsertHyperLinks</Key>
+    <Value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">true</Value>
+  </Configuration>
+  <Configuration>
+    <ID>43</ID>
+    <ConfigurationTypeID>1</ConfigurationTypeID>
+    <Key>InsertImageDiscoveries</Key>
+    <Value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">true</Value>
+  </Configuration>
+  <Configuration>
+    <ID>44</ID>
+    <ConfigurationTypeID>1</ConfigurationTypeID>
+    <Key>InsertImageMetaData</Key>
+    <Value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">true</Value>
+  </Configuration>
+  <Configuration>
+    <ID>45</ID>
+    <ConfigurationTypeID>1</ConfigurationTypeID>
+    <Key>InsertImageResponseHeaders</Key>
+    <Value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">true</Value>
+  </Configuration>
+  <Configuration>
+    <ID>46</ID>
+    <ConfigurationTypeID>1</ConfigurationTypeID>
+    <Key>InsertImages</Key>
+    <Value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">true</Value>
+  </Configuration>
+  <Configuration>
+    <ID>47</ID>
+    <ConfigurationTypeID>1</ConfigurationTypeID>
+    <Key>InsertImageSource</Key>
+    <Value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+  </Configuration>
+  <Configuration>
+    <ID>48</ID>
+    <ConfigurationTypeID>1</ConfigurationTypeID>
+    <Key>InsertWebPageMetaData</Key>
+    <Value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+  </Configuration>
+  <Configuration>
+    <ID>49</ID>
+    <ConfigurationTypeID>1</ConfigurationTypeID>
+    <Key>InsertWebPageResponseHeaders</Key>
+    <Value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">true</Value>
+  </Configuration>
+  <Configuration>
+    <ID>50</ID>
+    <ConfigurationTypeID>1</ConfigurationTypeID>
+    <Key>InsertWebPages</Key>
+    <Value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">true</Value>
+  </Configuration>
+  <Configuration>
+    <ID>51</ID>
+    <ConfigurationTypeID>1</ConfigurationTypeID>
+    <Key>InsertWebPageSource</Key>
+    <Value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+  </Configuration>
+  <Configuration>
+    <ID>52</ID>
+    <ConfigurationTypeID>1</ConfigurationTypeID>
+    <Key>MaximumNumberOfAutoRedirects</Key>
+    <Value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">50</Value>
+  </Configuration>
+  <Configuration>
+    <ID>53</ID>
+    <ConfigurationTypeID>1</ConfigurationTypeID>
+    <Key>MaximumNumberOfCrawlRequestsToCreatePerBatch</Key>
+    <Value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">1000</Value>
+  </Configuration>
+  <Configuration>
+    <ID>54</ID>
+    <ConfigurationTypeID>1</ConfigurationTypeID>
+    <Key>MaximumNumberOfCrawlThreads</Key>
+    <Value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">10</Value>
+  </Configuration>
+  <Configuration>
+    <ID>55</ID>
+    <ConfigurationTypeID>1</ConfigurationTypeID>
+    <Key>MaximumNumberOfHostsAndPrioritiesToSelect</Key>
+    <Value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">10000</Value>
+  </Configuration>
+  <Configuration>
+    <ID>56</ID>
+    <ConfigurationTypeID>1</ConfigurationTypeID>
+    <Key>OutputConsoleToLogs</Key>
+    <Value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+  </Configuration>
+  <Configuration>
+    <ID>57</ID>
+    <ConfigurationTypeID>1</ConfigurationTypeID>
+    <Key>OutputStatistics</Key>
+    <Value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+  </Configuration>
+  <Configuration>
+    <ID>58</ID>
+    <ConfigurationTypeID>1</ConfigurationTypeID>
+    <Key>OutputWebExceptions</Key>
+    <Value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">true</Value>
+  </Configuration>
+  <Configuration>
+    <ID>59</ID>
+    <ConfigurationTypeID>1</ConfigurationTypeID>
+    <Key>ProcessCookies</Key>
+    <Value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">true</Value>
+  </Configuration>
+  <Configuration>
+    <ID>60</ID>
+    <ConfigurationTypeID>1</ConfigurationTypeID>
+    <Key>ProcessDiscoveriesAsynchronously</Key>
+    <Value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+  </Configuration>
+  <Configuration>
+    <ID>61</ID>
+    <ConfigurationTypeID>1</ConfigurationTypeID>
+    <Key>SaveDiscoveredFilesToDisk</Key>
+    <Value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">true</Value>
+  </Configuration>
+  <Configuration>
+    <ID>62</ID>
+    <ConfigurationTypeID>1</ConfigurationTypeID>
+    <Key>SaveDiscoveredImagesToDisk</Key>
+    <Value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">true</Value>
+  </Configuration>
+  <Configuration>
+    <ID>63</ID>
+    <ConfigurationTypeID>1</ConfigurationTypeID>
+    <Key>SaveDiscoveredWebPagesToDisk</Key>
+    <Value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">true</Value>
+  </Configuration>
+  <Configuration>
+    <ID>64</ID>
+    <ConfigurationTypeID>1</ConfigurationTypeID>
+    <Key>SetRefererToParentAbsoluteUri</Key>
+    <Value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">true</Value>
+  </Configuration>
+  <Configuration>
+    <ID>65</ID>
+    <ConfigurationTypeID>1</ConfigurationTypeID>
+    <Key>UserAgent</Key>
+    <Value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">http://arachnode.net 1.4</Value>
+  </Configuration>
+  <Configuration>
+    <ID>66</ID>
+    <ConfigurationTypeID>1</ConfigurationTypeID>
+    <Key>VerboseOutput</Key>
+    <Value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+  </Configuration>
+  <Configuration>
+    <ID>67</ID>
+    <ConfigurationTypeID>2</ConfigurationTypeID>
+    <Key>CacheTimeoutInMinutes</Key>
+    <Value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">15</Value>
+  </Configuration>
+  <Configuration>
+    <ID>68</ID>
+    <ConfigurationTypeID>2</ConfigurationTypeID>
+    <Key>CreateCrawlRequestsForMissingFilesAndImages</Key>
+    <Value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">false</Value>
+  </Configuration>
+  <Configuration>
+    <ID>69</ID>
+    <ConfigurationTypeID>2</ConfigurationTypeID>
+    <Key>DownloadedFilesVirtualDirectory</Key>
+    <Value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">\DownloadedFiles</Value>
+  </Configuration>
+  <Configuration>
+    <ID>70</ID>
+    <ConfigurationTypeID>2</ConfigurationTypeID>
+    <Key>DownloadedImagesVirtualDirectory</Key>
+    <Value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">\DownloadedImages</Value>
+  </Configuration>
+  <Configuration>
+    <ID>71</ID>
+    <ConfigurationTypeID>2</ConfigurationTypeID>
+    <Key>LuceneDotNetIndexDirectory</Key>
+    <Value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">C:\Applications\arachnode.net\Console\bin\Debug\LuceneDotNetIndex</Value>
+  </Configuration>
+  <Configuration>
+    <ID>72</ID>
+    <ConfigurationTypeID>2</ConfigurationTypeID>
+    <Key>MaximumNumberOfDocumentsToReturnPerSearch</Key>
+    <Value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">200</Value>
+  </Configuration>
+  <Configuration>
+    <ID>73</ID>
+    <ConfigurationTypeID>2</ConfigurationTypeID>
+    <Key>MaximumPageTitleLength</Key>
+    <Value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">64</Value>
+  </Configuration>
+  <Configuration>
+    <ID>74</ID>
+    <ConfigurationTypeID>2</ConfigurationTypeID>
+    <Key>PageSize</Key>
+    <Value xsi:type="xs:string" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">10</Value>
+  </Configuration>
+</DocumentElement>

@@ -1,0 +1,71 @@
+﻿<html dir="LTR">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta content="history" name="save" />
+    <meta name="vs_targetSchema" content="http://schemas.microsoft.com/intellisense/ie5" />
+    <title>Crawler Methods</title>
+    <xml>
+    </xml>
+    <link rel="stylesheet" type="text/css" href="MSDN.css" />
+  </head>
+  <body id="bodyID" class="dtBODY">
+    <div id="nsbanner">
+      <div id="bannerrow1">
+        <table class="bannerparthead" cellspacing="0">
+          <tr id="hdr">
+            <td class="runninghead">arachnode.net</td>
+            <td class="product">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div id="TitleRow">
+        <h1 class="dtH1">Crawler Methods</h1>
+      </div>
+    </div>
+    <div id="nstext">
+      <p>The methods of the <b>Crawler</b> class are listed below. For a complete list of <b>Crawler</b> class members, see the <a href="Arachnode.SiteCrawler~Arachnode.SiteCrawler.Crawler~Members.html">Crawler Members</a> topic.</p>
+      <h4 class="dtH4" xmlns:ndoc="urn:ndoc-schema">Public Instance Methods</h4>
+      <div class="tablediv" xmlns:ndoc="urn:ndoc-schema">
+        <table class="dtTABLE" cellspacing="0">
+<tr VALIGN="top"><td width="50%"><img src="pubmethod.gif"></img><a href="Arachnode.SiteCrawler~Arachnode.SiteCrawler.Crawler.ClearDisallowedAbsoluteUris.html">ClearDisallowedAbsoluteUris</a></td><td width="50%"> Clears all DisallowedAbsoluteUris on disk. </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubmethod.gif"></img><a href="Arachnode.SiteCrawler~Arachnode.SiteCrawler.Crawler.ClearDiscoveries.html">ClearDiscoveries</a></td><td width="50%"> Clears the Discoveries in RAM and on disk. This method is not thread-safe and should not be called while the Engine is running. </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubmethod.gif"></img><a href="Arachnode.SiteCrawler~Arachnode.SiteCrawler.Crawler.ClearPolitenesses.html">ClearPolitenesses</a></td><td width="50%"> Clears the Politenesses in RAM. This method is not thread-safe and should not be called while the Engine is running. </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubmethod.gif"></img><a href="Arachnode.SiteCrawler~Arachnode.SiteCrawler.Crawler.ClearUncrawledCrawlRequests.html">ClearUncrawledCrawlRequests</a></td><td width="50%"> Clears the UncrawledCrawlRequests in RAM and on disk. This method is not thread-safe and should not be called while the Engine is running. </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubmethod.gif"></img><a href="Arachnode.SiteCrawler~Arachnode.SiteCrawler.Crawler.Crawl.html">Crawl</a></td><td width="50%"> Submits a CrawlRequest to the Engine for crawling. If Crawl(CrawlRequest crawlRequest) returns 'false' the Cache is already aware of the Discovery and the Discovery is awaiting processing or has already been processed and was loaded from the database. If a Crawl is resuming, the Discoveries found in the database table 'Discoveries' will be loaded into RAM, allowing arachnode.net to resume the memory state of the crawl. To re-crawl an AbsoluteUri that was already discovered, delete the row from database table 'Discoveries'. To clear all Discoveries, call 'crawler.ClearDiscoveries'. </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubmethod.gif"></img><a href="http://msdn.microsoft.com/{0}/library/{1}({2}).aspxSystemObjectClassEqualsTopic.aspx">Equals</a> (inherited from <b>Object</b>)</td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubmethod.gif"></img><a href="http://msdn.microsoft.com/{0}/library/{1}({2}).aspxSystemObjectClassGetHashCodeTopic.aspx">GetHashCode</a> (inherited from <b>Object</b>)</td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubmethod.gif"></img><a href="http://msdn.microsoft.com/{0}/library/{1}({2}).aspxSystemObjectClassGetTypeTopic.aspx">GetType</a> (inherited from <b>Object</b>)</td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubmethod.gif"></img><a href="Arachnode.SiteCrawler~Arachnode.SiteCrawler.Crawler.ReinitializeConfiguration.html">ReinitializeConfiguration</a></td><td width="50%"> Reinitializes the configuration. Refreshes the Crawler configuration without having to create a new Crawler. </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="pubmethod.gif"></img><a href="http://msdn.microsoft.com/{0}/library/{1}({2}).aspxSystemObjectClassToStringTopic.aspx">ToString</a> (inherited from <b>Object</b>)</td><td width="50%"> </td></tr></table>
+      </div>
+      <h4 class="dtH4" xmlns:ndoc="urn:ndoc-schema">Protected Instance Methods</h4>
+      <div class="tablediv" xmlns:ndoc="urn:ndoc-schema">
+        <table class="dtTABLE" cellspacing="0">
+<tr VALIGN="top"><td width="50%"><img src="protmethod.gif"></img><a href="http://msdn.microsoft.com/{0}/library/{1}({2}).aspxSystemObjectClassFinalizeTopic.aspx">Finalize</a> (inherited from <b>Object</b>)</td><td width="50%"> </td></tr>
+<tr VALIGN="top"><td width="50%"><img src="protmethod.gif"></img><a href="http://msdn.microsoft.com/{0}/library/{1}({2}).aspxSystemObjectClassMemberwiseCloneTopic.aspx">MemberwiseClone</a> (inherited from <b>Object</b>)</td><td width="50%"> </td></tr></table>
+      </div>
+      <h4 class="dtH4" xmlns:ndoc="urn:ndoc-schema">Internal Instance Methods</h4>
+      <div class="tablediv" xmlns:ndoc="urn:ndoc-schema">
+        <table class="dtTABLE" cellspacing="0">
+<tr VALIGN="top"><td width="50%"><img src="intmethod.gif"></img><a href="Arachnode.SiteCrawler~Arachnode.SiteCrawler.Crawler.LoadCrawlActions.html">LoadCrawlActions</a></td><td width="50%"></td></tr>
+<tr VALIGN="top"><td width="50%"><img src="intmethod.gif"></img><a href="Arachnode.SiteCrawler~Arachnode.SiteCrawler.Crawler.LoadCrawlRules.html">LoadCrawlRules</a></td><td width="50%"></td></tr>
+<tr VALIGN="top"><td width="50%"><img src="intmethod.gif"></img><a href="Arachnode.SiteCrawler~Arachnode.SiteCrawler.Crawler.ProcessException.html">ProcessException</a></td><td width="50%"> Throws the exception. </td></tr></table>
+      </div>
+      <h4 class="dtH4">See Also</h4>
+      <p>
+        <a href="Arachnode.SiteCrawler~Arachnode.SiteCrawler.Crawler.html">Crawler Class</a> | <a href="~Arachnode.SiteCrawler.html">Arachnode.SiteCrawler Namespace</a></p>
+      <object type="application/x-oleobject" classid="clsid:1e2a7bd0-dab9-11d0-b93a-00c04fc99f9e" viewastext="true" style="display: none;">
+        <param name="Keyword" value="Crawler class, methods">
+        </param>
+      </object>
+      <hr />
+      <div id="footer">
+        <p>
+          <a href="http://arachnode.net">Copyright 2010 http://arachnode.net</a>
+        </p>
+        <p>Generated from assembly Arachnode.SiteCrawler [2.0.3815.26340] by <a href="http://ndoc3.sourceforget.net">NDoc3</a></p>
+      </div>
+    </div>
+  </body>
+</html>

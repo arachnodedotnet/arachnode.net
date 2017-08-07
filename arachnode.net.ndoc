@@ -1,0 +1,38 @@
+<project SchemaVersion="1.3">
+    <assemblies>
+        <assembly location=".\Administration\bin\Arachnode.Administration.dll" documentation="" />
+        <assembly location=".\Web\bin\Arachnode.Web.dll" documentation=".\Web\bin\Arachnode.Web.XML" />
+        <assembly location=".\Application\bin\Arachnode.Application.dll" documentation="" />
+        <assembly location=".\Configuration\bin\Release\Arachnode.Configuration.dll" documentation=".\Configuration\bin\Release\Arachnode.Configuration.XML" />
+        <assembly location=".\Console\bin\Release\Arachnode.Console.exe" documentation=".\Console\bin\Release\Arachnode.Console.XML" />
+        <assembly location=".\SiteCrawler\bin\Release\Arachnode.SiteCrawler.dll" documentation=".\SiteCrawler\bin\Release\Arachnode.SiteCrawler.XML" />
+        <assembly location=".\Functions\bin\Release\Arachnode.Functions.dll" documentation=".\Functions\bin\Release\Arachnode.Functions.XML" />
+        <assembly location=".\Plugins\bin\Release\Arachnode.Plugins.dll" documentation=".\Plugins\bin\Release\Arachnode.Plugins.XML" />
+        <assembly location=".\Library\bin\Release\Arachnode.Library.dll" documentation=".\Library\bin\Release\Arachnode.Library.xml" />
+        <assembly location=".\Performance\bin\Release\Arachnode.Performance.dll" documentation=".\Performance\bin\Release\Arachnode.Performance.XML" />
+        <assembly location=".\Structures\bin\Release\Arachnode.Structures.dll" documentation=".\Structures\bin\Release\Arachnode.Structures.XML" />
+        <assembly location=".\DataAccess\bin\Release\Arachnode.DataAccess.dll" documentation=".\DataAccess\bin\Release\Arachnode.DataAccess.XML" />
+        <assembly location=".\Renderer\bin\Release\Arachnode.Renderer.exe" documentation=".\Renderer\bin\Release\Arachnode.Renderer.xml" />
+        <assembly location=".\Service\bin\Release\Arachnode.Service.exe" documentation=".\Service\bin\Release\Arachnode.Service.XML" />
+        <assembly location=".\Security\bin\Release\Arachnode.Security.dll" documentation=".\Security\bin\Release\Arachnode.Security.XML" />
+        <assembly location=".\DataSource\bin\Release\Arachnode.DataSource.dll" documentation=".\DataSource\bin\Release\Arachnode.DataSource.XML" />
+        <assembly location=".\Utilities\bin\Release\Arachnode.Utilities.dll" documentation=".\Utilities\bin\Release\Arachnode.Utilities.XML" />
+    </assemblies>
+    <documenters>
+        <documenter name="MSDN">
+            <property name="OutputDirectory" value=".\Documentation\" />
+            <property name="HtmlHelpName" value="arachnode.net API Documentation" />
+            <property name="Title" value="arachnode.net" />
+            <property name="IncludeFavorites" value="True" />
+            <property name="RootPageTOCName" value="arachnode.net" />
+            <property name="DocumentExplicitInterfaceImplementations" value="True" />
+            <property name="DocumentInternals" value="True" />
+            <property name="DocumentEmptyNamespaces" value="True" />
+            <property name="AssemblyVersionInfo" value="AssemblyVersion" />
+            <property name="CopyrightText" value="Copyright 2015 http://arachnode.net" />
+            <property name="CopyrightHref" value="http://arachnode.net" />
+            <property name="SdkDocVersion" value="SDK_v3_5" />
+            <property name="SdkDocVersionString" value="VS.90" />
+        </documenter>
+    </documenters>
+</project>

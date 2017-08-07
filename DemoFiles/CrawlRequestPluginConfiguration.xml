@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Configuration>
+  <ThrottleCrawlingByDomainCrawlDelayInMilliseconds value="1000" />
+  <MaximumDownloadableContentLengthInBytes value="20971520" />
+  <FullTextIndexTypes>
+		<FullTextIndexType key="text/html" value=".txt" />
+		<FullTextIndexType key="image/x-icon" value=".ico" />
+		<FullTextIndexType key="image/gif" value=".gif" />
+		<FullTextIndexType key="image/png" value=".png" />
+		<FullTextIndexType key="image/jpg" value=".jpg" />
+		<FullTextIndexType key="image/jpeg" value=".jpeg" />
+		<FullTextIndexType key="text/css" value=".txt" />
+		<FullTextIndexType key="image/vnd.microsoft.icon" value=".ico" />
+    <!-- JavaScript download functionality is not enabled by default for security/safety reasons -->
+    <!--<FullTextIndexType key="text/javascript" value=".js" />-->
+	</FullTextIndexTypes>
+</Configuration>

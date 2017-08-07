@@ -1,0 +1,1 @@
+﻿<%@ WebService Language="C#" CodeBehind="PersonalizationService.asmx.cs" Class="Arachnode.Web.Services.PersonalizationService" %>

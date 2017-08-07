@@ -1,0 +1,975 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="ac8b0b52-c8d9-4117-9313-cdc54223304d" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>UriClassificationDataSourceView</ID>
+  <Name>UriClassificationDataSourceView</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout>
+              <dds>
+                <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="38" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="6493" scrolltop="3070" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="75" x="20876" y="15743" backcolor="15334399" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+                  <font>
+                    <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+                  </font>
+                  <mouseicon>
+                    <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+                  </mouseicon>
+                </diagram>
+                <layoutmanager>
+                  <ddsxmlobj />
+                </layoutmanager>
+                <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.1" tooltip="Domains (dbo.Domains)" left="12166" top="10581" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="3000" height="2302" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobjectstreaminitwrapper binary="00080000b80b0000fe080000" />
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dbo_Domains" vartype="8" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <shape groupshapeid="0" groupnode="0" />
+                </ddscontrol>
+                <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.1" tooltip="Domains_Discoveries (dbo.Domains_Discoveries)" left="11726" top="15283" logicalid="2" controlid="2" masterid="0" hint1="0" hint2="0" width="3440" height="3149" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobjectstreaminitwrapper binary="00080000700d00004d0c0000" />
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dbo_Domains_Discoveries" vartype="8" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <shape groupshapeid="0" groupnode="0" />
+                </ddscontrol>
+                <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.1" tooltip="Extensions (dbo.Extensions)" left="17786" top="13567" logicalid="3" controlid="3" masterid="0" hint1="0" hint2="0" width="3000" height="1879" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobjectstreaminitwrapper binary="00080000b80b000057070000" />
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dbo_Extensions" vartype="8" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <shape groupshapeid="0" groupnode="0" />
+                </ddscontrol>
+                <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.1" tooltip="Extensions_Discoveries (dbo.Extensions_Discoveries)" left="17566" top="8018" logicalid="4" controlid="4" masterid="0" hint1="0" hint2="0" width="3440" height="3149" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobjectstreaminitwrapper binary="00080000700d00004d0c0000" />
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dbo_Extensions_Discoveries" vartype="8" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <shape groupshapeid="0" groupnode="0" />
+                </ddscontrol>
+                <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.1" tooltip="Hosts (dbo.Hosts)" left="12166" top="5879" logicalid="5" controlid="5" masterid="0" hint1="0" hint2="0" width="3000" height="2302" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobjectstreaminitwrapper binary="00080000b80b0000fe080000" />
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dbo_Hosts" vartype="8" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <shape groupshapeid="0" groupnode="0" />
+                </ddscontrol>
+                <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.1" tooltip="Hosts_Discoveries (dbo.Hosts_Discoveries)" left="5886" top="12297" logicalid="6" controlid="6" masterid="0" hint1="0" hint2="0" width="3440" height="3149" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobjectstreaminitwrapper binary="00080000700d00004d0c0000" />
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dbo_Hosts_Discoveries" vartype="8" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <shape groupshapeid="0" groupnode="0" />
+                </ddscontrol>
+                <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.1" tooltip="Schemes (dbo.Schemes)" left="27384" top="17423" logicalid="7" controlid="7" masterid="0" hint1="0" hint2="0" width="3000" height="1879" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobjectstreaminitwrapper binary="00080000b80b000057070000" />
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dbo_Schemes" vartype="8" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <shape groupshapeid="0" groupnode="0" />
+                </ddscontrol>
+                <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.1" tooltip="Schemes_Discoveries (dbo.Schemes_Discoveries)" left="30322" top="10158" logicalid="8" controlid="8" masterid="0" hint1="0" hint2="0" width="3440" height="3149" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobjectstreaminitwrapper binary="00080000700d00004d0c0000" />
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dbo_Schemes_Discoveries" vartype="8" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <shape groupshapeid="0" groupnode="0" />
+                </ddscontrol>
+                <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.1" tooltip="Files_Schemes_Discoveries (dbo.Files_Schemes_Discoveries)" left="32784" top="17423" logicalid="9" controlid="9" masterid="0" hint1="0" hint2="0" width="3916" height="1879" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobjectstreaminitwrapper binary="000800004c0f000057070000" />
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dbo_Files_Schemes_Discoveries" vartype="8" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <shape groupshapeid="0" groupnode="0" />
+                </ddscontrol>
+                <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.1" tooltip="Exceptions_Schemes_Discoveries (dbo.Exceptions_Schemes_Discoveries)" left="36162" top="8442" logicalid="10" controlid="10" masterid="0" hint1="0" hint2="0" width="4075" height="2302" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobjectstreaminitwrapper binary="00080000eb0f0000fe080000" />
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dbo_Exceptions_Schemes_Discoveries" vartype="8" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <shape groupshapeid="0" groupnode="0" />
+                </ddscontrol>
+                <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.1" tooltip="WebPages_Schemes_Discoveries (dbo.WebPages_Schemes_Discoveries)" left="29846" top="5879" logicalid="11" controlid="11" masterid="0" hint1="0" hint2="0" width="3916" height="1879" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobjectstreaminitwrapper binary="000800004c0f000057070000" />
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dbo_WebPages_Schemes_Discoveries" vartype="8" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <shape groupshapeid="0" groupnode="0" />
+                </ddscontrol>
+                <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.1" tooltip="DiscoveryTypes (dbo.DiscoveryTypes)" left="20" top="0" logicalid="12" controlid="12" masterid="0" hint1="0" hint2="0" width="3000" height="1879" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobjectstreaminitwrapper binary="00080000b80b000057070000" />
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dbo_DiscoveryTypes" vartype="8" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <shape groupshapeid="0" groupnode="0" />
+                </ddscontrol>
+                <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.1" tooltip="EmailAddresses_Schemes_Discoveries (dbo.EmailAddresses_Schemes_Discoveries)" left="36162" top="13144" logicalid="13" controlid="13" masterid="0" hint1="0" hint2="0" width="3916" height="1879" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobjectstreaminitwrapper binary="000800004c0f000057070000" />
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dbo_EmailAddresses_Schemes_Discoveries" vartype="8" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <shape groupshapeid="0" groupnode="0" />
+                </ddscontrol>
+                <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.1" tooltip="HyperLinks_Schemes_Discoveries (dbo.HyperLinks_Schemes_Discoveries)" left="24006" top="10793" logicalid="14" controlid="14" masterid="0" hint1="0" hint2="0" width="3916" height="1879" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobjectstreaminitwrapper binary="000800004c0f000057070000" />
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dbo_HyperLinks_Schemes_Discoveries" vartype="8" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <shape groupshapeid="0" groupnode="0" />
+                </ddscontrol>
+                <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.1" tooltip="HyperLinks_Hosts_Discoveries (dbo.HyperLinks_Hosts_Discoveries)" left="20" top="12932" logicalid="15" controlid="15" masterid="0" hint1="0" hint2="0" width="3466" height="1879" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobjectstreaminitwrapper binary="000800008a0d000057070000" />
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dbo_HyperLinks_Hosts_Discoveries" vartype="8" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <shape groupshapeid="0" groupnode="0" />
+                </ddscontrol>
+                <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.1" tooltip="Files_Hosts_Discoveries (dbo.Files_Hosts_Discoveries)" left="5860" top="8018" logicalid="16" controlid="16" masterid="0" hint1="0" hint2="0" width="3466" height="1879" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobjectstreaminitwrapper binary="000800008a0d000057070000" />
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dbo_Files_Hosts_Discoveries" vartype="8" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <shape groupshapeid="0" groupnode="0" />
+                </ddscontrol>
+                <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.1" tooltip="EmailAddresses_Hosts_Discoveries (dbo.EmailAddresses_Hosts_Discoveries)" left="11726" top="19985" logicalid="17" controlid="17" masterid="0" hint1="0" hint2="0" width="3466" height="1879" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobjectstreaminitwrapper binary="000800008a0d000057070000" />
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dbo_EmailAddresses_Hosts_Discoveries" vartype="8" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <shape groupshapeid="0" groupnode="0" />
+                </ddscontrol>
+                <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.1" tooltip="WebPages_Hosts_Discoveries (dbo.WebPages_Hosts_Discoveries)" left="8886" top="24264" logicalid="18" controlid="18" masterid="0" hint1="0" hint2="0" width="3466" height="1879" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobjectstreaminitwrapper binary="000800008a0d000057070000" />
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dbo_WebPages_Hosts_Discoveries" vartype="8" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <shape groupshapeid="0" groupnode="0" />
+                </ddscontrol>
+                <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.1" tooltip="Exceptions_Hosts_Discoveries (dbo.Exceptions_Hosts_Discoveries)" left="2861" top="24264" logicalid="19" controlid="19" masterid="0" hint1="0" hint2="0" width="3625" height="2302" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobjectstreaminitwrapper binary="00080000290e0000fe080000" />
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dbo_Exceptions_Hosts_Discoveries" vartype="8" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <shape groupshapeid="0" groupnode="0" />
+                </ddscontrol>
+                <ddscontrol controlprogid="MSDDS.Polyline" left="14866" top="11432" logicalid="20" controlid="20" masterid="0" hint1="0" hint2="0" width="3220" height="3474" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobj>
+                      <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                    </ddsxmlobj>
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dataSet.Relations[FK_Domains_Extensions]" vartype="8" />
+                      <property name="Virtual" value="0" vartype="11" />
+                      <property name="VisibleAP" value="0" vartype="3" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <connector lineroutestyle="MSDDS.Rectilinear" sourceid="3" destid="1" sourceattachpoint="12" destattachpoint="13" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                    <point x="17786" y="14506" />
+                    <point x="16476" y="14506" />
+                    <point x="16476" y="11732" />
+                    <point x="15166" y="11732" />
+                  </connector>
+                </ddscontrol>
+                <ddscontrol controlprogid="MSDDS.Polyline" left="13146" top="12384" logicalid="21" controlid="21" masterid="0" hint1="0" hint2="0" width="920" height="3199" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobj>
+                      <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                    </ddsxmlobj>
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dataSet.Relations[FK_Domains_Discoveries_Domains]" vartype="8" />
+                      <property name="Virtual" value="0" vartype="11" />
+                      <property name="VisibleAP" value="0" vartype="3" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <connector lineroutestyle="MSDDS.Rectilinear" sourceid="1" destid="2" sourceattachpoint="5" destattachpoint="4" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                    <point x="13666" y="12883" />
+                    <point x="13666" y="14083" />
+                    <point x="13446" y="14083" />
+                    <point x="13446" y="15283" />
+                  </connector>
+                </ddscontrol>
+                <ddscontrol controlprogid="MSDDS.Polyline" left="18887" top="10867" logicalid="22" controlid="22" masterid="0" hint1="0" hint2="0" width="799" height="3200" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobj>
+                      <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                    </ddsxmlobj>
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dataSet.Relations[FK_Extensions_Discoveries_Extensions]" vartype="8" />
+                      <property name="Virtual" value="0" vartype="11" />
+                      <property name="VisibleAP" value="0" vartype="3" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <connector lineroutestyle="MSDDS.Rectilinear" sourceid="3" destid="4" sourceattachpoint="4" destattachpoint="5" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                    <point x="19286" y="13567" />
+                    <point x="19286" y="11167" />
+                  </connector>
+                </ddscontrol>
+                <ddscontrol controlprogid="MSDDS.Polyline" left="13267" top="7881" logicalid="23" controlid="23" masterid="0" hint1="0" hint2="0" width="799" height="3200" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobj>
+                      <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                    </ddsxmlobj>
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dataSet.Relations[FK_Hosts_Domains]" vartype="8" />
+                      <property name="Virtual" value="0" vartype="11" />
+                      <property name="VisibleAP" value="0" vartype="3" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <connector lineroutestyle="MSDDS.Rectilinear" sourceid="1" destid="5" sourceattachpoint="4" destattachpoint="5" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                    <point x="13666" y="10581" />
+                    <point x="13666" y="8181" />
+                  </connector>
+                </ddscontrol>
+                <ddscontrol controlprogid="MSDDS.Polyline" left="9026" top="6631" logicalid="24" controlid="24" masterid="0" hint1="0" hint2="0" width="3440" height="6440" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobj>
+                      <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                    </ddsxmlobj>
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dataSet.Relations[FK_Hosts_Discoveries_Hosts]" vartype="8" />
+                      <property name="Virtual" value="0" vartype="11" />
+                      <property name="VisibleAP" value="0" vartype="3" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <connector lineroutestyle="MSDDS.Rectilinear" sourceid="5" destid="6" sourceattachpoint="12" destattachpoint="11" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                    <point x="12166" y="7030" />
+                    <point x="10746" y="7030" />
+                    <point x="10746" y="12771" />
+                    <point x="9326" y="12771" />
+                  </connector>
+                </ddscontrol>
+                <ddscontrol controlprogid="MSDDS.Polyline" left="28485" top="13007" logicalid="25" controlid="25" masterid="0" hint1="0" hint2="0" width="2757" height="4916" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobj>
+                      <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                    </ddsxmlobj>
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dataSet.Relations[FK_Schemes_Discoveries_Schemes]" vartype="8" />
+                      <property name="Virtual" value="0" vartype="11" />
+                      <property name="VisibleAP" value="0" vartype="3" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <connector lineroutestyle="MSDDS.Rectilinear" sourceid="7" destid="8" sourceattachpoint="4" destattachpoint="1" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                    <point x="28884" y="17423" />
+                    <point x="28884" y="15365" />
+                    <point x="30942" y="15365" />
+                    <point x="30942" y="13307" />
+                  </connector>
+                </ddscontrol>
+                <ddscontrol controlprogid="MSDDS.Polyline" left="32193" top="12808" logicalid="26" controlid="26" masterid="0" hint1="0" hint2="0" width="2849" height="4915" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobj>
+                      <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                    </ddsxmlobj>
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dataSet.Relations[FK_Files_Schemes_Discoveries_Schemes_Discoveries]" vartype="8" />
+                      <property name="Virtual" value="0" vartype="11" />
+                      <property name="VisibleAP" value="0" vartype="3" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <connector lineroutestyle="MSDDS.Rectilinear" sourceid="8" destid="9" sourceattachpoint="7" destattachpoint="6" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                    <point x="32592" y="13307" />
+                    <point x="32592" y="15365" />
+                    <point x="34742" y="15365" />
+                    <point x="34742" y="17423" />
+                  </connector>
+                </ddscontrol>
+                <ddscontrol controlprogid="MSDDS.Polyline" left="33462" top="9293" logicalid="27" controlid="27" masterid="0" hint1="0" hint2="0" width="3000" height="2839" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobj>
+                      <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                    </ddsxmlobj>
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dataSet.Relations[FK_Exceptions_Schemes_Discoveries_Schemes_Discoveries]" vartype="8" />
+                      <property name="Virtual" value="0" vartype="11" />
+                      <property name="VisibleAP" value="0" vartype="3" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <connector lineroutestyle="MSDDS.Rectilinear" sourceid="8" destid="10" sourceattachpoint="15" destattachpoint="16" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                    <point x="33762" y="11732" />
+                    <point x="34962" y="11732" />
+                    <point x="34962" y="9593" />
+                    <point x="36162" y="9593" />
+                  </connector>
+                </ddscontrol>
+                <ddscontrol controlprogid="MSDDS.Polyline" left="33462" top="8743" logicalid="28" controlid="28" masterid="0" hint1="0" hint2="0" width="3000" height="2839" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobj>
+                      <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                    </ddsxmlobj>
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dataSet.Relations[FK_Exceptions_Schemes_Discoveries_Schemes_Discoveries1]" vartype="8" />
+                      <property name="Virtual" value="0" vartype="11" />
+                      <property name="VisibleAP" value="0" vartype="3" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <connector lineroutestyle="MSDDS.Rectilinear" sourceid="8" destid="10" sourceattachpoint="13" destattachpoint="14" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                    <point x="33762" y="11182" />
+                    <point x="34962" y="11182" />
+                    <point x="34962" y="9043" />
+                    <point x="36162" y="9043" />
+                  </connector>
+                </ddscontrol>
+                <ddscontrol controlprogid="MSDDS.Polyline" left="31504" top="7458" logicalid="29" controlid="29" masterid="0" hint1="0" hint2="0" width="938" height="3200" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobj>
+                      <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                    </ddsxmlobj>
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dataSet.Relations[FK_WebPages_Schemes_Discoveries_Schemes_Discoveries]" vartype="8" />
+                      <property name="Virtual" value="0" vartype="11" />
+                      <property name="VisibleAP" value="0" vartype="3" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <connector lineroutestyle="MSDDS.Rectilinear" sourceid="8" destid="11" sourceattachpoint="4" destattachpoint="7" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                    <point x="32042" y="10158" />
+                    <point x="32042" y="8958" />
+                    <point x="31804" y="8958" />
+                    <point x="31804" y="7758" />
+                  </connector>
+                </ddscontrol>
+                <ddscontrol controlprogid="MSDDS.Polyline" left="33462" top="11883" logicalid="30" controlid="30" masterid="0" hint1="0" hint2="0" width="3000" height="2500" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobj>
+                      <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                    </ddsxmlobj>
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dataSet.Relations[FK_EmailAddresses_Schemes_Discoveries_Schemes_Discoveries]" vartype="8" />
+                      <property name="Virtual" value="0" vartype="11" />
+                      <property name="VisibleAP" value="0" vartype="3" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <connector lineroutestyle="MSDDS.Rectilinear" sourceid="8" destid="13" sourceattachpoint="17" destattachpoint="16" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                    <point x="33762" y="12282" />
+                    <point x="34962" y="12282" />
+                    <point x="34962" y="14083" />
+                    <point x="36162" y="14083" />
+                  </connector>
+                </ddscontrol>
+                <ddscontrol controlprogid="MSDDS.Polyline" left="27622" top="11333" logicalid="31" controlid="31" masterid="0" hint1="0" hint2="0" width="3000" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobj>
+                      <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                    </ddsxmlobj>
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dataSet.Relations[FK_HyperLinks_Schemes_Discoveries_Schemes_Discoveries]" vartype="8" />
+                      <property name="Virtual" value="0" vartype="11" />
+                      <property name="VisibleAP" value="0" vartype="3" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <connector lineroutestyle="MSDDS.Rectilinear" sourceid="8" destid="14" sourceattachpoint="14" destattachpoint="17" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                    <point x="30322" y="11732" />
+                    <point x="27922" y="11732" />
+                  </connector>
+                </ddscontrol>
+                <ddscontrol controlprogid="MSDDS.Polyline" left="3186" top="13472" logicalid="32" controlid="32" masterid="0" hint1="0" hint2="0" width="3000" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobj>
+                      <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                    </ddsxmlobj>
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dataSet.Relations[FK_HyperLinks_Hosts_Discoveries_Hosts_Discoveries]" vartype="8" />
+                      <property name="Virtual" value="0" vartype="11" />
+                      <property name="VisibleAP" value="0" vartype="3" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <connector lineroutestyle="MSDDS.Rectilinear" sourceid="6" destid="15" sourceattachpoint="14" destattachpoint="13" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                    <point x="5886" y="13871" />
+                    <point x="3486" y="13871" />
+                  </connector>
+                </ddscontrol>
+                <ddscontrol controlprogid="MSDDS.Polyline" left="7207" top="9597" logicalid="33" controlid="33" masterid="0" hint1="0" hint2="0" width="799" height="3200" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobj>
+                      <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                    </ddsxmlobj>
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dataSet.Relations[FK_Files_Hosts_Discoveries_Hosts_Discoveries]" vartype="8" />
+                      <property name="Virtual" value="0" vartype="11" />
+                      <property name="VisibleAP" value="0" vartype="3" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <connector lineroutestyle="MSDDS.Rectilinear" sourceid="6" destid="16" sourceattachpoint="4" destattachpoint="5" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                    <point x="7606" y="12297" />
+                    <point x="7606" y="11097" />
+                    <point x="7593" y="11097" />
+                    <point x="7593" y="9897" />
+                  </connector>
+                </ddscontrol>
+                <ddscontrol controlprogid="MSDDS.Polyline" left="9026" top="14022" logicalid="34" controlid="34" masterid="0" hint1="0" hint2="0" width="3000" height="7202" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobj>
+                      <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                    </ddsxmlobj>
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dataSet.Relations[FK_EmailAddresses_Hosts_Discoveries_Hosts_Discoveries]" vartype="8" />
+                      <property name="Virtual" value="0" vartype="11" />
+                      <property name="VisibleAP" value="0" vartype="3" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <connector lineroutestyle="MSDDS.Rectilinear" sourceid="6" destid="17" sourceattachpoint="17" destattachpoint="12" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                    <point x="9326" y="14421" />
+                    <point x="10526" y="14421" />
+                    <point x="10526" y="20924" />
+                    <point x="11726" y="20924" />
+                  </connector>
+                </ddscontrol>
+                <ddscontrol controlprogid="MSDDS.Polyline" left="7757" top="14947" logicalid="35" controlid="35" masterid="0" hint1="0" hint2="0" width="3162" height="9617" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobj>
+                      <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                    </ddsxmlobj>
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dataSet.Relations[FK_WebPages_Hosts_Discoveries_Hosts_Discoveries]" vartype="8" />
+                      <property name="Virtual" value="0" vartype="11" />
+                      <property name="VisibleAP" value="0" vartype="3" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <connector lineroutestyle="MSDDS.Rectilinear" sourceid="6" destid="18" sourceattachpoint="7" destattachpoint="4" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                    <point x="8156" y="15446" />
+                    <point x="8156" y="19855" />
+                    <point x="10619" y="19855" />
+                    <point x="10619" y="24264" />
+                  </connector>
+                </ddscontrol>
+                <ddscontrol controlprogid="MSDDS.Polyline" left="4923" top="14947" logicalid="36" controlid="36" masterid="0" hint1="0" hint2="0" width="3083" height="9617" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobj>
+                      <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                    </ddsxmlobj>
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dataSet.Relations[FK_Exceptions_Hosts_Discoveries_Hosts_Discoveries]" vartype="8" />
+                      <property name="Virtual" value="0" vartype="11" />
+                      <property name="VisibleAP" value="0" vartype="3" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <connector lineroutestyle="MSDDS.Rectilinear" sourceid="6" destid="19" sourceattachpoint="5" destattachpoint="8" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                    <point x="7606" y="15446" />
+                    <point x="7606" y="19855" />
+                    <point x="5223" y="19855" />
+                    <point x="5223" y="24264" />
+                  </connector>
+                </ddscontrol>
+                <ddscontrol controlprogid="MSDDS.Polyline" left="3273" top="14947" logicalid="37" controlid="37" masterid="0" hint1="0" hint2="0" width="4183" height="9617" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobj>
+                      <polyline endtypedst="6" endtypesrc="3" usercolor="0" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                    </ddsxmlobj>
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dataSet.Relations[FK_Exceptions_Hosts_Discoveries_Hosts_Discoveries1]" vartype="8" />
+                      <property name="Virtual" value="0" vartype="11" />
+                      <property name="VisibleAP" value="0" vartype="3" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <connector lineroutestyle="MSDDS.Rectilinear" sourceid="6" destid="19" sourceattachpoint="3" destattachpoint="2" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                    <point x="7056" y="15446" />
+                    <point x="7056" y="19855" />
+                    <point x="3573" y="19855" />
+                    <point x="3573" y="24264" />
+                  </connector>
+                </ddscontrol>
+              </dds>
+</DiagramLayout>
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>6493</DiagramViewPortLeft>
+            <DiagramViewPortTop>3070</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>75</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>UriClassificationDataSource</DataSourceID>
+  <Schema>
+    <xs:schema id="UriClassificationDataSourceView" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="UriClassificationDataSourceView" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="0affa87c-64d3-4b11-9751-b5a8c2fabece">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_Domains" msprop:FriendlyName="Domains" msprop:DbSchemaName="dbo" msprop:DbTableName="Domains" msprop:design-time-name="17398c76-8ad8-46cb-bb55-68bba0f39985" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="ID" msprop:DbColumnName="ID" msprop:design-time-name="03431d2f-0872-4537-8f6f-03ce72cf420a" type="xs:int" />
+                  <xs:element name="ExtensionID" msprop:FriendlyName="ExtensionID" msprop:DbColumnName="ExtensionID" msprop:design-time-name="f46ebda8-cc4c-4288-9252-391790229868" type="xs:int" />
+                  <xs:element name="Domain" msprop:FriendlyName="Domain" msprop:DbColumnName="Domain" msprop:design-time-name="be244674-528a-45f7-b4bf-b0fdecf3c357">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="884" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Domains_Discoveries" msprop:FriendlyName="Domains_Discoveries" msprop:DbSchemaName="dbo" msprop:DbTableName="Domains_Discoveries" msprop:design-time-name="2322845c-490d-4bb9-a7d3-d72a7414dde2" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="InitiallyDiscovered" msprop:FriendlyName="InitiallyDiscovered" msprop:DbColumnName="InitiallyDiscovered" msprop:design-time-name="cc759649-59a5-4986-99e1-62bdf5502d2d" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="LastDiscovered" msprop:FriendlyName="LastDiscovered" msprop:DbColumnName="LastDiscovered" msprop:design-time-name="6bcf640f-573c-4106-9abe-afb38258152d" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="ID" msprop:DbColumnName="ID" msprop:design-time-name="88aee465-7956-4c99-9226-be295dd332e6" type="xs:int" />
+                  <xs:element name="DiscoveryTypeID" msprop:FriendlyName="DiscoveryTypeID" msprop:DbColumnName="DiscoveryTypeID" msprop:design-time-name="b5f53010-2868-4b6b-a391-879239e29302" type="xs:unsignedByte" />
+                  <xs:element name="DomainID" msprop:FriendlyName="DomainID" msprop:DbColumnName="DomainID" msprop:design-time-name="843a7b9c-9f62-4922-bdf4-ca6d5e9a77e1" type="xs:int" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Extensions" msprop:FriendlyName="Extensions" msprop:DbSchemaName="dbo" msprop:DbTableName="Extensions" msprop:design-time-name="3e6cef9a-a839-4b1a-8404-fcfd8cafc95f" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="ID" msprop:DbColumnName="ID" msprop:design-time-name="972fb505-ff43-4e63-bf65-cdd2a4b05f2e" type="xs:int" />
+                  <xs:element name="Extension" msprop:FriendlyName="Extension" msprop:DbColumnName="Extension" msprop:design-time-name="de0a468d-1b49-441a-95fa-3c5dd555b070">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="884" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Extensions_Discoveries" msprop:FriendlyName="Extensions_Discoveries" msprop:DbSchemaName="dbo" msprop:DbTableName="Extensions_Discoveries" msprop:design-time-name="3bb9bdc9-6415-4429-8e32-9a4f7d961b63" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="InitiallyDiscovered" msprop:FriendlyName="InitiallyDiscovered" msprop:DbColumnName="InitiallyDiscovered" msprop:design-time-name="a866711a-78bd-4208-872c-92850b0307b7" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="LastDiscovered" msprop:FriendlyName="LastDiscovered" msprop:DbColumnName="LastDiscovered" msprop:design-time-name="5cca9ac9-aaa6-45c7-8ad6-07883311fd86" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="ID" msprop:DbColumnName="ID" msprop:design-time-name="9345816c-8d8d-4a91-9b55-e505c2f4f1af" type="xs:int" />
+                  <xs:element name="DiscoveryTypeID" msprop:FriendlyName="DiscoveryTypeID" msprop:DbColumnName="DiscoveryTypeID" msprop:design-time-name="506a8835-481b-4916-b780-082be779be79" type="xs:unsignedByte" />
+                  <xs:element name="ExtensionID" msprop:FriendlyName="ExtensionID" msprop:DbColumnName="ExtensionID" msprop:design-time-name="60969200-e09b-46bf-961f-2ea5d7407597" type="xs:int" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Hosts" msprop:FriendlyName="Hosts" msprop:DbSchemaName="dbo" msprop:DbTableName="Hosts" msprop:design-time-name="f85182db-f7dd-4e82-b3a9-014796d574eb" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="ID" msprop:DbColumnName="ID" msprop:design-time-name="46f01860-c15c-489d-8983-fc05cf35c8c6" type="xs:int" />
+                  <xs:element name="DomainID" msprop:FriendlyName="DomainID" msprop:DbColumnName="DomainID" msprop:design-time-name="957d38fa-11fd-4032-ab6b-80144e6a9b3b" type="xs:int" />
+                  <xs:element name="Host" msprop:FriendlyName="Host" msprop:DbColumnName="Host" msprop:design-time-name="ff32701d-d994-41cb-8b3a-8c42123122f6">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="884" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Hosts_Discoveries" msprop:FriendlyName="Hosts_Discoveries" msprop:DbSchemaName="dbo" msprop:DbTableName="Hosts_Discoveries" msprop:design-time-name="1c47eab5-dbf7-4538-8655-c4a1573dd771" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="InitiallyDiscovered" msprop:FriendlyName="InitiallyDiscovered" msprop:DbColumnName="InitiallyDiscovered" msprop:design-time-name="8996d1cb-6a2a-4ca7-b4f7-ed74ebb7c6ae" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="LastDiscovered" msprop:FriendlyName="LastDiscovered" msprop:DbColumnName="LastDiscovered" msprop:design-time-name="d8de7cf1-90a9-47e9-a8b4-af04facb6eaf" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="ID" msprop:DbColumnName="ID" msprop:design-time-name="398d82d6-6905-4158-a273-77a664e5d8b0" type="xs:int" />
+                  <xs:element name="DiscoveryTypeID" msprop:FriendlyName="DiscoveryTypeID" msprop:DbColumnName="DiscoveryTypeID" msprop:design-time-name="e9d1bfb5-2e28-4e44-be51-5cc94d1d75e5" type="xs:unsignedByte" />
+                  <xs:element name="HostID" msprop:FriendlyName="HostID" msprop:DbColumnName="HostID" msprop:design-time-name="2833784b-4d3c-403d-9126-d4919ca58419" type="xs:int" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Schemes" msprop:FriendlyName="Schemes" msprop:DbSchemaName="dbo" msprop:DbTableName="Schemes" msprop:design-time-name="dceb9cbf-1e62-4660-a986-8317fa6d382e" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="ID" msprop:DbColumnName="ID" msprop:design-time-name="813d8da2-ff83-4dd0-93f0-c10cb9ed493d" type="xs:int" />
+                  <xs:element name="Scheme" msprop:FriendlyName="Scheme" msprop:DbColumnName="Scheme" msprop:design-time-name="7b1e49ba-0d50-46e8-971b-d21b1005c545">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="884" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Schemes_Discoveries" msprop:FriendlyName="Schemes_Discoveries" msprop:DbSchemaName="dbo" msprop:DbTableName="Schemes_Discoveries" msprop:design-time-name="fab6036a-95bd-4e4a-adfb-080718aee09a" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="InitiallyDiscovered" msprop:FriendlyName="InitiallyDiscovered" msprop:DbColumnName="InitiallyDiscovered" msprop:design-time-name="5bc3ac25-76f0-472f-841a-76bf56a501d8" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="LastDiscovered" msprop:FriendlyName="LastDiscovered" msprop:DbColumnName="LastDiscovered" msprop:design-time-name="6252810f-67d3-4cbf-81a3-918f00da88a7" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="ID" msprop:DbColumnName="ID" msprop:design-time-name="ab7b0a84-afa4-4dbc-88c8-a8b72c3df3f9" type="xs:int" />
+                  <xs:element name="DiscoveryTypeID" msprop:FriendlyName="DiscoveryTypeID" msprop:DbColumnName="DiscoveryTypeID" msprop:design-time-name="155800ed-d5ef-4090-ad46-1548cfb4ea72" type="xs:unsignedByte" />
+                  <xs:element name="SchemeID" msprop:FriendlyName="SchemeID" msprop:DbColumnName="SchemeID" msprop:design-time-name="b09680ac-895e-488d-8dbb-d5c886627547" type="xs:int" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Files_Schemes_Discoveries" msprop:FriendlyName="Files_Schemes_Discoveries" msprop:DbSchemaName="dbo" msprop:DbTableName="Files_Schemes_Discoveries" msprop:design-time-name="b2764a32-4729-4f02-bd6e-8e4f665e8244" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="FileID" msprop:FriendlyName="FileID" msprop:DbColumnName="FileID" msprop:design-time-name="d7fd7d51-9cf9-4dd4-b36f-1d3213f50f8a" type="xs:long" />
+                  <xs:element name="Scheme_DiscoveryID" msprop:FriendlyName="Scheme_DiscoveryID" msprop:DbColumnName="Scheme_DiscoveryID" msprop:design-time-name="73233959-8b76-4087-a288-7e2464979d8e" type="xs:int" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Exceptions_Schemes_Discoveries" msprop:FriendlyName="Exceptions_Schemes_Discoveries" msprop:DbSchemaName="dbo" msprop:DbTableName="Exceptions_Schemes_Discoveries" msprop:design-time-name="8cc487e0-a6f6-45ab-8dd6-1b4ea1149525" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="ExceptionID" msprop:FriendlyName="ExceptionID" msprop:DbColumnName="ExceptionID" msprop:design-time-name="22c25d34-94f1-4c98-9b5a-129e1a90e48f" type="xs:long" />
+                  <xs:element name="Scheme_DiscoveryID1" msprop:FriendlyName="Scheme_DiscoveryID1" msprop:DbColumnName="Scheme_DiscoveryID1" msprop:design-time-name="74b12746-b79d-40c8-b968-fd7f20e0dd49" type="xs:int" />
+                  <xs:element name="Scheme_DiscoveryID2" msprop:FriendlyName="Scheme_DiscoveryID2" msprop:DbColumnName="Scheme_DiscoveryID2" msprop:design-time-name="5c818f13-5409-4d17-99a7-c1e9b355ec5d" type="xs:int" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_WebPages_Schemes_Discoveries" msprop:FriendlyName="WebPages_Schemes_Discoveries" msprop:DbSchemaName="dbo" msprop:DbTableName="WebPages_Schemes_Discoveries" msprop:design-time-name="9a87c4d0-5c36-4be4-93c1-ff5b71cb5503" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="WebPageID" msprop:FriendlyName="WebPageID" msprop:DbColumnName="WebPageID" msprop:design-time-name="96607557-23d1-40aa-a406-ead1a89205f0" type="xs:long" />
+                  <xs:element name="Scheme_DiscoveryID" msprop:FriendlyName="Scheme_DiscoveryID" msprop:DbColumnName="Scheme_DiscoveryID" msprop:design-time-name="3cc01366-23e9-4a33-8d54-d256e2497d5a" type="xs:int" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_DiscoveryTypes" msprop:FriendlyName="DiscoveryTypes" msprop:DbSchemaName="dbo" msprop:DbTableName="DiscoveryTypes" msprop:design-time-name="7f4c50ab-af91-46fc-8048-eca0f6bc919f" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="ID" msprop:DbColumnName="ID" msprop:design-time-name="1d16fe71-c77f-44c5-bc48-8c4d8fa63948" type="xs:int" />
+                  <xs:element name="Name" msprop:FriendlyName="Name" msprop:DbColumnName="Name" msprop:design-time-name="c86d14fb-06f8-49a5-8895-2f69e504f282">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_EmailAddresses_Schemes_Discoveries" msprop:FriendlyName="EmailAddresses_Schemes_Discoveries" msprop:DbSchemaName="dbo" msprop:DbTableName="EmailAddresses_Schemes_Discoveries" msprop:design-time-name="4919d34f-8d59-47dd-af12-1a91115c2647" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="EmailAddressID" msprop:FriendlyName="EmailAddressID" msprop:DbColumnName="EmailAddressID" msprop:design-time-name="03219e6d-2c1f-410c-a183-a02c2ec4ae46" type="xs:long" />
+                  <xs:element name="Scheme_DiscoveryID" msprop:FriendlyName="Scheme_DiscoveryID" msprop:DbColumnName="Scheme_DiscoveryID" msprop:design-time-name="75ce33a6-8fff-4205-a0f6-6a9d2f091f3f" type="xs:int" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_HyperLinks_Schemes_Discoveries" msprop:FriendlyName="HyperLinks_Schemes_Discoveries" msprop:DbSchemaName="dbo" msprop:DbTableName="HyperLinks_Schemes_Discoveries" msprop:design-time-name="13d15bee-4e33-4337-8580-ac42baaacb4d" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="HyperLinkID" msprop:FriendlyName="HyperLinkID" msprop:DbColumnName="HyperLinkID" msprop:design-time-name="eb712d28-8b95-4984-9a52-3291db82e6f4" type="xs:long" />
+                  <xs:element name="Scheme_DiscoveryID" msprop:FriendlyName="Scheme_DiscoveryID" msprop:DbColumnName="Scheme_DiscoveryID" msprop:design-time-name="a74dd927-71d5-4901-8eaf-b901f7565a5e" type="xs:int" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_HyperLinks_Hosts_Discoveries" msprop:FriendlyName="HyperLinks_Hosts_Discoveries" msprop:DbSchemaName="dbo" msprop:DbTableName="HyperLinks_Hosts_Discoveries" msprop:design-time-name="12515d47-c2a1-40c8-9ef9-1d8ed78dbaf5" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="HyperLinkID" msprop:FriendlyName="HyperLinkID" msprop:DbColumnName="HyperLinkID" msprop:design-time-name="bbfffe97-9c19-4308-b091-7c61b29e6ed2" type="xs:long" />
+                  <xs:element name="Host_DiscoveryID" msprop:FriendlyName="Host_DiscoveryID" msprop:DbColumnName="Host_DiscoveryID" msprop:design-time-name="14f5b668-589e-4f4b-9b75-26dcf951be92" type="xs:int" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Files_Hosts_Discoveries" msprop:FriendlyName="Files_Hosts_Discoveries" msprop:DbSchemaName="dbo" msprop:DbTableName="Files_Hosts_Discoveries" msprop:design-time-name="eaccd915-4cad-49fd-8cca-6b22a7ca7426" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="FileID" msprop:FriendlyName="FileID" msprop:DbColumnName="FileID" msprop:design-time-name="5803f5d8-cfea-4dc9-a4fb-b373cb6279f3" type="xs:long" />
+                  <xs:element name="Host_DiscoveryID" msprop:FriendlyName="Host_DiscoveryID" msprop:DbColumnName="Host_DiscoveryID" msprop:design-time-name="0cf613e0-5a1f-40d8-9af8-8897d141254f" type="xs:int" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_EmailAddresses_Hosts_Discoveries" msprop:FriendlyName="EmailAddresses_Hosts_Discoveries" msprop:DbSchemaName="dbo" msprop:DbTableName="EmailAddresses_Hosts_Discoveries" msprop:design-time-name="df2df0a8-c874-4bd1-bb91-e4752388c938" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="EmailAddressID" msprop:FriendlyName="EmailAddressID" msprop:DbColumnName="EmailAddressID" msprop:design-time-name="50e930b1-c796-425f-aa20-ee922f1e713b" type="xs:long" />
+                  <xs:element name="Host_DiscoveryID" msprop:FriendlyName="Host_DiscoveryID" msprop:DbColumnName="Host_DiscoveryID" msprop:design-time-name="df9b3950-ea02-446b-a28f-fdf09913a7fa" type="xs:int" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_WebPages_Hosts_Discoveries" msprop:FriendlyName="WebPages_Hosts_Discoveries" msprop:DbSchemaName="dbo" msprop:DbTableName="WebPages_Hosts_Discoveries" msprop:design-time-name="c12d8ae5-a2f0-4f41-84ca-52c2cb636309" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="WebPageID" msprop:FriendlyName="WebPageID" msprop:DbColumnName="WebPageID" msprop:design-time-name="45f437fa-b005-4cb1-bd28-4aabf02e8b82" type="xs:long" />
+                  <xs:element name="Host_DiscoveryID" msprop:FriendlyName="Host_DiscoveryID" msprop:DbColumnName="Host_DiscoveryID" msprop:design-time-name="6121ce27-5470-400b-b258-84b287f70a80" type="xs:int" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Exceptions_Hosts_Discoveries" msprop:FriendlyName="Exceptions_Hosts_Discoveries" msprop:DbSchemaName="dbo" msprop:DbTableName="Exceptions_Hosts_Discoveries" msprop:design-time-name="a9c870bf-be2c-4d37-bdd5-a62976c91cae" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="ExceptionID" msprop:FriendlyName="ExceptionID" msprop:DbColumnName="ExceptionID" msprop:design-time-name="4dbc2aea-94e3-4bbd-a660-ae957f558feb" type="xs:long" />
+                  <xs:element name="Host_DiscoveryID1" msprop:FriendlyName="Host_DiscoveryID1" msprop:DbColumnName="Host_DiscoveryID1" msprop:design-time-name="815c54dc-e6fd-4fb2-a9bf-36d669beeb6a" type="xs:int" />
+                  <xs:element name="Host_DiscoveryID2" msprop:FriendlyName="Host_DiscoveryID2" msprop:DbColumnName="Host_DiscoveryID2" msprop:design-time-name="25aca0b1-7829-44b6-bb6c-01e612ae43c7" type="xs:int" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Domains" />
+          <xs:field xpath="ID" />
+        </xs:unique>
+        <xs:unique name="dbo_Domains_Discoveries_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Domains_Discoveries" />
+          <xs:field xpath="ID" />
+        </xs:unique>
+        <xs:unique name="dbo_Extensions_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Extensions" />
+          <xs:field xpath="ID" />
+        </xs:unique>
+        <xs:unique name="dbo_Extensions_Discoveries_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Extensions_Discoveries" />
+          <xs:field xpath="ID" />
+        </xs:unique>
+        <xs:unique name="dbo_Hosts_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Hosts" />
+          <xs:field xpath="ID" />
+        </xs:unique>
+        <xs:unique name="dbo_Hosts_Discoveries_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Hosts_Discoveries" />
+          <xs:field xpath="ID" />
+        </xs:unique>
+        <xs:unique name="dbo_Schemes_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Schemes" />
+          <xs:field xpath="ID" />
+        </xs:unique>
+        <xs:unique name="dbo_Schemes_Discoveries_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Schemes_Discoveries" />
+          <xs:field xpath="ID" />
+        </xs:unique>
+        <xs:unique name="dbo_Files_Schemes_Discoveries_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Files_Schemes_Discoveries" />
+          <xs:field xpath="FileID" />
+        </xs:unique>
+        <xs:unique name="dbo_Exceptions_Schemes_Discoveries_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Exceptions_Schemes_Discoveries" />
+          <xs:field xpath="ExceptionID" />
+        </xs:unique>
+        <xs:unique name="dbo_WebPages_Schemes_Discoveries_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_WebPages_Schemes_Discoveries" />
+          <xs:field xpath="WebPageID" />
+        </xs:unique>
+        <xs:unique name="dbo_DiscoveryTypes_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_DiscoveryTypes" />
+          <xs:field xpath="ID" />
+        </xs:unique>
+        <xs:unique name="dbo_EmailAddresses_Schemes_Discoveries_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_EmailAddresses_Schemes_Discoveries" />
+          <xs:field xpath="EmailAddressID" />
+        </xs:unique>
+        <xs:unique name="dbo_HyperLinks_Schemes_Discoveries_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_HyperLinks_Schemes_Discoveries" />
+          <xs:field xpath="HyperLinkID" />
+        </xs:unique>
+        <xs:unique name="dbo_HyperLinks_Hosts_Discoveries_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_HyperLinks_Hosts_Discoveries" />
+          <xs:field xpath="HyperLinkID" />
+        </xs:unique>
+        <xs:unique name="dbo_Files_Hosts_Discoveries_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Files_Hosts_Discoveries" />
+          <xs:field xpath="FileID" />
+        </xs:unique>
+        <xs:unique name="dbo_EmailAddresses_Hosts_Discoveries_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_EmailAddresses_Hosts_Discoveries" />
+          <xs:field xpath="EmailAddressID" />
+        </xs:unique>
+        <xs:unique name="dbo_WebPages_Hosts_Discoveries_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_WebPages_Hosts_Discoveries" />
+          <xs:field xpath="WebPageID" />
+        </xs:unique>
+        <xs:unique name="dbo_Exceptions_Hosts_Discoveries_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Exceptions_Hosts_Discoveries" />
+          <xs:field xpath="ExceptionID" />
+        </xs:unique>
+        <xs:keyref name="FK_Exceptions_Hosts_Discoveries_Hosts_Discoveries1" refer="dbo_Hosts_Discoveries_Constraint1">
+          <xs:selector xpath=".//dbo_Exceptions_Hosts_Discoveries" />
+          <xs:field xpath="Host_DiscoveryID2" />
+        </xs:keyref>
+        <xs:keyref name="FK_Exceptions_Hosts_Discoveries_Hosts_Discoveries" refer="dbo_Hosts_Discoveries_Constraint1">
+          <xs:selector xpath=".//dbo_Exceptions_Hosts_Discoveries" />
+          <xs:field xpath="Host_DiscoveryID1" />
+        </xs:keyref>
+        <xs:keyref name="FK_WebPages_Hosts_Discoveries_Hosts_Discoveries" refer="dbo_Hosts_Discoveries_Constraint1">
+          <xs:selector xpath=".//dbo_WebPages_Hosts_Discoveries" />
+          <xs:field xpath="Host_DiscoveryID" />
+        </xs:keyref>
+        <xs:keyref name="FK_EmailAddresses_Hosts_Discoveries_Hosts_Discoveries" refer="dbo_Hosts_Discoveries_Constraint1">
+          <xs:selector xpath=".//dbo_EmailAddresses_Hosts_Discoveries" />
+          <xs:field xpath="Host_DiscoveryID" />
+        </xs:keyref>
+        <xs:keyref name="FK_Files_Hosts_Discoveries_Hosts_Discoveries" refer="dbo_Hosts_Discoveries_Constraint1">
+          <xs:selector xpath=".//dbo_Files_Hosts_Discoveries" />
+          <xs:field xpath="Host_DiscoveryID" />
+        </xs:keyref>
+        <xs:keyref name="FK_HyperLinks_Hosts_Discoveries_Hosts_Discoveries" refer="dbo_Hosts_Discoveries_Constraint1">
+          <xs:selector xpath=".//dbo_HyperLinks_Hosts_Discoveries" />
+          <xs:field xpath="Host_DiscoveryID" />
+        </xs:keyref>
+        <xs:keyref name="FK_HyperLinks_Schemes_Discoveries_Schemes_Discoveries" refer="dbo_Schemes_Discoveries_Constraint1">
+          <xs:selector xpath=".//dbo_HyperLinks_Schemes_Discoveries" />
+          <xs:field xpath="Scheme_DiscoveryID" />
+        </xs:keyref>
+        <xs:keyref name="FK_EmailAddresses_Schemes_Discoveries_Schemes_Discoveries" refer="dbo_Schemes_Discoveries_Constraint1">
+          <xs:selector xpath=".//dbo_EmailAddresses_Schemes_Discoveries" />
+          <xs:field xpath="Scheme_DiscoveryID" />
+        </xs:keyref>
+        <xs:keyref name="FK_WebPages_Schemes_Discoveries_Schemes_Discoveries" refer="dbo_Schemes_Discoveries_Constraint1">
+          <xs:selector xpath=".//dbo_WebPages_Schemes_Discoveries" />
+          <xs:field xpath="Scheme_DiscoveryID" />
+        </xs:keyref>
+        <xs:keyref name="FK_Exceptions_Schemes_Discoveries_Schemes_Discoveries1" refer="dbo_Schemes_Discoveries_Constraint1">
+          <xs:selector xpath=".//dbo_Exceptions_Schemes_Discoveries" />
+          <xs:field xpath="Scheme_DiscoveryID2" />
+        </xs:keyref>
+        <xs:keyref name="FK_Exceptions_Schemes_Discoveries_Schemes_Discoveries" refer="dbo_Schemes_Discoveries_Constraint1">
+          <xs:selector xpath=".//dbo_Exceptions_Schemes_Discoveries" />
+          <xs:field xpath="Scheme_DiscoveryID1" />
+        </xs:keyref>
+        <xs:keyref name="FK_Files_Schemes_Discoveries_Schemes_Discoveries" refer="dbo_Schemes_Discoveries_Constraint1">
+          <xs:selector xpath=".//dbo_Files_Schemes_Discoveries" />
+          <xs:field xpath="Scheme_DiscoveryID" />
+        </xs:keyref>
+        <xs:keyref name="FK_Schemes_Discoveries_Schemes" refer="dbo_Schemes_Constraint1">
+          <xs:selector xpath=".//dbo_Schemes_Discoveries" />
+          <xs:field xpath="SchemeID" />
+        </xs:keyref>
+        <xs:keyref name="FK_Hosts_Discoveries_Hosts" refer="dbo_Hosts_Constraint1">
+          <xs:selector xpath=".//dbo_Hosts_Discoveries" />
+          <xs:field xpath="HostID" />
+        </xs:keyref>
+        <xs:keyref name="FK_Hosts_Domains" refer="Constraint1">
+          <xs:selector xpath=".//dbo_Hosts" />
+          <xs:field xpath="DomainID" />
+        </xs:keyref>
+        <xs:keyref name="FK_Extensions_Discoveries_Extensions" refer="dbo_Extensions_Constraint1">
+          <xs:selector xpath=".//dbo_Extensions_Discoveries" />
+          <xs:field xpath="ExtensionID" />
+        </xs:keyref>
+        <xs:keyref name="FK_Domains_Discoveries_Domains" refer="Constraint1">
+          <xs:selector xpath=".//dbo_Domains_Discoveries" />
+          <xs:field xpath="DomainID" />
+        </xs:keyref>
+        <xs:keyref name="FK_Domains_Extensions" refer="dbo_Extensions_Constraint1">
+          <xs:selector xpath=".//dbo_Domains" />
+          <xs:field xpath="ExtensionID" />
+        </xs:keyref>
+      </xs:element>
+    </xs:schema>
+    <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1" />
+  </Schema>
+</DataSourceView>

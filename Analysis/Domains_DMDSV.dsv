@@ -1,0 +1,69 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="2941cc8c-ecac-471b-9f8d-a8b8a2a98954" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Domains_DMDSV</ID>
+  <Name>Domains_DMDSV</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>.</DataSourceID>
+  <Schema>
+    <xs:schema id="DIMENSION_CONTENT_SCHEMA" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="DIMENSION_CONTENT_SCHEMA" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="db40575c-5895-4e10-90b4-bced1167b618">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="DIMENSION_CONTENT_ROWSET" msprop:design-time-name="c04577d1-768f-4b38-8189-7539b0c99f1d" msprop:QueryDefinition="SELECT * FROM [Domains].DIMENSION_CONTENT">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="ATTRIBUTE_NAME" msprop:design-time-name="3e2a47fe-e257-4fd2-a767-ae1e32dd2eac" type="xs:string" minOccurs="0" />
+                  <xs:element name="NODE_NAME" msprop:design-time-name="a97ce3f5-d2f8-43f5-ad64-4065a3f3f53a" type="xs:string" minOccurs="0" />
+                  <xs:element name="NODE_TYPE" msprop:design-time-name="f9d2577c-18e5-4985-a4f5-b4490acf6c39" type="xs:int" minOccurs="0" />
+                  <xs:element name="NODE_GUID" msprop:design-time-name="08e8ef56-2cb6-40cb-9c51-fa10a35aa10c" type="xs:string" minOccurs="0" />
+                  <xs:element name="NODE_CAPTION" msprop:design-time-name="1e87a6d9-d014-4acb-aeda-6a63fd30cf0a" type="xs:string" minOccurs="0" />
+                  <xs:element name="CHILDREN_CARDINALITY" msprop:design-time-name="50d6dabc-d98f-43f8-a2f7-7d474bfbe887" type="xs:unsignedInt" minOccurs="0" />
+                  <xs:element name="PARENT_UNIQUE_NAME" msprop:design-time-name="4c02d519-fcb1-4be6-8396-3c6fa4f7f1bd" type="xs:string" minOccurs="0" />
+                  <xs:element name="NODE_DESCRIPTION" msprop:design-time-name="fd4f803f-d3a2-42e0-8b15-e07c031ebeae" type="xs:string" minOccurs="0" />
+                  <xs:element name="NODE_RULE" msprop:design-time-name="8d49dad0-8117-4893-a162-0f3f3b930545" type="xs:string" minOccurs="0" />
+                  <xs:element name="MARGINAL_RULE" msprop:design-time-name="798c5264-8511-411b-9059-fe830a151ec0" type="xs:string" minOccurs="0" />
+                  <xs:element name="NODE_PROBABILITY" msprop:design-time-name="0d2c06fb-7fe1-449c-8b7c-fb0ff6cfdc83" type="xs:double" minOccurs="0" />
+                  <xs:element name="MARGINAL_PROBABILITY" msprop:design-time-name="8542954d-16f9-4614-a4d9-0e34a8c05cd0" type="xs:double" minOccurs="0" />
+                  <xs:element name="NODE_SUPPORT" msprop:design-time-name="ac28241b-6ce7-4257-be82-0b456265f602" type="xs:double" minOccurs="0" />
+                  <xs:element name="MSOLAP_MODEL_COLUMN" msprop:design-time-name="2155817e-cfc8-4bc4-bd08-7f70b2488903" type="xs:string" minOccurs="0" />
+                  <xs:element name="MSOLAP_NODE_SCORE" msprop:design-time-name="e97bef51-79d2-4e03-971f-59e93aa63093" type="xs:double" minOccurs="0" />
+                  <xs:element name="MSOLAP_NODE_SHORT_CAPTION" msprop:design-time-name="2eefa4bd-d04e-499e-8d4f-614904d9f89f" type="xs:string" minOccurs="0" />
+                  <xs:element name="NODE_UNIQUE_NAME" msprop:design-time-name="509e9e13-f5ff-44f6-98f8-a336ec2553d2" type="xs:string" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+      </xs:element>
+    </xs:schema>
+    <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1" />
+  </Schema>
+</DataSourceView>

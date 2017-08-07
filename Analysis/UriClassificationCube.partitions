@@ -1,0 +1,277 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="37b15347-7a71-4168-a0f6-cfca956c0eaf" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>UriClassificationCube</ID>
+  <MeasureGroups>
+    <MeasureGroup>
+      <ID>Domains Discoveries</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="a601b5be-be01-45a1-a0ae-42742e947d71">
+          <ID>Domains Discoveries</ID>
+          <Name>Domains Discoveries</Name>
+          <CreatedTimestamp>0001-01-01T08:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T08:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T08:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="731fbee8-ebe1-45af-a9a8-a05bb60abffa">
+            <DataSourceViewID>UriClassificationDataSourceView</DataSourceViewID>
+            <TableID>dbo_Domains_Discoveries</TableID>
+          </Source>
+          <StorageMode>Rolap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="d442e873-774b-4782-8137-017d4f6f00c0">
+            <SilenceInterval>-PT1S</SilenceInterval>
+            <Latency>PT0S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Enabled>true</Enabled>
+            <AggregationStorage>MolapOnly</AggregationStorage>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="02da9099-16fa-4a82-a747-b6d98cb7591e">
+              <NotificationTechnique>Server</NotificationTechnique>
+            </Source>
+          </ProactiveCaching>
+          <EstimatedRows>4</EstimatedRows>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Extensions Discoveries</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="40d79c77-e49b-406f-9b40-77497457bfb7">
+          <ID>Extensions Discoveries</ID>
+          <Name>Extensions Discoveries</Name>
+          <CreatedTimestamp>0001-01-01T08:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T08:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T08:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="a2c18dfe-1a3b-4f2c-90bd-5e81af5141df">
+            <DataSourceViewID>UriClassificationDataSourceView</DataSourceViewID>
+            <TableID>dbo_Extensions_Discoveries</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Files Schemes Discoveries</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="f13c2edb-a2ca-408f-aedf-2f30005ae606">
+          <ID>Files Schemes Discoveries</ID>
+          <Name>Files Schemes Discoveries</Name>
+          <CreatedTimestamp>0001-01-01T08:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T08:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T08:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="1ea548bd-343a-459a-8af0-354e327d6eb3">
+            <DataSourceViewID>UriClassificationDataSourceView</DataSourceViewID>
+            <TableID>dbo_Files_Schemes_Discoveries</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Exceptions Schemes Discoveries</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="c1fdeccb-d33e-495c-9332-cc3ca6a1192a">
+          <ID>Exceptions Schemes Discoveries</ID>
+          <Name>Exceptions Schemes Discoveries</Name>
+          <CreatedTimestamp>0001-01-01T08:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T08:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T08:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="8c79b938-83d3-491d-aa14-457bccf81fee">
+            <DataSourceViewID>UriClassificationDataSourceView</DataSourceViewID>
+            <TableID>dbo_Exceptions_Schemes_Discoveries</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Web Pages Schemes Discoveries</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="c69180db-8cad-453d-b3aa-d304a18814e0">
+          <ID>Web Pages Schemes Discoveries</ID>
+          <Name>Web Pages Schemes Discoveries</Name>
+          <CreatedTimestamp>0001-01-01T08:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T08:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T08:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="013771b6-c441-4eab-a365-5a2a5cd26f62">
+            <DataSourceViewID>UriClassificationDataSourceView</DataSourceViewID>
+            <TableID>dbo_WebPages_Schemes_Discoveries</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Discovery Types</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="e160ed05-b94d-4296-942d-aa4c3d2dc7c5">
+          <ID>Discovery Types</ID>
+          <Name>Discovery Types</Name>
+          <CreatedTimestamp>0001-01-01T08:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T08:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T08:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="ddd4798f-ee99-4ac0-92cd-a8a9b8cd9db9">
+            <DataSourceViewID>UriClassificationDataSourceView</DataSourceViewID>
+            <TableID>dbo_DiscoveryTypes</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Email Addresses Schemes Discoveries</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="7e4c2f1f-d12b-434d-ad2e-ddffe997ea01">
+          <ID>Email Addresses Schemes Discoveries</ID>
+          <Name>Email Addresses Schemes Discoveries</Name>
+          <CreatedTimestamp>0001-01-01T08:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T08:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T08:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="801bd481-6100-4870-b8ec-7338d99a64d8">
+            <DataSourceViewID>UriClassificationDataSourceView</DataSourceViewID>
+            <TableID>dbo_EmailAddresses_Schemes_Discoveries</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Hyper Links Schemes Discoveries</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="a5d9c4d3-cf70-4911-a6ba-18665d320f9b">
+          <ID>Hyper Links Schemes Discoveries</ID>
+          <Name>Hyper Links Schemes Discoveries</Name>
+          <CreatedTimestamp>0001-01-01T08:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T08:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T08:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="c50a37eb-a8e8-4119-bdc4-5d51cc57931c">
+            <DataSourceViewID>UriClassificationDataSourceView</DataSourceViewID>
+            <TableID>dbo_HyperLinks_Schemes_Discoveries</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Hyper Links Hosts Discoveries</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="bab311a7-6d57-4f64-8f7b-945d119c1e6e">
+          <ID>Hyper Links Hosts Discoveries</ID>
+          <Name>Hyper Links Hosts Discoveries</Name>
+          <CreatedTimestamp>0001-01-01T08:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T08:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T08:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="0c3b8e83-4d87-4a34-ab36-4c9eae521f45">
+            <DataSourceViewID>UriClassificationDataSourceView</DataSourceViewID>
+            <TableID>dbo_HyperLinks_Hosts_Discoveries</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Files Hosts Discoveries</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="59ea62bd-3f8f-4fdc-bb13-0d5ae5cd17e2">
+          <ID>Files Hosts Discoveries</ID>
+          <Name>Files Hosts Discoveries</Name>
+          <CreatedTimestamp>0001-01-01T08:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T08:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T08:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="980f1720-24cb-4f60-a964-7c63597d4141">
+            <DataSourceViewID>UriClassificationDataSourceView</DataSourceViewID>
+            <TableID>dbo_Files_Hosts_Discoveries</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Email Addresses Hosts Discoveries</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="a16e8a15-6473-413a-8d9d-fc87cc0b234a">
+          <ID>Email Addresses Hosts Discoveries</ID>
+          <Name>Email Addresses Hosts Discoveries</Name>
+          <CreatedTimestamp>0001-01-01T08:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T08:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T08:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="ec3ae92a-c2da-424e-b036-0bea6300ffb3">
+            <DataSourceViewID>UriClassificationDataSourceView</DataSourceViewID>
+            <TableID>dbo_EmailAddresses_Hosts_Discoveries</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Web Pages Hosts Discoveries</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="df46f698-159a-4691-90c4-165ed695979e">
+          <ID>Web Pages Hosts Discoveries</ID>
+          <Name>Web Pages Hosts Discoveries</Name>
+          <CreatedTimestamp>0001-01-01T08:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T08:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T08:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="42be0e2c-b959-427b-9bac-c684b7ebd34e">
+            <DataSourceViewID>UriClassificationDataSourceView</DataSourceViewID>
+            <TableID>dbo_WebPages_Hosts_Discoveries</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Exceptions Hosts Discoveries</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="ce8af456-779c-4351-a985-5b98524b6943">
+          <ID>Exceptions Hosts Discoveries</ID>
+          <Name>Exceptions Hosts Discoveries</Name>
+          <CreatedTimestamp>0001-01-01T08:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T08:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T08:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="2aec725c-5f4c-4c04-b413-bd35131e506a">
+            <DataSourceViewID>UriClassificationDataSourceView</DataSourceViewID>
+            <TableID>dbo_Exceptions_Hosts_Discoveries</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+  </MeasureGroups>
+</Cube>

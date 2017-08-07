@@ -1,0 +1,125 @@
+<SmartAssemblyProject ProjectId="{4882e1bb-085c-42eb-86bc-74860b2e45cc}" Version="2.0">
+    <MainAssemblyFileName>.\SiteCrawler\bin\Demo\Arachnode.SiteCrawler.dll</MainAssemblyFileName>
+    <FriendlyName>SiteCrawler</FriendlyName>
+    <CompanyName>arachnode.net</CompanyName>
+    <Configuration Name="Release">
+        <ApplicationName>arachnode.net</ApplicationName>
+        <Destination DestinationFileName=".\Library\Arachnode.SiteCrawler.dll" />
+        <Assemblies>
+            <Assembly AssemblyName="Arachnode.License, Culture=neutral, PublicKeyToken=null">
+                <Merging />
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="Arachnode.Security, Culture=neutral, PublicKeyToken=null">
+                <Merging />
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="Arachnode.DataAccess, Culture=neutral, PublicKeyToken=null">
+                <Merging Merge="1">
+                    <Pruning Prune="0">
+                        <Exclusion />
+                    </Pruning>
+                    <Obfuscation Obfuscate="0">
+                        <Exclusion />
+                    </Obfuscation>
+                    <ControlFlow Obfuscate="0" ObfuscationLevel="2" />
+                    <MemberRefsProxy Proxy="0" />
+                    <StringsEncoding />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="Arachnode.DataSource, Culture=neutral, PublicKeyToken=null">
+                <Merging />
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="Arachnode.Configuration, Culture=neutral, PublicKeyToken=null">
+                <Merging />
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="Arachnode.Performance, Culture=neutral, PublicKeyToken=null">
+                <Merging />
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="Arachnode.Renderer, Culture=neutral, PublicKeyToken=null">
+                <Merging Merge="1">
+                    <Pruning Prune="0">
+                        <Exclusion />
+                    </Pruning>
+                    <Obfuscation Obfuscate="0">
+                        <Exclusion />
+                    </Obfuscation>
+                    <ControlFlow Obfuscate="0" ObfuscationLevel="2" />
+                    <MemberRefsProxy Proxy="0" />
+                    <ResourcesCompression Compress="0" />
+                    <StringsEncoding />
+                    <ResourcesPruning />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="Arachnode.Structures, Culture=neutral, PublicKeyToken=null">
+                <Merging />
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="HtmlAgilityPack, Culture=neutral, PublicKeyToken=bd319b19eaf3b43a">
+                <Merging />
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="Arachnode.Functions, Culture=neutral, PublicKeyToken=null">
+                <Merging />
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="Arachnode.Utilities, Culture=neutral, PublicKeyToken=null">
+                <Merging />
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="Arachnode.SiteCrawler, Culture=neutral, PublicKeyToken=null">
+                <Merging>
+                    <MemberRefsProxy Proxy="1" />
+                    <Pruning Prune="0">
+                        <Exclusion />
+                    </Pruning>
+                    <Obfuscation Obfuscate="1">
+                        <Exclusion />
+                    </Obfuscation>
+                    <ControlFlow Obfuscate="1" ObfuscationLevel="2" />
+                    <StringsEncoding />
+                </Merging>
+            </Assembly>
+            <Assembly AssemblyName="AxInterop.SHDocVw, Culture=neutral, PublicKeyToken=null">
+                <Merging />
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="Interop.SHDocVw, Culture=neutral, PublicKeyToken=null">
+                <Merging />
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="Arachnode.DataSource, Culture=neutral, PublicKeyToken=0e95c27fb4836e15">
+                <Merging Merge="1">
+                    <Pruning Prune="0">
+                        <Exclusion />
+                    </Pruning>
+                    <Obfuscation Obfuscate="0">
+                        <Exclusion />
+                    </Obfuscation>
+                    <ControlFlow Obfuscate="0" ObfuscationLevel="2" />
+                    <MemberRefsProxy Proxy="0" />
+                    <StringsEncoding />
+                </Merging>
+                <Embedding />
+            </Assembly>
+            <Assembly AssemblyName="System.Data.SqlServerCe, Culture=neutral, PublicKeyToken=89845dcd8080cc91">
+                <Merging />
+                <Embedding />
+            </Assembly>
+        </Assemblies>
+        <Options>
+            <Obfuscation FieldsNameMangling="3" NameMangling="3" />
+            <ExceptionReporting EmailToBeNotified="arachnode.net@gmail.com" ReportExceptions="1" />
+            <StrongNameSigning KeyFileName=".\arachnode.net.snk" Sign="0" />
+            <OtherProtections AddMetadataStream="1" SuppressIldasm="1" />
+            <StringsEncoding Compress="1" Encode="1" UseCache="1" UseImprovedEncoding="1" />
+            <OtherOptimizations SealClasses="1" />
+            <Debugging CreatePDB="1" ObfuscateDocumentsURL="1" />
+        </Options>
+    </Configuration>
+</SmartAssemblyProject>

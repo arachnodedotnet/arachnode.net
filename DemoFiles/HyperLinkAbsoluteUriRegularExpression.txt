@@ -1,0 +1,1 @@
+﻿<\s*(?<Tag>(a|base|form|frame|link))\s*.*?(?<AttributeName>(action|href|src))\s*=\s*([\"\'])(?<HyperLink>.*?)\3

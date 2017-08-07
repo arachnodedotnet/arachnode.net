@@ -1,0 +1,1489 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://arachnode.net/CrawlerService" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://arachnode.net/CrawlerService" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://arachnode.net/CrawlerService">
+      <s:element name="Constructor">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="applicationSettings" type="tns:ApplicationSettings" />
+            <s:element minOccurs="0" maxOccurs="1" name="webSettings" type="tns:WebSettings" />
+            <s:element minOccurs="1" maxOccurs="1" name="crawlMode" type="tns:CrawlMode" />
+            <s:element minOccurs="1" maxOccurs="1" name="enableRenderers" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ApplicationSettings">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="AutoThrottleHttpWebRequests" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="Accept" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="AcceptEncoding" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="AllowAutoRedirect" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="DiscoverySlidingExpirationInSeconds" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="InsertDisallowedDiscoveries" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="InsertDiscoveries" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="InsertCrawlRequests" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="InsertFileResponseHeaders" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="InsertImageResponseHeaders" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="InsertWebPageResponseHeaders" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="OutputWebExceptions" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="MaximumNumberOfAutoRedirects" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="ProcessDiscoveriesAsynchronously" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="SetRefererToParentAbsoluteUri" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="ProcessCookies" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="AssignCrawlRequestPrioritiesForFiles" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="AssignCrawlRequestPrioritiesForHyperLinks" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="AssignCrawlRequestPrioritiesForImages" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="AssignCrawlRequestPrioritiesForWebPages" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="AssignEmailAddressDiscoveries" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="AssignFileAndImageDiscoveries" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="AssignHyperLinkDiscoveries" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="ClassifyAbsoluteUris" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="ConnectionString" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ConsoleOutputLogsDirectory" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="CrawlRequestTimeoutInMinutes" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="CreateCrawlRequestsFromDatabaseCrawlRequests" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="CreateCrawlRequestsFromDatabaseFiles" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="CreateCrawlRequestsFromDatabaseHyperLinks" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="CreateCrawlRequestsFromDatabaseImages" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="CreateCrawlRequestsFromDatabaseWebPages" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="DesiredMaximumMemoryUsageInMegabytes" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="DownloadedFilesDirectory" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DownloadedImagesDirectory" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DownloadedWebPagesDirectory" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="EnableConsoleOutput" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="ExtractFileMetaData" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="ExtractImageMetaData" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="ExtractWebPageMetaData" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="HttpWebRequestRetries" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="InsertDisallowedAbsoluteUriDiscoveries" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="InsertDisallowedAbsoluteUris" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="InsertEmailAddressDiscoveries" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="InsertEmailAddresses" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="InsertExceptions" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="InsertFileDiscoveries" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="InsertFileMetaData" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="InsertFiles" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="InsertFileSource" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="InsertHyperLinks" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="InsertHyperLinkDiscoveries" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="InsertImageDiscoveries" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="InsertImageMetaData" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="InsertImages" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="InsertImageSource" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="InsertWebPageMetaData" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="InsertWebPages" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="InsertWebPageSource" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="ManageDiscoveryState" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="MaximumNumberOfCrawlRequestsToCreatePerBatch" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="MaximumNumberOfCrawlThreads" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="MaximumNumberOfHostsAndPrioritiesToSelect" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="OutputConsoleToLogs" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="OverrideDatabaseConfigurationWithXmlConfiguration" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="SaveDiscoveredFilesToDisk" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="SaveDiscoveredImagesToDisk" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="SaveDiscoveredWebPagesToDisk" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="UniqueIdentifier" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="UserAgent" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="VerboseOutput" type="s:boolean" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="WebSettings">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="CacheTimeoutInMinutes" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="ConnectionString" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="CreateCrawlRequestsForMissingFilesAndImages" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="DownloadedFilesVirtualDirectory" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DownloadedImagesVirtualDirectory" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="LuceneDotNetIndexDirectory" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="MaximumPageTitleLength" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="MaximumNumberOfDocumentsToReturnPerSearch" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="PageSize" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:simpleType name="CrawlMode">
+        <s:restriction base="s:string">
+          <s:enumeration value="None" />
+          <s:enumeration value="BreadthFirstByPriority" />
+          <s:enumeration value="DepthFirstByPriority" />
+        </s:restriction>
+      </s:simpleType>
+      <s:element name="ConstructorResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="Destructor">
+        <s:complexType />
+      </s:element>
+      <s:element name="DestructorResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="SetApplicationSettings">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="applicationSettings" type="tns:ApplicationSettings" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetApplicationSettingsResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="SetWebSettings">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="webSettings" type="tns:WebSettings" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetWebSettingsResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="Crawl">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="absoluteUri" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="depth" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="restrictCrawlTo" type="tns:UriClassificationType" />
+            <s:element minOccurs="1" maxOccurs="1" name="restrictDiscoveriesTo" type="tns:UriClassificationType" />
+            <s:element minOccurs="1" maxOccurs="1" name="priority" type="s:double" />
+            <s:element minOccurs="1" maxOccurs="1" name="renderType" type="tns:RenderType" />
+            <s:element minOccurs="1" maxOccurs="1" name="renderTypeForChildren" type="tns:RenderType" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:simpleType name="UriClassificationType">
+        <s:list>
+          <s:simpleType>
+            <s:restriction base="s:string">
+              <s:enumeration value="None" />
+              <s:enumeration value="Domain" />
+              <s:enumeration value="Extension" />
+              <s:enumeration value="FileExtension" />
+              <s:enumeration value="Host" />
+              <s:enumeration value="Scheme" />
+              <s:enumeration value="OriginalDirectoryLevelUp" />
+              <s:enumeration value="OriginalDirectory" />
+              <s:enumeration value="OriginalDirectoryLevel" />
+              <s:enumeration value="OriginalDirectoryLevelDown" />
+            </s:restriction>
+          </s:simpleType>
+        </s:list>
+      </s:simpleType>
+      <s:simpleType name="RenderType">
+        <s:list>
+          <s:simpleType>
+            <s:restriction base="s:string">
+              <s:enumeration value="None" />
+              <s:enumeration value="Render" />
+            </s:restriction>
+          </s:simpleType>
+        </s:list>
+      </s:simpleType>
+      <s:element name="CrawlResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CrawlResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCrawlActions">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetCrawlActionsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCrawlActionsResult" type="tns:ArrayOfACrawlActionOfArachnodeDAO" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfACrawlActionOfArachnodeDAO">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="ACrawlActionOfArachnodeDAO" nillable="true" type="tns:ACrawlActionOfArachnodeDAO" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ACrawlActionOfArachnodeDAO" abstract="true">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:ABehaviorOfArachnodeDAO">
+            <s:sequence>
+              <s:element minOccurs="1" maxOccurs="1" name="CrawlActionType" type="tns:CrawlActionType" />
+              <s:element minOccurs="0" maxOccurs="1" name="Settings" type="s:string" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="ABehaviorOfArachnodeDAO" abstract="true">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="AssemblyName" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="IsEnabled" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="Order" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="TypeName" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:simpleType name="CrawlActionType">
+        <s:restriction base="s:string">
+          <s:enumeration value="None" />
+          <s:enumeration value="PreRequest" />
+          <s:enumeration value="PreGet" />
+          <s:enumeration value="PostRequest" />
+          <s:enumeration value="PreAndPostRequest" />
+        </s:restriction>
+      </s:simpleType>
+      <s:element name="GetCrawlRules">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetCrawlRulesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCrawlRulesResult" type="tns:ArrayOfACrawlRuleOfArachnodeDAO" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfACrawlRuleOfArachnodeDAO">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="ACrawlRuleOfArachnodeDAO" nillable="true" type="tns:ACrawlRuleOfArachnodeDAO" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ACrawlRuleOfArachnodeDAO" abstract="true">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:ABehaviorOfArachnodeDAO">
+            <s:sequence>
+              <s:element minOccurs="1" maxOccurs="1" name="CrawlRuleType" type="tns:CrawlRuleType" />
+              <s:element minOccurs="1" maxOccurs="1" name="OutputIsDisallowedReason" type="s:boolean" />
+              <s:element minOccurs="0" maxOccurs="1" name="Settings" type="s:string" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:simpleType name="CrawlRuleType">
+        <s:restriction base="s:string">
+          <s:enumeration value="None" />
+          <s:enumeration value="PreRequest" />
+          <s:enumeration value="PreGet" />
+          <s:enumeration value="PostRequest" />
+          <s:enumeration value="PreAndPostRequest" />
+        </s:restriction>
+      </s:simpleType>
+      <s:element name="GetEngineActions">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetEngineActionsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetEngineActionsResult" type="tns:ArrayOfAEngineActionOfArachnodeDAO" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfAEngineActionOfArachnodeDAO">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="AEngineActionOfArachnodeDAO" nillable="true" type="tns:AEngineActionOfArachnodeDAO" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="AEngineActionOfArachnodeDAO" abstract="true">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:ABehaviorOfArachnodeDAO">
+            <s:sequence>
+              <s:element minOccurs="1" maxOccurs="1" name="EngineActionType" type="tns:EngineActionType" />
+              <s:element minOccurs="0" maxOccurs="1" name="Settings" type="s:string" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:simpleType name="EngineActionType">
+        <s:restriction base="s:string">
+          <s:enumeration value="None" />
+          <s:enumeration value="PreGetCrawlRequests" />
+          <s:enumeration value="PostGetCrawlRequests" />
+          <s:enumeration value="PreAndPostGetCrawlRequests" />
+        </s:restriction>
+      </s:simpleType>
+      <s:element name="StartEngine">
+        <s:complexType />
+      </s:element>
+      <s:element name="StartEngineResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="StopEngine">
+        <s:complexType />
+      </s:element>
+      <s:element name="StopEngineResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="PauseEngine">
+        <s:complexType />
+      </s:element>
+      <s:element name="PauseEngineResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="ResumeEngine">
+        <s:complexType />
+      </s:element>
+      <s:element name="ResumeEngineResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="Reset">
+        <s:complexType />
+      </s:element>
+      <s:element name="ResetResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetApplicationSettings">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetApplicationSettingsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetApplicationSettingsResult" type="tns:ApplicationSettings" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetWebSettings">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetWebSettingsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetWebSettingsResult" type="tns:WebSettings" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InitializeConfiguration">
+        <s:complexType />
+      </s:element>
+      <s:element name="InitializeConfigurationResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetPerformanceCountersForArachnodeDotNet">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetPerformanceCountersForArachnodeDotNetResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetPerformanceCountersForArachnodeDotNetResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPerformanceCounters">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="categoryNameStartsWith" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPerformanceCountersResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetPerformanceCountersResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAllTableRowCounts">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetAllTableRowCountsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAllTableRowCountsResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="boolean" type="s:boolean" />
+      <s:element name="ArrayOfACrawlActionOfArachnodeDAO" nillable="true" type="tns:ArrayOfACrawlActionOfArachnodeDAO" />
+      <s:element name="ArrayOfACrawlRuleOfArachnodeDAO" nillable="true" type="tns:ArrayOfACrawlRuleOfArachnodeDAO" />
+      <s:element name="ArrayOfAEngineActionOfArachnodeDAO" nillable="true" type="tns:ArrayOfAEngineActionOfArachnodeDAO" />
+      <s:element name="ApplicationSettings" nillable="true" type="tns:ApplicationSettings" />
+      <s:element name="WebSettings" nillable="true" type="tns:WebSettings" />
+      <s:element name="string" nillable="true" type="s:string" />
+      <s:element name="DataTable" nillable="true">
+        <s:complexType>
+          <s:sequence>
+            <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+            <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="ConstructorSoapIn">
+    <wsdl:part name="parameters" element="tns:Constructor" />
+  </wsdl:message>
+  <wsdl:message name="ConstructorSoapOut">
+    <wsdl:part name="parameters" element="tns:ConstructorResponse" />
+  </wsdl:message>
+  <wsdl:message name="DestructorSoapIn">
+    <wsdl:part name="parameters" element="tns:Destructor" />
+  </wsdl:message>
+  <wsdl:message name="DestructorSoapOut">
+    <wsdl:part name="parameters" element="tns:DestructorResponse" />
+  </wsdl:message>
+  <wsdl:message name="SetApplicationSettingsSoapIn">
+    <wsdl:part name="parameters" element="tns:SetApplicationSettings" />
+  </wsdl:message>
+  <wsdl:message name="SetApplicationSettingsSoapOut">
+    <wsdl:part name="parameters" element="tns:SetApplicationSettingsResponse" />
+  </wsdl:message>
+  <wsdl:message name="SetWebSettingsSoapIn">
+    <wsdl:part name="parameters" element="tns:SetWebSettings" />
+  </wsdl:message>
+  <wsdl:message name="SetWebSettingsSoapOut">
+    <wsdl:part name="parameters" element="tns:SetWebSettingsResponse" />
+  </wsdl:message>
+  <wsdl:message name="CrawlSoapIn">
+    <wsdl:part name="parameters" element="tns:Crawl" />
+  </wsdl:message>
+  <wsdl:message name="CrawlSoapOut">
+    <wsdl:part name="parameters" element="tns:CrawlResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetCrawlActionsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCrawlActions" />
+  </wsdl:message>
+  <wsdl:message name="GetCrawlActionsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCrawlActionsResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetCrawlRulesSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCrawlRules" />
+  </wsdl:message>
+  <wsdl:message name="GetCrawlRulesSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCrawlRulesResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetEngineActionsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetEngineActions" />
+  </wsdl:message>
+  <wsdl:message name="GetEngineActionsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetEngineActionsResponse" />
+  </wsdl:message>
+  <wsdl:message name="StartEngineSoapIn">
+    <wsdl:part name="parameters" element="tns:StartEngine" />
+  </wsdl:message>
+  <wsdl:message name="StartEngineSoapOut">
+    <wsdl:part name="parameters" element="tns:StartEngineResponse" />
+  </wsdl:message>
+  <wsdl:message name="StopEngineSoapIn">
+    <wsdl:part name="parameters" element="tns:StopEngine" />
+  </wsdl:message>
+  <wsdl:message name="StopEngineSoapOut">
+    <wsdl:part name="parameters" element="tns:StopEngineResponse" />
+  </wsdl:message>
+  <wsdl:message name="PauseEngineSoapIn">
+    <wsdl:part name="parameters" element="tns:PauseEngine" />
+  </wsdl:message>
+  <wsdl:message name="PauseEngineSoapOut">
+    <wsdl:part name="parameters" element="tns:PauseEngineResponse" />
+  </wsdl:message>
+  <wsdl:message name="ResumeEngineSoapIn">
+    <wsdl:part name="parameters" element="tns:ResumeEngine" />
+  </wsdl:message>
+  <wsdl:message name="ResumeEngineSoapOut">
+    <wsdl:part name="parameters" element="tns:ResumeEngineResponse" />
+  </wsdl:message>
+  <wsdl:message name="ResetSoapIn">
+    <wsdl:part name="parameters" element="tns:Reset" />
+  </wsdl:message>
+  <wsdl:message name="ResetSoapOut">
+    <wsdl:part name="parameters" element="tns:ResetResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetApplicationSettingsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetApplicationSettings" />
+  </wsdl:message>
+  <wsdl:message name="GetApplicationSettingsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetApplicationSettingsResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetWebSettingsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetWebSettings" />
+  </wsdl:message>
+  <wsdl:message name="GetWebSettingsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetWebSettingsResponse" />
+  </wsdl:message>
+  <wsdl:message name="InitializeConfigurationSoapIn">
+    <wsdl:part name="parameters" element="tns:InitializeConfiguration" />
+  </wsdl:message>
+  <wsdl:message name="InitializeConfigurationSoapOut">
+    <wsdl:part name="parameters" element="tns:InitializeConfigurationResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetPerformanceCountersForArachnodeDotNetSoapIn">
+    <wsdl:part name="parameters" element="tns:GetPerformanceCountersForArachnodeDotNet" />
+  </wsdl:message>
+  <wsdl:message name="GetPerformanceCountersForArachnodeDotNetSoapOut">
+    <wsdl:part name="parameters" element="tns:GetPerformanceCountersForArachnodeDotNetResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetPerformanceCountersSoapIn">
+    <wsdl:part name="parameters" element="tns:GetPerformanceCounters" />
+  </wsdl:message>
+  <wsdl:message name="GetPerformanceCountersSoapOut">
+    <wsdl:part name="parameters" element="tns:GetPerformanceCountersResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAllTableRowCountsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAllTableRowCounts" />
+  </wsdl:message>
+  <wsdl:message name="GetAllTableRowCountsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAllTableRowCountsResponse" />
+  </wsdl:message>
+  <wsdl:message name="DestructorHttpGetIn" />
+  <wsdl:message name="DestructorHttpGetOut" />
+  <wsdl:message name="CrawlHttpGetIn">
+    <wsdl:part name="absoluteUri" type="s:string" />
+    <wsdl:part name="depth" type="s:string" />
+    <wsdl:part name="restrictCrawlTo" type="s:string" />
+    <wsdl:part name="restrictDiscoveriesTo" type="s:string" />
+    <wsdl:part name="priority" type="s:string" />
+    <wsdl:part name="renderType" type="s:string" />
+    <wsdl:part name="renderTypeForChildren" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="CrawlHttpGetOut">
+    <wsdl:part name="Body" element="tns:boolean" />
+  </wsdl:message>
+  <wsdl:message name="GetCrawlActionsHttpGetIn" />
+  <wsdl:message name="GetCrawlActionsHttpGetOut">
+    <wsdl:part name="Body" element="tns:ArrayOfACrawlActionOfArachnodeDAO" />
+  </wsdl:message>
+  <wsdl:message name="GetCrawlRulesHttpGetIn" />
+  <wsdl:message name="GetCrawlRulesHttpGetOut">
+    <wsdl:part name="Body" element="tns:ArrayOfACrawlRuleOfArachnodeDAO" />
+  </wsdl:message>
+  <wsdl:message name="GetEngineActionsHttpGetIn" />
+  <wsdl:message name="GetEngineActionsHttpGetOut">
+    <wsdl:part name="Body" element="tns:ArrayOfAEngineActionOfArachnodeDAO" />
+  </wsdl:message>
+  <wsdl:message name="StartEngineHttpGetIn" />
+  <wsdl:message name="StartEngineHttpGetOut" />
+  <wsdl:message name="StopEngineHttpGetIn" />
+  <wsdl:message name="StopEngineHttpGetOut" />
+  <wsdl:message name="PauseEngineHttpGetIn" />
+  <wsdl:message name="PauseEngineHttpGetOut" />
+  <wsdl:message name="ResumeEngineHttpGetIn" />
+  <wsdl:message name="ResumeEngineHttpGetOut" />
+  <wsdl:message name="ResetHttpGetIn" />
+  <wsdl:message name="ResetHttpGetOut" />
+  <wsdl:message name="GetApplicationSettingsHttpGetIn" />
+  <wsdl:message name="GetApplicationSettingsHttpGetOut">
+    <wsdl:part name="Body" element="tns:ApplicationSettings" />
+  </wsdl:message>
+  <wsdl:message name="GetWebSettingsHttpGetIn" />
+  <wsdl:message name="GetWebSettingsHttpGetOut">
+    <wsdl:part name="Body" element="tns:WebSettings" />
+  </wsdl:message>
+  <wsdl:message name="InitializeConfigurationHttpGetIn" />
+  <wsdl:message name="InitializeConfigurationHttpGetOut" />
+  <wsdl:message name="GetPerformanceCountersForArachnodeDotNetHttpGetIn" />
+  <wsdl:message name="GetPerformanceCountersForArachnodeDotNetHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="GetPerformanceCountersHttpGetIn">
+    <wsdl:part name="categoryNameStartsWith" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetPerformanceCountersHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="GetAllTableRowCountsHttpGetIn" />
+  <wsdl:message name="GetAllTableRowCountsHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="DestructorHttpPostIn" />
+  <wsdl:message name="DestructorHttpPostOut" />
+  <wsdl:message name="CrawlHttpPostIn">
+    <wsdl:part name="absoluteUri" type="s:string" />
+    <wsdl:part name="depth" type="s:string" />
+    <wsdl:part name="restrictCrawlTo" type="s:string" />
+    <wsdl:part name="restrictDiscoveriesTo" type="s:string" />
+    <wsdl:part name="priority" type="s:string" />
+    <wsdl:part name="renderType" type="s:string" />
+    <wsdl:part name="renderTypeForChildren" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="CrawlHttpPostOut">
+    <wsdl:part name="Body" element="tns:boolean" />
+  </wsdl:message>
+  <wsdl:message name="GetCrawlActionsHttpPostIn" />
+  <wsdl:message name="GetCrawlActionsHttpPostOut">
+    <wsdl:part name="Body" element="tns:ArrayOfACrawlActionOfArachnodeDAO" />
+  </wsdl:message>
+  <wsdl:message name="GetCrawlRulesHttpPostIn" />
+  <wsdl:message name="GetCrawlRulesHttpPostOut">
+    <wsdl:part name="Body" element="tns:ArrayOfACrawlRuleOfArachnodeDAO" />
+  </wsdl:message>
+  <wsdl:message name="GetEngineActionsHttpPostIn" />
+  <wsdl:message name="GetEngineActionsHttpPostOut">
+    <wsdl:part name="Body" element="tns:ArrayOfAEngineActionOfArachnodeDAO" />
+  </wsdl:message>
+  <wsdl:message name="StartEngineHttpPostIn" />
+  <wsdl:message name="StartEngineHttpPostOut" />
+  <wsdl:message name="StopEngineHttpPostIn" />
+  <wsdl:message name="StopEngineHttpPostOut" />
+  <wsdl:message name="PauseEngineHttpPostIn" />
+  <wsdl:message name="PauseEngineHttpPostOut" />
+  <wsdl:message name="ResumeEngineHttpPostIn" />
+  <wsdl:message name="ResumeEngineHttpPostOut" />
+  <wsdl:message name="ResetHttpPostIn" />
+  <wsdl:message name="ResetHttpPostOut" />
+  <wsdl:message name="GetApplicationSettingsHttpPostIn" />
+  <wsdl:message name="GetApplicationSettingsHttpPostOut">
+    <wsdl:part name="Body" element="tns:ApplicationSettings" />
+  </wsdl:message>
+  <wsdl:message name="GetWebSettingsHttpPostIn" />
+  <wsdl:message name="GetWebSettingsHttpPostOut">
+    <wsdl:part name="Body" element="tns:WebSettings" />
+  </wsdl:message>
+  <wsdl:message name="InitializeConfigurationHttpPostIn" />
+  <wsdl:message name="InitializeConfigurationHttpPostOut" />
+  <wsdl:message name="GetPerformanceCountersForArachnodeDotNetHttpPostIn" />
+  <wsdl:message name="GetPerformanceCountersForArachnodeDotNetHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="GetPerformanceCountersHttpPostIn">
+    <wsdl:part name="categoryNameStartsWith" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetPerformanceCountersHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="GetAllTableRowCountsHttpPostIn" />
+  <wsdl:message name="GetAllTableRowCountsHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:portType name="CrawlerServiceSoap">
+    <wsdl:operation name="Constructor">
+      <wsdl:input message="tns:ConstructorSoapIn" />
+      <wsdl:output message="tns:ConstructorSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Destructor">
+      <wsdl:input message="tns:DestructorSoapIn" />
+      <wsdl:output message="tns:DestructorSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SetApplicationSettings">
+      <wsdl:input message="tns:SetApplicationSettingsSoapIn" />
+      <wsdl:output message="tns:SetApplicationSettingsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SetWebSettings">
+      <wsdl:input message="tns:SetWebSettingsSoapIn" />
+      <wsdl:output message="tns:SetWebSettingsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Crawl">
+      <wsdl:input message="tns:CrawlSoapIn" />
+      <wsdl:output message="tns:CrawlSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCrawlActions">
+      <wsdl:input message="tns:GetCrawlActionsSoapIn" />
+      <wsdl:output message="tns:GetCrawlActionsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCrawlRules">
+      <wsdl:input message="tns:GetCrawlRulesSoapIn" />
+      <wsdl:output message="tns:GetCrawlRulesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEngineActions">
+      <wsdl:input message="tns:GetEngineActionsSoapIn" />
+      <wsdl:output message="tns:GetEngineActionsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="StartEngine">
+      <wsdl:input message="tns:StartEngineSoapIn" />
+      <wsdl:output message="tns:StartEngineSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="StopEngine">
+      <wsdl:input message="tns:StopEngineSoapIn" />
+      <wsdl:output message="tns:StopEngineSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PauseEngine">
+      <wsdl:input message="tns:PauseEngineSoapIn" />
+      <wsdl:output message="tns:PauseEngineSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ResumeEngine">
+      <wsdl:input message="tns:ResumeEngineSoapIn" />
+      <wsdl:output message="tns:ResumeEngineSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Reset">
+      <wsdl:input message="tns:ResetSoapIn" />
+      <wsdl:output message="tns:ResetSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetApplicationSettings">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Gets the ApplicationSettings for the service instance.</wsdl:documentation>
+      <wsdl:input message="tns:GetApplicationSettingsSoapIn" />
+      <wsdl:output message="tns:GetApplicationSettingsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetWebSettings">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Gets the WebSettings for the service instance.</wsdl:documentation>
+      <wsdl:input message="tns:GetWebSettingsSoapIn" />
+      <wsdl:output message="tns:GetWebSettingsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InitializeConfiguration">
+      <wsdl:input message="tns:InitializeConfigurationSoapIn" />
+      <wsdl:output message="tns:InitializeConfigurationSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPerformanceCountersForArachnodeDotNet">
+      <wsdl:input message="tns:GetPerformanceCountersForArachnodeDotNetSoapIn" />
+      <wsdl:output message="tns:GetPerformanceCountersForArachnodeDotNetSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPerformanceCounters">
+      <wsdl:input message="tns:GetPerformanceCountersSoapIn" />
+      <wsdl:output message="tns:GetPerformanceCountersSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllTableRowCounts">
+      <wsdl:input message="tns:GetAllTableRowCountsSoapIn" />
+      <wsdl:output message="tns:GetAllTableRowCountsSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="CrawlerServiceHttpGet">
+    <wsdl:operation name="Destructor">
+      <wsdl:input message="tns:DestructorHttpGetIn" />
+      <wsdl:output message="tns:DestructorHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Crawl">
+      <wsdl:input message="tns:CrawlHttpGetIn" />
+      <wsdl:output message="tns:CrawlHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCrawlActions">
+      <wsdl:input message="tns:GetCrawlActionsHttpGetIn" />
+      <wsdl:output message="tns:GetCrawlActionsHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCrawlRules">
+      <wsdl:input message="tns:GetCrawlRulesHttpGetIn" />
+      <wsdl:output message="tns:GetCrawlRulesHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEngineActions">
+      <wsdl:input message="tns:GetEngineActionsHttpGetIn" />
+      <wsdl:output message="tns:GetEngineActionsHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="StartEngine">
+      <wsdl:input message="tns:StartEngineHttpGetIn" />
+      <wsdl:output message="tns:StartEngineHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="StopEngine">
+      <wsdl:input message="tns:StopEngineHttpGetIn" />
+      <wsdl:output message="tns:StopEngineHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PauseEngine">
+      <wsdl:input message="tns:PauseEngineHttpGetIn" />
+      <wsdl:output message="tns:PauseEngineHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ResumeEngine">
+      <wsdl:input message="tns:ResumeEngineHttpGetIn" />
+      <wsdl:output message="tns:ResumeEngineHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Reset">
+      <wsdl:input message="tns:ResetHttpGetIn" />
+      <wsdl:output message="tns:ResetHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetApplicationSettings">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Gets the ApplicationSettings for the service instance.</wsdl:documentation>
+      <wsdl:input message="tns:GetApplicationSettingsHttpGetIn" />
+      <wsdl:output message="tns:GetApplicationSettingsHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetWebSettings">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Gets the WebSettings for the service instance.</wsdl:documentation>
+      <wsdl:input message="tns:GetWebSettingsHttpGetIn" />
+      <wsdl:output message="tns:GetWebSettingsHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InitializeConfiguration">
+      <wsdl:input message="tns:InitializeConfigurationHttpGetIn" />
+      <wsdl:output message="tns:InitializeConfigurationHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPerformanceCountersForArachnodeDotNet">
+      <wsdl:input message="tns:GetPerformanceCountersForArachnodeDotNetHttpGetIn" />
+      <wsdl:output message="tns:GetPerformanceCountersForArachnodeDotNetHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPerformanceCounters">
+      <wsdl:input message="tns:GetPerformanceCountersHttpGetIn" />
+      <wsdl:output message="tns:GetPerformanceCountersHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllTableRowCounts">
+      <wsdl:input message="tns:GetAllTableRowCountsHttpGetIn" />
+      <wsdl:output message="tns:GetAllTableRowCountsHttpGetOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="CrawlerServiceHttpPost">
+    <wsdl:operation name="Destructor">
+      <wsdl:input message="tns:DestructorHttpPostIn" />
+      <wsdl:output message="tns:DestructorHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Crawl">
+      <wsdl:input message="tns:CrawlHttpPostIn" />
+      <wsdl:output message="tns:CrawlHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCrawlActions">
+      <wsdl:input message="tns:GetCrawlActionsHttpPostIn" />
+      <wsdl:output message="tns:GetCrawlActionsHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCrawlRules">
+      <wsdl:input message="tns:GetCrawlRulesHttpPostIn" />
+      <wsdl:output message="tns:GetCrawlRulesHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEngineActions">
+      <wsdl:input message="tns:GetEngineActionsHttpPostIn" />
+      <wsdl:output message="tns:GetEngineActionsHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="StartEngine">
+      <wsdl:input message="tns:StartEngineHttpPostIn" />
+      <wsdl:output message="tns:StartEngineHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="StopEngine">
+      <wsdl:input message="tns:StopEngineHttpPostIn" />
+      <wsdl:output message="tns:StopEngineHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PauseEngine">
+      <wsdl:input message="tns:PauseEngineHttpPostIn" />
+      <wsdl:output message="tns:PauseEngineHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ResumeEngine">
+      <wsdl:input message="tns:ResumeEngineHttpPostIn" />
+      <wsdl:output message="tns:ResumeEngineHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Reset">
+      <wsdl:input message="tns:ResetHttpPostIn" />
+      <wsdl:output message="tns:ResetHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetApplicationSettings">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Gets the ApplicationSettings for the service instance.</wsdl:documentation>
+      <wsdl:input message="tns:GetApplicationSettingsHttpPostIn" />
+      <wsdl:output message="tns:GetApplicationSettingsHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetWebSettings">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Gets the WebSettings for the service instance.</wsdl:documentation>
+      <wsdl:input message="tns:GetWebSettingsHttpPostIn" />
+      <wsdl:output message="tns:GetWebSettingsHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InitializeConfiguration">
+      <wsdl:input message="tns:InitializeConfigurationHttpPostIn" />
+      <wsdl:output message="tns:InitializeConfigurationHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPerformanceCountersForArachnodeDotNet">
+      <wsdl:input message="tns:GetPerformanceCountersForArachnodeDotNetHttpPostIn" />
+      <wsdl:output message="tns:GetPerformanceCountersForArachnodeDotNetHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPerformanceCounters">
+      <wsdl:input message="tns:GetPerformanceCountersHttpPostIn" />
+      <wsdl:output message="tns:GetPerformanceCountersHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllTableRowCounts">
+      <wsdl:input message="tns:GetAllTableRowCountsHttpPostIn" />
+      <wsdl:output message="tns:GetAllTableRowCountsHttpPostOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="CrawlerServiceSoap" type="tns:CrawlerServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Constructor">
+      <soap:operation soapAction="http://arachnode.net/CrawlerService/Constructor" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Destructor">
+      <soap:operation soapAction="http://arachnode.net/CrawlerService/Destructor" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetApplicationSettings">
+      <soap:operation soapAction="http://arachnode.net/CrawlerService/SetApplicationSettings" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetWebSettings">
+      <soap:operation soapAction="http://arachnode.net/CrawlerService/SetWebSettings" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Crawl">
+      <soap:operation soapAction="http://arachnode.net/CrawlerService/Crawl" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCrawlActions">
+      <soap:operation soapAction="http://arachnode.net/CrawlerService/GetCrawlActions" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCrawlRules">
+      <soap:operation soapAction="http://arachnode.net/CrawlerService/GetCrawlRules" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEngineActions">
+      <soap:operation soapAction="http://arachnode.net/CrawlerService/GetEngineActions" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="StartEngine">
+      <soap:operation soapAction="http://arachnode.net/CrawlerService/StartEngine" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="StopEngine">
+      <soap:operation soapAction="http://arachnode.net/CrawlerService/StopEngine" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PauseEngine">
+      <soap:operation soapAction="http://arachnode.net/CrawlerService/PauseEngine" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ResumeEngine">
+      <soap:operation soapAction="http://arachnode.net/CrawlerService/ResumeEngine" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Reset">
+      <soap:operation soapAction="http://arachnode.net/CrawlerService/Reset" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetApplicationSettings">
+      <soap:operation soapAction="http://arachnode.net/CrawlerService/GetApplicationSettings" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetWebSettings">
+      <soap:operation soapAction="http://arachnode.net/CrawlerService/GetWebSettings" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InitializeConfiguration">
+      <soap:operation soapAction="http://arachnode.net/CrawlerService/InitializeConfiguration" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPerformanceCountersForArachnodeDotNet">
+      <soap:operation soapAction="http://arachnode.net/CrawlerService/GetPerformanceCountersForArachnodeDotNet" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPerformanceCounters">
+      <soap:operation soapAction="http://arachnode.net/CrawlerService/GetPerformanceCounters" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllTableRowCounts">
+      <soap:operation soapAction="http://arachnode.net/CrawlerService/GetAllTableRowCounts" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="CrawlerServiceSoap12" type="tns:CrawlerServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Constructor">
+      <soap12:operation soapAction="http://arachnode.net/CrawlerService/Constructor" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Destructor">
+      <soap12:operation soapAction="http://arachnode.net/CrawlerService/Destructor" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetApplicationSettings">
+      <soap12:operation soapAction="http://arachnode.net/CrawlerService/SetApplicationSettings" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetWebSettings">
+      <soap12:operation soapAction="http://arachnode.net/CrawlerService/SetWebSettings" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Crawl">
+      <soap12:operation soapAction="http://arachnode.net/CrawlerService/Crawl" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCrawlActions">
+      <soap12:operation soapAction="http://arachnode.net/CrawlerService/GetCrawlActions" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCrawlRules">
+      <soap12:operation soapAction="http://arachnode.net/CrawlerService/GetCrawlRules" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEngineActions">
+      <soap12:operation soapAction="http://arachnode.net/CrawlerService/GetEngineActions" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="StartEngine">
+      <soap12:operation soapAction="http://arachnode.net/CrawlerService/StartEngine" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="StopEngine">
+      <soap12:operation soapAction="http://arachnode.net/CrawlerService/StopEngine" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PauseEngine">
+      <soap12:operation soapAction="http://arachnode.net/CrawlerService/PauseEngine" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ResumeEngine">
+      <soap12:operation soapAction="http://arachnode.net/CrawlerService/ResumeEngine" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Reset">
+      <soap12:operation soapAction="http://arachnode.net/CrawlerService/Reset" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetApplicationSettings">
+      <soap12:operation soapAction="http://arachnode.net/CrawlerService/GetApplicationSettings" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetWebSettings">
+      <soap12:operation soapAction="http://arachnode.net/CrawlerService/GetWebSettings" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InitializeConfiguration">
+      <soap12:operation soapAction="http://arachnode.net/CrawlerService/InitializeConfiguration" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPerformanceCountersForArachnodeDotNet">
+      <soap12:operation soapAction="http://arachnode.net/CrawlerService/GetPerformanceCountersForArachnodeDotNet" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPerformanceCounters">
+      <soap12:operation soapAction="http://arachnode.net/CrawlerService/GetPerformanceCounters" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllTableRowCounts">
+      <soap12:operation soapAction="http://arachnode.net/CrawlerService/GetAllTableRowCounts" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="CrawlerServiceHttpGet" type="tns:CrawlerServiceHttpGet">
+    <http:binding verb="GET" />
+    <wsdl:operation name="Destructor">
+      <http:operation location="/Destructor" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="Crawl">
+      <http:operation location="/Crawl" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCrawlActions">
+      <http:operation location="/GetCrawlActions" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCrawlRules">
+      <http:operation location="/GetCrawlRules" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEngineActions">
+      <http:operation location="/GetEngineActions" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="StartEngine">
+      <http:operation location="/StartEngine" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="StopEngine">
+      <http:operation location="/StopEngine" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="PauseEngine">
+      <http:operation location="/PauseEngine" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="ResumeEngine">
+      <http:operation location="/ResumeEngine" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="Reset">
+      <http:operation location="/Reset" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="GetApplicationSettings">
+      <http:operation location="/GetApplicationSettings" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetWebSettings">
+      <http:operation location="/GetWebSettings" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InitializeConfiguration">
+      <http:operation location="/InitializeConfiguration" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="GetPerformanceCountersForArachnodeDotNet">
+      <http:operation location="/GetPerformanceCountersForArachnodeDotNet" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPerformanceCounters">
+      <http:operation location="/GetPerformanceCounters" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllTableRowCounts">
+      <http:operation location="/GetAllTableRowCounts" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="CrawlerServiceHttpPost" type="tns:CrawlerServiceHttpPost">
+    <http:binding verb="POST" />
+    <wsdl:operation name="Destructor">
+      <http:operation location="/Destructor" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="Crawl">
+      <http:operation location="/Crawl" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCrawlActions">
+      <http:operation location="/GetCrawlActions" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCrawlRules">
+      <http:operation location="/GetCrawlRules" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEngineActions">
+      <http:operation location="/GetEngineActions" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="StartEngine">
+      <http:operation location="/StartEngine" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="StopEngine">
+      <http:operation location="/StopEngine" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="PauseEngine">
+      <http:operation location="/PauseEngine" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="ResumeEngine">
+      <http:operation location="/ResumeEngine" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="Reset">
+      <http:operation location="/Reset" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="GetApplicationSettings">
+      <http:operation location="/GetApplicationSettings" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetWebSettings">
+      <http:operation location="/GetWebSettings" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InitializeConfiguration">
+      <http:operation location="/InitializeConfiguration" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="GetPerformanceCountersForArachnodeDotNet">
+      <http:operation location="/GetPerformanceCountersForArachnodeDotNet" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPerformanceCounters">
+      <http:operation location="/GetPerformanceCounters" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllTableRowCounts">
+      <http:operation location="/GetAllTableRowCounts" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="CrawlerService">
+    <wsdl:port name="CrawlerServiceSoap" binding="tns:CrawlerServiceSoap">
+      <soap:address location="http://localhost:56830/Services/CrawlerService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="CrawlerServiceSoap12" binding="tns:CrawlerServiceSoap12">
+      <soap12:address location="http://localhost:56830/Services/CrawlerService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="CrawlerServiceHttpGet" binding="tns:CrawlerServiceHttpGet">
+      <http:address location="http://localhost:56830/Services/CrawlerService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="CrawlerServiceHttpPost" binding="tns:CrawlerServiceHttpPost">
+      <http:address location="http://localhost:56830/Services/CrawlerService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

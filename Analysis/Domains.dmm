@@ -1,0 +1,134 @@
+﻿<MiningStructure xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="0913413a-7ce7-4098-9bce-c499572d994b" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Domains</ID>
+  <Name>Domains</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>MDXFilterComponent</Name>
+      <Value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;Filter xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/SQLServer/reporting/QuerySpecification"&gt;&lt;FilterItems xmlns="http://schemas.microsoft.com/AnalysisServices/QueryDefinition" /&gt;&lt;/Filter&gt;</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="CubeDimensionBinding" dwd:design-time-name="02e6474c-5ce7-43d4-a4f7-5813287a5cc9">
+    <DataSourceID>.</DataSourceID>
+    <CubeID>Uri Classification Data Source View</CubeID>
+    <CubeDimensionID>Domains</CubeDimensionID>
+    <Filter></Filter>
+  </Source>
+  <Columns>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="9ab4c20c-ad23-4904-bb1c-a87b382742c4">
+      <ID>Domains</ID>
+      <Name>Domains</Name>
+      <IsKey>true</IsKey>
+      <Type>Text</Type>
+      <Source xsi:type="CubeAttributeBinding" dwd:design-time-name="086dc6fd-0aa0-4235-ae3e-a1560a16fb46">
+        <CubeID>Uri Classification Data Source View</CubeID>
+        <CubeDimensionID>Domains</CubeDimensionID>
+        <AttributeID>Domains</AttributeID>
+        <Type>All</Type>
+      </Source>
+      <Content>Key</Content>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="3bdf27af-81a4-436e-95ae-875b4f07acbe">
+      <ID>Extension ID</ID>
+      <Name>Extension ID</Name>
+      <Type>Long</Type>
+      <Source xsi:type="CubeAttributeBinding" dwd:design-time-name="eb992c0a-4733-46e3-a1ce-dd3c76cb533b">
+        <CubeID>Uri Classification Data Source View</CubeID>
+        <CubeDimensionID>Domains</CubeDimensionID>
+        <AttributeID>Extension ID</AttributeID>
+        <Type>All</Type>
+      </Source>
+      <Content>Continuous</Content>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="ad452a80-71d3-404b-8490-f0f38aadc1e2">
+      <ID>Discovery Type ID</ID>
+      <Name>Discovery Type ID</Name>
+      <Type>Long</Type>
+      <Source xsi:type="MeasureBinding" dwd:design-time-name="649f01ef-4fc8-47ff-9b56-9a1b4bea2c1c">
+        <MeasureID>Discovery Type ID</MeasureID>
+      </Source>
+      <Content>Continuous</Content>
+    </Column>
+    <Column xsi:type="ScalarMiningStructureColumn" dwd:design-time-name="c3de269f-07cf-446a-bec4-ad9bc444a35d">
+      <ID>Domains Discoveries Count</ID>
+      <Name>Domains Discoveries Count</Name>
+      <Type>Long</Type>
+      <Source xsi:type="MeasureBinding" dwd:design-time-name="cd85e495-e404-4a15-9a12-bf4b068b8876">
+        <MeasureID>Domains Discoveries Count</MeasureID>
+      </Source>
+      <Content>Continuous</Content>
+    </Column>
+  </Columns>
+  <MiningModels>
+    <MiningModel dwd:design-time-name="aa36f777-84ed-4e61-92cf-e08bb66a2f03">
+      <ID>Domains</ID>
+      <Name>Domains</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Algorithm>Microsoft_Clustering</Algorithm>
+      <Columns>
+        <Column dwd:design-time-name="fa2de585-cc05-460c-a88b-0f0de00c6fe2">
+          <ID>Domains</ID>
+          <Name>Domains</Name>
+          <SourceColumnID>Domains</SourceColumnID>
+          <Usage>Key</Usage>
+        </Column>
+        <Column dwd:design-time-name="679667e0-b53a-488e-bf60-6a5df1f6ce08">
+          <ID>Extension ID</ID>
+          <Name>Extension ID</Name>
+          <SourceColumnID>Extension ID</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="b9d03477-b83b-4bfe-81a7-33023506a1cc">
+          <ID>Discovery Type ID</ID>
+          <Name>Discovery Type ID</Name>
+          <SourceColumnID>Discovery Type ID</SourceColumnID>
+        </Column>
+        <Column dwd:design-time-name="f447da03-888a-482e-84de-fd8d8930555d">
+          <ID>Domains Discoveries Count</ID>
+          <Name>Domains Discoveries Count</Name>
+          <SourceColumnID>Domains Discoveries Count</SourceColumnID>
+        </Column>
+      </Columns>
+    </MiningModel>
+  </MiningModels>
+</MiningStructure>

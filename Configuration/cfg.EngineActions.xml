@@ -1,0 +1,12 @@
+<?xml version="1.0" standalone="yes"?>
+<DocumentElement>
+  <EngineActions>
+    <ID></ID>
+    <EngineActionTypeID></EngineActionTypeID>
+    <AssemblyName></AssemblyName>
+    <TypeName></TypeName>
+    <IsEnabled></IsEnabled>
+    <Order></Order>
+    <Settings></Settings>
+  </EngineActions>
+</DocumentElement>

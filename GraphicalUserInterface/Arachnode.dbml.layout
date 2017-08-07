@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 15, 14.625" name="ArachnodeDataSource">
+  <DataContextMoniker Name="/ArachnodeDataSourceDataContext" />
+  <nestedChildShapes>
+    <classShape Id="e69d55a8-95d1-412f-81b7-4ccf5b2d6082" absoluteBounds="6.25, 0.875, 2, 1.7708968098958335">
+      <DataClassMoniker Name="/ArachnodeDataSourceDataContext/AllowedDataType" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2c425af8-a05a-4996-920b-e9cb68d591a3" absoluteBounds="6.2650000005960464, 1.3350000008940697, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="462a5401-d6f4-444e-9aef-0c75c7b39d2d" absoluteBounds="6.75, 7.75, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/ArachnodeDataSourceDataContext/Version" />
+      <nestedChildShapes>
+        <elementListCompartment Id="eb869592-838b-48af-a1f0-0f086e23324c" absoluteBounds="6.765, 8.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="263e2a1a-7b50-44c8-bd95-0aea156f5b00" absoluteBounds="8.75, 0.75, 2, 1.0016910807291666">
+      <DataClassMoniker Name="/ArachnodeDataSourceDataContext/AllowedExtension" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1103c61a-07a2-4d3c-9c2c-33ae30bf76a9" absoluteBounds="8.765, 1.21, 1.9700000000000002, 0.44169108072916669" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="efffab4c-ca43-432e-a5e8-e5205a90cf1d" absoluteBounds="6.75, 9.75, 2, 1.0016910807291666">
+      <DataClassMoniker Name="/ArachnodeDataSourceDataContext/AllowedScheme" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0d878876-fbcc-4044-8f96-98acaa8b42f3" absoluteBounds="6.765, 10.21, 1.9700000000000002, 0.44169108072916669" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="038a85f1-28f8-4774-96fb-d24a9a4332a7" absoluteBounds="9.75, 7.75, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/ArachnodeDataSourceDataContext/Configuration" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2663a9d4-0e25-4185-b106-f3f20390f556" absoluteBounds="9.765, 8.21, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c0500119-6255-43ae-b82d-e1874106597f" absoluteBounds="9.75, 10.75, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/ArachnodeDataSourceDataContext/ConfigurationType" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c8a2824e-8a7b-4a54-9e1d-e3c14855663d" absoluteBounds="9.765, 11.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d3ebca6e-f89e-4419-8c6a-cf87da58f450" absoluteBounds="3.5, 1.125, 2, 1.3862939453124996">
+      <DataClassMoniker Name="/ArachnodeDataSourceDataContext/ContentType" />
+      <nestedChildShapes>
+        <elementListCompartment Id="67ddf82f-1abd-44e6-96e3-66bcf96a8d0c" absoluteBounds="3.5150000005960464, 1.5850000008940697, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="bae6db21-1cf5-463f-afc0-dae396331950" absoluteBounds="0.75, 1.25, 2, 1.1939925130208335">
+      <DataClassMoniker Name="/ArachnodeDataSourceDataContext/ContentTypeType" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7dd3c471-19ae-454f-b76c-f11804aa0aee" absoluteBounds="0.76500000059604645, 1.7100000008940697, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="39777533-451b-42eb-bff7-75d50043ac85" absoluteBounds="3.5, 7.875, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/ArachnodeDataSourceDataContext/CrawlAction" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b534d2d8-4f1f-4203-9399-0b5052960652" absoluteBounds="3.5150000005960464, 8.33500000089407, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="13ba9426-4201-4582-8a3b-2e7ac5065d63" absoluteBounds="0.75, 8.375, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/ArachnodeDataSourceDataContext/CrawlActionType" />
+      <nestedChildShapes>
+        <elementListCompartment Id="60627144-55fa-4b19-a481-e5b11e25235a" absoluteBounds="0.76500000059604645, 8.83500000089407, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d5142794-f6a3-4888-908e-cbeca783249c" absoluteBounds="9.5, 4, 2, 2.3478011067708326">
+      <DataClassMoniker Name="/ArachnodeDataSourceDataContext/CrawlRule" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d70d454f-561f-4c5a-9b18-3f0baf276fcd" absoluteBounds="9.5150000005960464, 4.46000000089407, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="76d4213c-34a7-4ec1-8e16-edaf1693382a" absoluteBounds="6.75, 4.5, 2, 1.1939925130208327">
+      <DataClassMoniker Name="/ArachnodeDataSourceDataContext/CrawlRuleType" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6484d243-235f-4fa9-b591-fcab28ed5878" absoluteBounds="6.7650000005960464, 4.96000000089407, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="7160caff-92b6-4e86-918d-453dfeb6d539" absoluteBounds="11.75, 0.75, 2, 1.3862939453125003">
+      <DataClassMoniker Name="/ArachnodeDataSourceDataContext/DisallowedDomain" />
+      <nestedChildShapes>
+        <elementListCompartment Id="235f158b-1d32-4a62-aef1-e488e3ce3a38" absoluteBounds="11.765, 1.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e5b6baa2-f60b-435f-839f-536091a57f4e" absoluteBounds="0.75, 11.75, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/ArachnodeDataSourceDataContext/DisallowedExtension" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3961d514-4da8-4647-86fc-f7b5a798b41a" absoluteBounds="0.765, 12.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="9652d5a6-9ad7-4195-b7d3-8e752ab266db" absoluteBounds="3.75, 11.75, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/ArachnodeDataSourceDataContext/DisallowedFileExtension" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5f9f7119-cdc2-4ce7-b1f4-ed8c0610459d" absoluteBounds="3.765, 12.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b0cfb054-7036-44e1-a4e8-f7f264be88f8" absoluteBounds="12.75, 3.75, 2, 1.193992513020834">
+      <DataClassMoniker Name="/ArachnodeDataSourceDataContext/DisallowedHost" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e19ba588-8f60-4965-b2aa-4e35ee184b85" absoluteBounds="12.765, 4.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="3fa8c0f5-2c5d-4f86-8022-9f243e794955" absoluteBounds="12.75, 5.75, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/ArachnodeDataSourceDataContext/DisallowedScheme" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9ec79acb-257f-4e06-9a5b-9603dbbe2cc6" absoluteBounds="12.765, 6.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a27e4509-373b-4cd5-8d71-2c32908433a2" absoluteBounds="6.75, 12.75, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/ArachnodeDataSourceDataContext/DisallowedWord" />
+      <nestedChildShapes>
+        <elementListCompartment Id="25c5ddf3-dfff-49ea-b63f-ac56188b2461" absoluteBounds="6.765, 13.21, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1993b8b7-2e27-44a6-a6fe-da0db5fedfa2" absoluteBounds="3.5, 3.875, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/ArachnodeDataSourceDataContext/EngineAction" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8ea685e0-c6a7-4d24-a924-962cd7f4fbf9" absoluteBounds="3.5150000005960464, 4.33500000089407, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="35678ee8-c62d-4151-80b3-347fa9fd07ea" absoluteBounds="0.75, 4.375, 2, 1.1939925130208327">
+      <DataClassMoniker Name="/ArachnodeDataSourceDataContext/EngineActionType" />
+      <nestedChildShapes>
+        <elementListCompartment Id="58bc4555-d556-4a5b-a9f8-0125a88ac6b2" absoluteBounds="0.76500000059604645, 4.83500000089407, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="27af2ca1-4263-4226-b65f-328a7adf1ead" absoluteBounds="12.75, 7.75, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/ArachnodeDataSourceDataContext/FullTextIndexType" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9c1a5bdc-fc81-4bfd-8b4f-6dade0d1878f" absoluteBounds="12.765, 8.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e762ae42-9c75-4f6d-858c-d05ed83bbecb" absoluteBounds="12.75, 9.75, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/ArachnodeDataSourceDataContext/Priority" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0a81d3aa-7a6d-4522-a295-735a40d9f47e" absoluteBounds="12.765, 10.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(5.5 : 1.81814697265625); (6.25 : 1.81814697265625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/ArachnodeDataSourceDataContext/ContentType/ContentType_AllowedDataType" />
+      <nodes>
+        <classShapeMoniker Id="d3ebca6e-f89e-4419-8c6a-cf87da58f450" />
+        <classShapeMoniker Id="e69d55a8-95d1-412f-81b7-4ccf5b2d6082" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 1.84699625651042); (3.5 : 1.84699625651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/ArachnodeDataSourceDataContext/ContentTypeType/ContentTypeType_ContentType" />
+      <nodes>
+        <classShapeMoniker Id="bae6db21-1cf5-463f-afc0-dae396331950" />
+        <classShapeMoniker Id="d3ebca6e-f89e-4419-8c6a-cf87da58f450" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 8.97199625651042); (3.5 : 8.97199625651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/ArachnodeDataSourceDataContext/CrawlActionType/CrawlActionType_CrawlAction" />
+      <nodes>
+        <classShapeMoniker Id="13ba9426-4201-4582-8a3b-2e7ac5065d63" />
+        <classShapeMoniker Id="39777533-451b-42eb-bff7-75d50043ac85" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.75 : 5.09699625651042); (9.5 : 5.09699625651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/ArachnodeDataSourceDataContext/CrawlRuleType/CrawlRuleType_CrawlRule" />
+      <nodes>
+        <classShapeMoniker Id="76d4213c-34a7-4ec1-8e16-edaf1693382a" />
+        <classShapeMoniker Id="d5142794-f6a3-4888-908e-cbeca783249c" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 4.97199625651042); (3.5 : 4.97199625651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/ArachnodeDataSourceDataContext/EngineActionType/EngineActionType_EngineAction" />
+      <nodes>
+        <classShapeMoniker Id="35678ee8-c62d-4151-80b3-347fa9fd07ea" />
+        <classShapeMoniker Id="1993b8b7-2e27-44a6-a6fe-da0db5fedfa2" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

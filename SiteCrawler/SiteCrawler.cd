@@ -1,0 +1,475 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Arachnode.SiteCrawler.Actions.Renderer" Collapsed="true">
+    <Position X="25.25" Y="12.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAAAAAAAAAAAAAIAAAAAIAICAAAAAAAAA=</HashCode>
+      <FileName>Actions\Renderer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Arachnode.SiteCrawler.Components.Crawl" Collapsed="true">
+    <Position X="28" Y="14.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAMAWIAIAAgAAMAAAAAARAIAgAAAAAAEwAAAAAEgEg=</HashCode>
+      <FileName>Components\Crawl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Arachnode.SiteCrawler.Components.DiscoveryProcessor" Collapsed="true">
+    <Position X="30.25" Y="14.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAIAAAAAAAgAAAAAEAIAAAgAAAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>Components\DiscoveryProcessor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Arachnode.SiteCrawler.Components.WebClient" Collapsed="true">
+    <Position X="60.5" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BEAAAAABAAQAAAAAAAAAAAAMACAAAAAAAAAEAEAAIAA=</HashCode>
+      <FileName>Components\WebClient.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Arachnode.SiteCrawler.Core.Cache" Collapsed="true">
+    <Position X="58.75" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAAAAgAgkBMIAQAAAAEAAAAAMYAEAGAEABg=</HashCode>
+      <FileName>Core\Cache.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Arachnode.SiteCrawler.Core.Engine" Collapsed="true">
+    <Position X="57" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>4gAogAICoCEgIAAEAgACAYAAAgAAAsACITQgBCkAAiE=</HashCode>
+      <FileName>Core\Engine.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Arachnode.SiteCrawler.Core.QueryProcessor" Collapsed="true">
+    <Position X="62.25" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAgAIAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Core\QueryProcessor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Arachnode.SiteCrawler.Crawler" Collapsed="true">
+    <Position X="64" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAUAAAAAAEgAAAAAIAIAAQgAEAKBgIABARAAIAABBA=</HashCode>
+      <FileName>Crawler.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Arachnode.SiteCrawler.Managers.ActionManager" Collapsed="true">
+    <Position X="57" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAAAAAAAAoAIAAAAAAwEABAAAAYAAQAAAAQAA=</HashCode>
+      <FileName>Managers\ActionManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Arachnode.SiteCrawler.Managers.CacheManager" Collapsed="true">
+    <Position X="60.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Managers\CacheManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Arachnode.SiteCrawler.Managers.ConsoleManager" Collapsed="true">
+    <Position X="62.25" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAIAEEAAAEAiEAAQEABAIAMAgIAAAAAAgIAAAAAg=</HashCode>
+      <FileName>Managers\ConsoleManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Arachnode.SiteCrawler.Managers.CrawlRequestManager" Collapsed="true">
+    <Position X="57" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAEAAAAAAAAAAAAAAABAMAIIQAAAAAAAAABQAAAAAA=</HashCode>
+      <FileName>Managers\CrawlRequestManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Arachnode.SiteCrawler.Managers.DataManager" Collapsed="true">
+    <Position X="58.75" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Managers\DataManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Arachnode.SiteCrawler.Managers.DataTypeManager" Collapsed="true">
+    <Position X="60.5" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAACAgAhAAAAAAAAABAAEAAgAAUAAAAAAAAAA=</HashCode>
+      <FileName>Managers\DataTypeManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Arachnode.SiteCrawler.Managers.DiscoveryManager" Collapsed="true">
+    <Position X="64" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABABAAAQACIAAAAIAAAIAUAAAAEAAAAAAAiAg=</HashCode>
+      <FileName>Managers\DiscoveryManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Arachnode.SiteCrawler.Managers.EncodingManager" Collapsed="true">
+    <Position X="65.75" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAAAAAAAAAAAAAIAAAACAAAQAAAAAAAAAA=</HashCode>
+      <FileName>Managers\EncodingManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Arachnode.SiteCrawler.Managers.FileManager" Collapsed="true">
+    <Position X="58.75" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Managers\FileManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Arachnode.SiteCrawler.Managers.HtmlManager" Collapsed="true">
+    <Position X="60.5" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAEAIAAAAAAA=</HashCode>
+      <FileName>Managers\HtmlManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Arachnode.SiteCrawler.Managers.ImageManager" Collapsed="true">
+    <Position X="62.25" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAABAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Managers\ImageManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Arachnode.SiteCrawler.Managers.MemoryManager" Collapsed="true">
+    <Position X="58.75" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAgAAAAAAAAAAABAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Managers\MemoryManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Arachnode.SiteCrawler.Managers.ReportingManager" Collapsed="true">
+    <Position X="64" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgQAAAAAAIAAAAAAgAABAEAAAAAIAAAAQAAAIAAAAAA=</HashCode>
+      <FileName>Managers\ReportingManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Arachnode.SiteCrawler.Managers.RobotsManager" Collapsed="true">
+    <Position X="65.75" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Managers\RobotsManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Arachnode.SiteCrawler.Managers.RuleManager" Collapsed="true">
+    <Position X="57" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAAIAAAAAAAAgAAgAAAAAAAAYAABAAAAAAg=</HashCode>
+      <FileName>Managers\RuleManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Arachnode.SiteCrawler.Managers.WebPageManager" Collapsed="true">
+    <Position X="62.25" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Managers\WebPageManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Arachnode.SiteCrawler.Managers.XmlManager" Collapsed="true">
+    <Position X="64" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Managers\XmlManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Arachnode.SiteCrawler.Properties.Settings" Collapsed="true">
+    <Position X="58.75" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAAAgAAAAAAAAAIAAAAAABAAAAAAAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Arachnode.SiteCrawler.Rules.AbsoluteUri" Collapsed="true">
+    <Position X="50" Y="12.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AoAEgABAAAAAAAAABAAEAAACAAIAAAAAYCQCAAgAQgA=</HashCode>
+      <FileName>Rules\AbsoluteUri.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Arachnode.SiteCrawler.Rules.ContentLength" Collapsed="true">
+    <Position X="27.5" Y="12.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYCAAAAABAAA=</HashCode>
+      <FileName>Rules\ContentLength.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Arachnode.SiteCrawler.Rules.DataType" Collapsed="true">
+    <Position X="32" Y="12.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYCAAAAAAAAA=</HashCode>
+      <FileName>Rules\DataType.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Arachnode.SiteCrawler.Rules.Depth" Collapsed="true">
+    <Position X="36.5" Y="12.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAYCAAAAAAAAA=</HashCode>
+      <FileName>Rules\Depth.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Arachnode.SiteCrawler.Rules.Frequency" Collapsed="true">
+    <Position X="38.75" Y="12.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAABACAAAAAAAYCAAAAAAAAA=</HashCode>
+      <FileName>Rules\Frequency.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Arachnode.SiteCrawler.Rules.LastModified" Collapsed="true">
+    <Position X="41" Y="12.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAYCAAAAAAAAA=</HashCode>
+      <FileName>Rules\LastModified.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Arachnode.SiteCrawler.Rules.ResponseHeaders" Collapsed="true">
+    <Position X="43.25" Y="12.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYCAAAAAAAAA=</HashCode>
+      <FileName>Rules\ResponseHeaders.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Arachnode.SiteCrawler.Rules.ResponseUri" Collapsed="true">
+    <Position X="45.5" Y="12.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYCAAAAAAAAA=</HashCode>
+      <FileName>Rules\ResponseUri.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Arachnode.SiteCrawler.Rules.RobotsDotText" Collapsed="true">
+    <Position X="47.75" Y="12.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYCAAAAAAAAA=</HashCode>
+      <FileName>Rules\RobotsDotText.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Arachnode.SiteCrawler.Rules.Source" Collapsed="true">
+    <Position X="52.25" Y="12.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYCAAAAAAAAA=</HashCode>
+      <FileName>Rules\Source.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Arachnode.SiteCrawler.Rules.StatusCode" Collapsed="true">
+    <Position X="29.75" Y="12.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYCAAAAAAAAA=</HashCode>
+      <FileName>Rules\StatusCode.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Arachnode.SiteCrawler.Rules.Storable" Collapsed="true">
+    <Position X="34.25" Y="12.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYCAAAAAAAAA=</HashCode>
+      <FileName>Rules\Storable.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Arachnode.SiteCrawler.Value.AbstractClasses.ABehavior" Collapsed="true">
+    <Position X="40" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAAAAAAAAEAAAACAAAAABAAICAAAAAAAAA=</HashCode>
+      <FileName>Value\AbstractClasses\ABehavior.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Arachnode.SiteCrawler.Value.AbstractClasses.ACacheable" Collapsed="true">
+    <Position X="25.25" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Value\AbstractClasses\ACacheable.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Arachnode.SiteCrawler.Value.AbstractClasses.ACrawlAction" Collapsed="true">
+    <Position X="25.25" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAIAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAA=</HashCode>
+      <FileName>Value\AbstractClasses\ACrawlAction.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Arachnode.SiteCrawler.Value.AbstractClasses.ACrawlRule" Collapsed="true">
+    <Position X="40" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAwAAAAAAAAAg=</HashCode>
+      <FileName>Value\AbstractClasses\ACrawlRule.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Arachnode.SiteCrawler.Value.AbstractClasses.ADisallowed" Collapsed="true">
+    <Position X="25.25" Y="16.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAAAAAAAAAAAAAAAEAAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>Value\AbstractClasses\ADisallowed.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Arachnode.SiteCrawler.Value.AbstractClasses.AEngineAction" Collapsed="true">
+    <Position X="54.5" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAgAAAAAEAAAA=</HashCode>
+      <FileName>Value\AbstractClasses\AEngineAction.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Arachnode.SiteCrawler.Value.AbstractClasses.AStorable" Collapsed="true">
+    <Position X="25.25" Y="14.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Value\AbstractClasses\AStorable.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Arachnode.SiteCrawler.Value.AbstractClasses.AWorker" Collapsed="true">
+    <Position X="29.25" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Value\AbstractClasses\AWorker.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Arachnode.SiteCrawler.Value.CrawlInfo" Collapsed="true">
+    <Position X="65.75" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAEAAAAAAAACAEAAAABAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Value\CrawlInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Arachnode.SiteCrawler.Value.CrawlRequest" Collapsed="true">
+    <Position X="24" Y="17.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAEEAAAEAAMoAAAEABCIQCAAgAIAABQAAAABEgAAAGA=</HashCode>
+      <FileName>Value\CrawlRequest.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Arachnode.SiteCrawler.Value.Discoveries" Collapsed="true">
+    <Position X="62.25" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAACAAAAAAAEAAAAAAAAAIAQAAAAAAAAIAAAAA=</HashCode>
+      <FileName>Value\Discoveries.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Arachnode.SiteCrawler.Value.Discovery" Collapsed="true">
+    <Position X="26.25" Y="17.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAEAAgAAEAAAAAAAAAAAAARAACEAAAAEAACA=</HashCode>
+      <FileName>Value\Discovery.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Arachnode.SiteCrawler.Value.ManagedFile" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="64" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Value\ManagedFile.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Arachnode.SiteCrawler.Value.ManagedImage" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="65.75" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQCAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAQAAAAA=</HashCode>
+      <FileName>Value\ManagedImage.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Arachnode.SiteCrawler.Value.ManagedWebPage" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="57" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAACAIAAAAAAAAAEAAAAAACAAAAAA=</HashCode>
+      <FileName>Value\ManagedWebPage.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Arachnode.SiteCrawler.Value.Politeness" Collapsed="true">
+    <Position X="60.5" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAAAAAAAAAAAAEAAAAACAAABQgAAAAAAAA=</HashCode>
+      <FileName>Value\Politeness.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="Arachnode.SiteCrawler.Value.Structs.DataType" Collapsed="true">
+    <Position X="57" Y="14.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAUAABAAQAAACAACAAAAAAAAAAAAQEQCAAAI=</HashCode>
+      <FileName>Value\Structs\DataType.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Interface Name="Arachnode.SiteCrawler.Value.Interfaces.IManagedDiscovery" Collapsed="true">
+    <Position X="57" Y="16" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Value\Interfaces\IManagedDiscovery.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="Arachnode.SiteCrawler.Value.Enums.CrawlActionType" Collapsed="true">
+    <Position X="57" Y="17" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAAABAAAAAAAAAAAACACAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Value\Enums\CrawlActionType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Arachnode.SiteCrawler.Value.Enums.CrawlMode" Collapsed="true">
+    <Position X="58.75" Y="17" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Value\Enums\CrawlMode.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Arachnode.SiteCrawler.Value.Enums.CrawlRuleType" Collapsed="true">
+    <Position X="60.5" Y="17" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAAABAAAAAAAAAAAACACAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Value\Enums\CrawlRuleType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Arachnode.SiteCrawler.Value.Enums.CrawlState" Collapsed="true">
+    <Position X="62.25" Y="17" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAACAAAAAAAAAAAAAAAAAAAAAAIAAAAAEAAAA=</HashCode>
+      <FileName>Value\Enums\CrawlState.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Arachnode.SiteCrawler.Value.Enums.DiscoveryState" Collapsed="true">
+    <Position X="64" Y="17" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAABAAAAAAAAAAAAAAAAAACAAAAIAAAAAAEAAAA=</HashCode>
+      <FileName>Value\Enums\DiscoveryState.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Arachnode.SiteCrawler.Value.Enums.DiscoveryType" Collapsed="true">
+    <Position X="65.75" Y="17" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAgAAAAAAAAAAAAAAAAAAAEABAAAABAAgEAAAA=</HashCode>
+      <FileName>Value\Enums\DiscoveryType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Arachnode.SiteCrawler.Value.Enums.EngineActionType" Collapsed="true">
+    <Position X="57" Y="17.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAgAAAAAAAAAABAAAAAAAAAAAAAAAIEAAAA=</HashCode>
+      <FileName>Value\Enums\EngineActionType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Arachnode.SiteCrawler.Value.Enums.EngineState" Collapsed="true">
+    <Position X="58.75" Y="17.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAACAAAAAAAAAAAAAAAAAAAAAAIAAAAAEAAAA=</HashCode>
+      <FileName>Value\Enums\EngineState.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Arachnode.SiteCrawler.Value.Enums.OutputType" Collapsed="true">
+    <Position X="60.5" Y="17.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAKAAAAQABAUAAAIAAAAAIJAACQAAAAABAAAEEBAA=</HashCode>
+      <FileName>Value\Enums\OutputType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Arachnode.SiteCrawler.Value.Enums.UriClassificationType" Collapsed="true">
+    <Position X="62.25" Y="17.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAEAhAACQCAAAkAAAkAAAA=</HashCode>
+      <FileName>Value\Enums\UriClassificationType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Arachnode.SiteCrawler.Value.Enums.UriQualificationType" Collapsed="true">
+    <Position X="64" Y="17.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAACEAAAA=</HashCode>
+      <FileName>Value\Enums\UriQualificationType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>
